@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>SRI Reporting</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+	<style>
+
+		/* Sections
+		 * --------------------------------------- */
+		#section0 img,
+		#section1 img{
+			margin: 20px 0 0 0;
+		}
+		#section2 img{
+			margin: 20px 0 0 52px;
+		}
+		#section3 img{
+			bottom: 0px;
+			position: absolute;
+			margin-left: -420px;
+		}
+		.intro p{
+			width: 50%;
+			margin: 0 auto;
+			font-size: 1.5em;
+		}
+		.twitter-share-button{
+			position: absolute;
+			z-index: 99;
+			right: 149px;
+			top: 9px;
+		}
+		p {
+    		padding-top: 50px;
+    		padding-right: 100px;
+    		padding-bottom: 50px;
+    		padding-left: 100px;
+    		font-size: large;
+		}
+	</style>
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+				menu: '#menu',
+				scrollingSpeed: 1000
+			});
+
+		});
+	</script>
+
+</head>
+<body>
+
+
+<ul id="menu">
+	<li data-menuanchor="firstPage"><a href="#firstPage">Background</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">Project Objectives</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">Data</a></li>
+	<li data-menuanchor="4thpage"><a href="#4thpage">More Data</a></li>
+</ul>
+
+
+<div id="fullpage">
+	<div class="section " id="section0">
+		<h1>Reporting for Socially Responsible Investing</h1>
+		 <input type="hidden" name="id" value="1" />
+		<p>Casual investors are looking more and more at the social and environmental impacts of the companies in which they are investing. For these investors, there is not a quick and inexpensive way to understand the environmental, social, and governance (ESG) practices of the companies within their portfolio. Analysis for Socially Responsible Investing (SRI) analysis can be found “for sale”, but in consolidated views, this is offered only to financial institutions or advisors.  There are specifically targeted SRI funds, but one fund may excel on one ESG attribute, but err on another. Additionally, if you want to understand ESG attributes for non-SRI funds, investors have to search through numerous sites, often focusing only on those companies that comprise the largest portion of a fund. It can be a considerable time investment for a casual investor.
+		</p>
+	</div>
+	<div class="section" id="section1">
+		<div class="slide">
+			<div class="intro">
+				<h1>Goals</h1>
+				<p>The overall goal is to support the casual investor in building a socially responsible portfolio through insight into environmental, social, and governance attributes alongside financials for both funds and stocks.</p>
+			</div>
+
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<h1>Target Users</h1>
+				<p>The intended users for this site are the casual investor looking to understand the ESG attributes of their portfolio. This is for individual stock/fund holders, to support their socially responsible investing. The website will allow users to look at funds together, regardless of issuing financial institution, and provide a consistent set of ESG attributes for comparison.</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<h1>Tasks</h1>
+				<p>To support the user both aggregate and detail views will be provided. Aggregate views will be available across ESG attributes and across companies. Detailed views can be viewed by attribute or by company or fund, showing attributes. Searching functionality, both by objective(s) (e.g. human rights supporter) or by specific company, stock ticker, or fund (e.g. 3M, or MMM) will be critical for users’ purposes.</p>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>Data</h1>
+			<p>Source data is provided by fund, stock ticker, or company. Company and stock ticker will be linked into a single company representation (for publically traded companies). As companies within funds change very often, funds will be reported in their entirety. Ratings and financials will represent a snapshot in time. Specifically, we will not update financials or any new ratings as part of this project. Each will represent a snapshot, from when the data was downloaded. Also, it is important to note that each data source has an existing rating in place, with independent methodologies to determine the rating. In addition to the data, our website will link to a reference to the rating philosophy and procedure for each public rating included.</p>
+		</div>
+	</div>
+	<div class="section" id="section3">
+		<div class="intro">
+			<h1>More Data</h1>
+			<p>
+				Embbed sample d3 chart below
+			</p>
+			<iframe src="http://embed.vida.io/documents/hERF59CdAmCwHN4e6" width="700" height="335" seamless frameBorder="10" scrolling="no"></iframe><
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

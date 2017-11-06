@@ -1,0 +1,211 @@
+Sector,industry,Symbol,LastSale
+Health Care,Medical/Dental Instruments,MMM,217.72
+Consumer Services,Broadcasting,SIRI,5.71
+Transportation,Air Freight/Delivery Services,LUV,59.12
+Public Utilities,Telecommunications Equipment,S,7.12
+Consumer Services,Restaurants,SBUX,55.72
+Consumer Durables,Office Equipment/Supplies/Services,SCS,15.4
+Health Care,Medical/Dental Instruments,SYK,146.69
+Technology,Computer Software: Prepackaged Software,SYMC,32.36
+Finance,Finance: Consumer Services,SYF,30.82
+Finance,Investment Bankers/Brokers/Service,TROW,94.94
+Consumer Services,Department/Specialty Retail Stores,TGT,60.85
+Finance,Investment Bankers/Brokers/Service,AMTD,47.31
+Consumer Non-Durables,Electronic Components,TEL,87.74
+Technology,Retail: Computer Software & Peripheral Equipment,TECD,93.38
+Consumer Services,Broadcasting,TGNA,12.64
+Capital Goods,Auto Manufacturing,TSLA,355.57
+Technology,Semiconductors,TXN,93.59
+Consumer Services,Other Consumer Services,ABCO,53.9
+Capital Goods,Industrial Machinery/Components,TMO,192.42
+Consumer Services,Publishing,TRI,46.81
+Consumer Services,Television Services,TWX,100.94
+Consumer Services,Clothing/Shoe/Accessory Stores,TJX,72.07
+Technology,"Computer Software: Programming, Data Processing",TWTR,18.63
+Consumer Non-Durables,Meat/Poultry/Fish,TSN,70.21
+Finance,Major Banks,UBSH,35.11
+Transportation,Air Freight/Delivery Services,UAL,67.57
+Transportation,Trucking Freight/Courier Services,UPS,118.36
+Capital Goods,Aerospace,UTX,118.72
+Consumer Services,Television Services,VIAB,26.0
+Miscellaneous,Business Services,V,108.66
+Finance,Life Insurance,VOYA,39.84
+Consumer Services,Office Equipment/Supplies/Services,GWW,181.05
+Health Care,Medical/Nursing Services,WBA,67.56
+Consumer Services,Department/Specialty Retail Stores,WMT,86.62
+Consumer Services,Television Services,DIS,97.38
+Consumer Durables,Consumer Electronics/Appliances,WHR,178.78
+Finance,Specialty Insurers,WLTW,157.59
+Consumer Services,Hotels/Resorts,WYN,110.37
+Consumer Services,Hotels/Resorts,WYNN,142.33
+Public Utilities,Power Generation,XEL,48.61
+Technology,Computer peripheral equipment,XRX,33.01
+Consumer Services,Other Consumer Services,YELP,43.65
+Health Care,Major Pharmaceuticals,ABBV,90.67
+Miscellaneous,Business Services,ACN,139.2
+Technology,Computer Software: Prepackaged Software,ADBE,153.93
+Technology,Semiconductors,AMD,14.22
+Health Care,Medical Specialities,AET,153.06
+Basic Industries,Major Chemicals,APD,153.46
+Miscellaneous,Business Services,AKAM,50.76
+Transportation,Air Freight/Delivery Services,ALK,80.96
+Basic Industries,Aluminum,AA,47.71
+Consumer Services,Movies/Entertainment,AMC,13.75
+Public Utilities,Power Generation,AEE,60.41
+Transportation,Air Freight/Delivery Services,AAL,52.7
+Consumer Services,Clothing/Shoe/Accessory Stores,AEO,12.99
+Public Utilities,Electric Utilities: Central,AEP,73.16
+Finance,Finance: Consumer Services,AXP,92.86
+Finance,Investment Managers,AMP,152.91
+Health Care,Biotechnology: Biological Products (No Diagnostic Substances),AMGN,183.01
+Finance,Specialty Insurers,AON,149.38
+Technology,Computer Manufacturing,AAPL,156.99
+Public Utilities,Telecommunications Equipment,T,35.7
+Technology,Computer Software: Prepackaged Software,ADSK,119.63
+Technology,EDP Services,ADP,113.86
+Consumer Non-Durables,Package Goods/Cosmetics,AVP,2.39
+Consumer Durables,Containers/Packaging,BLL,42.35
+Finance,Major Banks,BK,54.67
+Health Care,Medical/Dental Instruments,BAX,62.82
+Finance,Major Banks,BBT,46.7
+Consumer Services,Consumer Electronics/Video Chains,BBY,55.1
+Health Care,Biotechnology: Biological Products (No Diagnostic Substances),BIIB,337.64
+Capital Goods,Aerospace,BA,260.74
+Consumer Services,Professional Services,BAH,38.56
+Health Care,Medical/Dental Instruments,BSX,29.44
+Miscellaneous,Other Consumer Services,BFAM,85.15
+Health Care,Major Pharmaceuticals,BMY,65.29
+Miscellaneous,Business Services,BR,82.59
+Technology,Computer Software: Prepackaged Software,CA,33.88
+Consumer Services,Hotels/Resorts,CZR,12.15
+Consumer Non-Durables,Packaged Foods,CPB,46.18
+Health Care,Other Pharmaceuticals,CAH,64.96
+Finance,Real Estate,CBG,39.59
+Consumer Services,Broadcasting,CBS,57.0
+Finance,Investment Bankers/Brokers/Service,SCHW,44.73
+Consumer Services,Television Services,CHTR,357.4
+Energy,Integrated oil Companies,CVX,119.16
+Consumer Services,Hotels/Resorts,CHH,67.35
+Health Care,Medical Specialities,CI,186.15
+Technology,Computer Communications Equipment,CSCO,33.47
+Technology,Computer Software: Prepackaged Software,CTXS,81.47
+Consumer Durables,Specialty Chemicals,CLX,131.29
+Finance,Property-Casualty Insurers,CNA,50.69
+Consumer Non-Durables,Apparel,COH,39.57
+Consumer Non-Durables,Beverages (Production/Distribution),COKE,225.3
+Consumer Non-Durables,Package Goods/Cosmetics,CL,75.99
+Finance,Major Banks,CMA,75.55
+Consumer Non-Durables,Packaged Foods,CAG,34.33
+Technology,EDP Services,CVG,25.89
+Basic Industries,Telecommunications Equipment,GLW,29.74
+Energy,Industrial Machinery/Components,CMI,172.62
+Health Care,Medical/Nursing Services,CVS,72.6
+Capital Goods,Industrial Machinery/Components,DHR,86.84
+Consumer Services,Restaurants,DRI,79.42
+Transportation,Air Freight/Delivery Services,DAL,53.96
+Finance,Finance: Consumer Services,DNB,120.02
+Basic Industries,Major Chemicals,DWDP,71.43
+Technology,Industrial Machinery/Components,ETN,78.53
+Basic Industries,Package Goods/Cosmetics,ECL,134.09
+Technology,Computer Software: Prepackaged Software,EA,118.62
+Health Care,Major Pharmaceuticals,LLY,86.55
+Finance,Property-Casualty Insurers,EMCI,28.8
+Consumer Non-Durables,Package Goods/Cosmetics,EL,111.0
+Public Utilities,Power Generation,EXC,39.24
+Consumer Services,Transportation Services,EXPE,150.11
+Health Care,Medical/Nursing Services,ESRX,57.14
+Technology,"Computer Software: Programming, Data Processing",FB,173.74
+Technology,"Computer Software: Programming, Data Processing",FDS,177.41
+Capital Goods,Auto Manufacturing,F,12.05
+Finance,Investment Managers,BEN,44.64
+Consumer Services,Electronics Distribution,GME,19.71
+Consumer Services,Clothing/Shoe/Accessory Stores,GPS,27.25
+Consumer Non-Durables,Packaged Foods,GIS,51.53
+Capital Goods,Auto Manufacturing,GM,45.88
+Finance,Life Insurance,GNW,3.94
+Technology,"Computer Software: Programming, Data Processing",GOOGL,1007.87
+Technology,Advertising,GRPN,4.63
+Capital Goods,Industrial Machinery/Components,HRS,136.56
+Consumer Non-Durables,Recreational Products/Toys,HAS,96.62
+Health Care,Medical Specialities,HSIC,80.93
+Consumer Durables,Office Equipment/Supplies/Services,MLHR,35.7
+Consumer Non-Durables,Specialty Foods,HSY,110.07
+Technology,Computer Manufacturing,HPE,14.89
+Consumer Services,Hotels/Resorts,HLT,71.16
+Consumer Services,RETAIL: Building Materials,HD,164.47
+Consumer Non-Durables,Meat/Poultry/Fish,HRL,31.85
+Technology,Computer Manufacturing,HPQ,21.71
+Health Care,Medical Specialities,HUM,237.73
+Finance,Major Banks,HBAN,13.7
+Consumer Services,Professional Services,HURN,36.2
+Consumer Services,Hotels/Resorts,H,61.42
+Technology,Computer Manufacturing,IBM,147.1
+Capital Goods,Auto Parts:O.E.M.,IR,91.32
+Technology,Semiconductors,INTC,39.67
+Technology,Advertising,IPG,20.82
+Technology,Computer Software: Prepackaged Software,INTU,145.65
+Consumer Services,Department/Specialty Retail Stores,JCP,3.41
+Transportation,Air Freight/Delivery Services,JBLU,20.37
+Health Care,Major Pharmaceuticals,JNJ,136.43
+Finance,Major Banks,JPM,95.86
+Capital Goods,Metal Fabrications,KALU,106.54
+Consumer Non-Durables,Packaged Foods,K,61.96
+Consumer Durables,Containers/Packaging,KMB,118.56
+Capital Goods,Auto Parts:O.E.M.,LEA,173.37
+Capital Goods,Military/Government/Technical,LMT,319.39
+Finance,Investment Bankers/Brokers/Service,LPLA,53.0
+Consumer Services,Department/Specialty Retail Stores,M,20.2
+Health Care,Major Pharmaceuticals,MNK,33.29
+Technology,Professional Services,MAN,122.32
+Consumer Services,Hotels/Resorts,MAR,115.11
+Finance,Specialty Insurers,MMC,83.9
+Miscellaneous,Business Services,MA,147.34
+Consumer Non-Durables,Recreational Products/Toys,MAT,15.74
+Capital Goods,Metal Fabrications,MDR,6.96
+Consumer Services,Restaurants,MCD,165.37
+Health Care,Other Pharmaceuticals,MCK,147.17
+Health Care,Biotechnology: Electromedical & Electrotherapeutic Apparatus,MDT,78.07
+Health Care,Major Pharmaceuticals,MRK,63.39
+Finance,Life Insurance,MET,52.72
+Consumer Services,Hotels/Resorts,MGM,29.74
+Technology,Computer Software: Prepackaged Software,MSFT,77.49
+Consumer Non-Durables,Packaged Foods,MDLZ,41.68
+Basic Industries,Agricultural Chemicals,MON,122.3
+Finance,Finance: Consumer Services,MCO,144.24
+Consumer Services,Professional Services,NCI,17.09
+Miscellaneous,Office Equipment/Supplies/Services,NCR,37.54
+Consumer Services,Consumer Electronics/Video Chains,NFLX,199.49
+Basic Industries,Precious Metals,NEM,38.59
+Miscellaneous,Business Services,NLSN,39.7
+Consumer Non-Durables,Shoe Manufacturing,NKE,50.98
+Consumer Services,Clothing/Shoe/Accessory Stores,JWN,42.65
+Finance,Major Banks,NTRS,92.99
+Capital Goods,Industrial Machinery/Components,NOC,296.4
+Technology,Semiconductors,NVDA,194.59
+Consumer Services,Other Specialty Stores,ODP,3.81
+Technology,Advertising,OMC,75.14
+Finance,Investment Bankers/Brokers/Service,OPY,17.85
+Technology,Computer Software: Prepackaged Software,ORCL,48.61
+Capital Goods,Industrial Machinery/Components,OC,79.25
+Consumer Services,Broadcasting,P,7.97
+Miscellaneous,Business Services,PYPL,68.66
+Consumer Non-Durables,Beverages (Production/Distribution),PEP,112.62
+Health Care,Major Pharmaceuticals,PFE,36.34
+Public Utilities,Power Generation,PCG,57.72
+Public Utilities,Electric Utilities: Central,POR,46.25
+Public Utilities,Electric Utilities: Central,PPL,37.56
+Basic Industries,Major Chemicals,PX,142.21
+Finance,Accident &Health Insurance,PFG,67.21
+Basic Industries,Package Goods/Cosmetics,PG,93.04
+Technology,Radio And Television Broadcasting And Communications Equipment,QCOM,52.82
+Health Care,Medical Specialities,DGX,91.06
+Capital Goods,Industrial Machinery/Components,RTN,187.89
+Capital Goods,Metal Fabrications,ROLL,126.5
+Technology,Professional Services,RHI,49.01
+Capital Goods,Industrial Machinery/Components,ROK,185.88
+Capital Goods,Military/Government/Technical,COL,134.71
+Consumer Services,Marine Transportation,RCL,127.77
+Finance,Finance: Consumer Services,SPGI,161.82
+Technology,Computer Software: Prepackaged Software,CRM,96.94
+Consumer Services,Department/Specialty Retail Stores,SHLD,6.77
+Public Utilities,Natural Gas Distribution,SRE,114.87

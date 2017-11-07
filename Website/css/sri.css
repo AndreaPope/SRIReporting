@@ -1,0 +1,40 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+ #demosMenu{
+	position:fixed;
+	bottom: 10px;
+	right:10px;
+	z-index: 999;
+ }
+
+
+#container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: #c6dbef;
+    clear: left;
+    text-align: center;
+}
+
+navSRI {
+    float: left;
+    max-width: 490px;
+    margin: 0;
+    /*padding: 1em;*/
+}
+
+
+articleSRI {
+    margin-left: 500px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+

@@ -6,16 +6,14 @@
 	<title>SRI Reporting</title>
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+	<link rel="stylesheet" type="text/css" href="css/sri.css" />
 	<style>
-
 		/* Sections
 		 * --------------------------------------- */
-
 		#section0{
 		background-image: url(res/bg1.jpg);
 		opacity: 0.8;
 		}
-
 		#section0 img,
 		
 		#section1 img{
@@ -62,12 +60,11 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				sectionsColor: ['#1bbc9b', 'white', 'white', 'white', '#4BBFC3', 'whitesmoke', '#ccddff'],
-				anchors: ['1st', '2ed', '3rd', '4th', '5th', '6th', '7th'],
+				sectionsColor: ['#1bbc9b', 'white','white', 'white', 'white', '#4BBFC3', 'whitesmoke', '#ccddff'],
+				anchors: ['1st', '2nd', '3rd', '4th', '5th', '6th', '7th'],
 				menu: '#menu',
 				scrollingSpeed: 1000
 			});
-
 		});
 	</script>
 
@@ -77,11 +74,12 @@
 
 <ul id="menu">
 	<li data-menuanchor="1st"><a href="#1st">Background</a></li>
-	<li data-menuanchor="2ed"><a href="#2ed">Emission</a></li>
-	<li data-menuanchor="3rd"><a href="#3rd">Forest</a></li>
-	<li data-menuanchor="4th"><a href="#4th">HRC</a></li>
-	<li data-menuanchor="5th"><a href="#5th">Project Objectives</a></li>
-	<li data-menuanchor="6th"><a href="#6th">More Data</a></li>
+	<li data-menuanchor="2nd"><a href="#2nd">SRI Funds</a></li>
+	<li data-menuanchor="3rd"><a href="#3rd">Emission</a></li>
+	<li data-menuanchor="4th"><a href="#4th">Forest</a></li>
+	<li data-menuanchor="5th"><a href="#5th">HRC</a></li>
+	<li data-menuanchor="6th"><a href="#6th">Project Objectives</a></li>
+	<li data-menuanchor="7th"><a href="#7th">Explore</a></li>
 </ul>
 
 
@@ -89,26 +87,113 @@
 
 
 	<div class="section " id="section0">
+
+
 		<h1 style="color:white;text-shadow: 1px 1px black;">Reporting for Socially Responsible Investing</h1>
-		 <input type="hidden" name="id" value="1" />
+			 <input type="hidden" name="id" value="1" />
 		<p style="color:white;text-shadow: 1px 1px black;">Casual investors are looking more and more at the social and environmental impacts of the companies in which they are investing. For these investors, there is not a quick and inexpensive way to understand the environmental, social, and governance (ESG) practices of the companies within their portfolio. Analysis for Socially Responsible Investing (SRI) analysis can be found “for sale”, but in consolidated views, this is offered only to financial institutions or advisors.  There are specifically targeted SRI funds, but one fund may excel on one ESG attribute, but err on another. Additionally, if you want to understand ESG attributes for non-SRI funds, investors have to search through numerous sites, often focusing only on those companies that comprise the largest portion of a fund. It can be a considerable time investment for a casual investor.
 		</p>
-	</div>
+
+<!-- 		<div id="videoblock"> 
+
+			<video preload="preload"  id="welcomevideo" autoplay loop="loop" poster="images/bg1.jpg">
+				<source src="images/SummerBreeze.mp4" type="video/mp4"></source>
+			</video>
+		</div>
+
+
+		<div id="videomessage">
+
+			<h1 style="color:white;text-shadow: 1px 1px black;">Reporting for Socially Responsible Investing</h1>
+			 <input type="hidden" name="id" value="1" />
+			<p style="color:white;text-shadow: 1px 1px black;">Casual investors are looking more and more at the social and environmental impacts of the companies in which they are investing. For these investors, there is not a quick and inexpensive way to understand the environmental, social, and governance (ESG) practices of the companies within their portfolio. Analysis for Socially Responsible Investing (SRI) analysis can be found “for sale”, but in consolidated views, this is offered only to financial institutions or advisors.  There are specifically targeted SRI funds, but one fund may excel on one ESG attribute, but err on another. Additionally, if you want to understand ESG attributes for non-SRI funds, investors have to search through numerous sites, often focusing only on those companies that comprise the largest portion of a fund. It can be a considerable time investment for a casual investor.
+			</p>
+		</div>
+ -->	</div>
 
 
 	<div class="section" id="section1">
-		<div class="intro">
-			<h1>Top Companies by Emission</h1>
-			<img src="res/emission.jpg" style="width:800px;height:400px;">
-			<p>The big companies  big companies big companies  big companies put your descriptions here </p>
-			
+		<div class="container">
+			<header>
+   				<h1>SRI Funds</h1>
+   				<!-- need a background image here -->
+			</header>
+			  
+			<navSRI>
+
+				<p>
+				The Forum for Sustainable and Responsible Investment,<br> <img src="images/USSIF.png" ><br>, is a leading voice for advancing sustainable, responsible, and impact investing across all asset classes. Their mission is to shift invesment practices towards sustainability, focusing on long-term investment and the generation of positive social and environmental impacts. You can read more about them and access their data directly <a href="http://www.ussif.org/about">here</a>.
+				</p>
+
+				<p>Within our analysis, we are incorporating financial, environmental, social, and governance ratings for 202 funds, as self reported by the fund managers with USSIF.</p>
+
+			</navSRI>
+
+			<articleSRI>
+				<img src="images/USSIF-ESG.png">
+				<i>click category to see top performers</i>
+			</articleSRI>
+
+			<footer></footer>
+
 		</div>
 	</div>
 
 
 	<div class="section" id="section1">
+		<div class="container">
+			<header>
+   				<h1>Greenhouse Gas Emissions</h1>
+   				<!-- need a background image here -->
+			</header>
+			  
+			  <p>
+				For Greenhouse Gas (GHG) Emissions, we are leveraging data from the CDP. CDP is a not-for-profit charity that runs the global disclosure system for investors, companies, cities, states and regions to manage their environmental impacts. To learn more about CDP, you can go <a href="https://www.cdp.net/en">here</a>.
+
+				CDP provides Scope 1 and 2 emissions from 482 of the largest 500 companies in the world by market capitalization. A group called The Greenhouse Gas Protocol has been very influential in defining how organizations should manage and report their GHG, including the establishment of three categories of emissions (Scope). The separation of GHG emissions into scopes is designed to avoid ‘double-counting’ of emissions, and is also intended to help organizations categorize GHG into those that they control versus those that they can influence.
+				Scope 1 are also referred to as Direct GHG, and are defined as ‘emissions from sources that are owned or controlled by the organization’, such as:
+				<table border=0px; align="center";>
+				<tr><td align="left"><li>Stationary Combustion: from the combustion of fossil fuels (e.g. natural gas, fuel oil, propane, etc.) for comfort heating or other industrial applications</li></td></tr>
+				<tr><td align="left"><li>Mobile Combustion: from the combustion of fossil fuels (e.g. gasoline, diesel) used in the operation of vehicles or other forms of mobile transportation</li></td></tr>
+				<tr><td align="left"><li>Process Emissions: emissions released during the manufacturing process in specific industry sectors (e.g. cement, iron and steel, ammonia)</li></td></tr>
+				<tr><td align="left"><li>Fugitive Emissions: unintentional release of GHG from sources including refrigerant systems and natural gas distribution</li></td></tr>
+				</table>
+			</p>
+			<p>
+
+				For the majority of organizations, the stationary and mobile combustion sources of Scope 1 GHG will be the most relevant.
+				Scope 2 are also referred to as Energy Indirect GHG, and are defined as ‘emissions from the consumption of purchased electricity, steam, or other sources of energy (e.g. chilled water) generated upstream from the organization’.
+
+				To learn more about the GHG protocol, click here: http://www.ghgprotocol.org/
+
+			</p>
+
+			<img src="res/emission.jpg" >
+			<i>interaction note</i>
+				
+
+
+
+			<footer></footer>
+
+		</div>
+
+
+
+
+
+		<!-- <div class="intro">
+			<h1>Top Companies by Emission</h1>
+			<img src="res/emission.jpg" style="width:800px;height:400px;">
+			<p>The big companies  big companies big companies  big companies put your descriptions here </p>
+			
+		</div> -->
+	</div>
+
+
+	<div class="section" id="section1">
 		<div class="intro">
-			<h1>Title</h1>
+			<h1>Forest / Water</h1>
 			<img src="res/emission.jpg" style="width:800px;height:400px;">
 			<p>Text Decription </p>
 		</div>
@@ -117,7 +202,7 @@
 
 	<div class="section" id="section1">
 		<div class="intro">
-			<h1>Title</h1>
+			<h1>HRC</h1>
 			<img src="res/emission.jpg" style="width:800px;height:400px;">
 			<p>Description</p>
 		</div>
@@ -150,7 +235,7 @@
 
 	<div class="section" id="section3">
 		<div class="intro">
-			<h1>More Data</h1>
+			<h1>Explore</h1>
 			<p>
 				Embbed sample d3 chart below
 			</p>

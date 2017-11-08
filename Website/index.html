@@ -92,8 +92,10 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				sectionsColor: ['#1bbc9b', 'white','white', 'white', 'white', '#4BBFC3', 'whitesmoke', '#ccddff'],
-				anchors: ['1st', '2nd', '3rd', '4th', '5th', '6th', '7th'],
+				//sectionsColor: ['#1bbc9b', 'white','white', 'white', 'white', '#4BBFC3', 'whitesmoke', '#ccddff'],
+				sectionsColor: ['#1bbc9b', 'white','white', 'white', 'white',  'whitesmoke', '#ccddff'],
+				//anchors: ['1st', '2nd', '3rd', '4th', '5th', '6th', '7th'],
+				anchors: ['1st', '2nd', '3rd', '4th', '5th', '7th'],
 				menu: '#menu',
 				scrollingSpeed: 1000
 			});
@@ -105,12 +107,12 @@
 
 
 <ul id="menu">
-	<li data-menuanchor="1st"><a href="#1st">Background</a></li>
+	<li data-menuanchor="1st"><a href="#1st">About</a></li>
 	<li data-menuanchor="2nd"><a href="#2nd">SRI Funds</a></li>
-	<li data-menuanchor="3rd"><a href="#3rd">Emission</a></li>
+	<li data-menuanchor="3rd"><a href="#3rd">Emissions</a></li>
 	<li data-menuanchor="4th"><a href="#4th">Forest</a></li>
 	<li data-menuanchor="5th"><a href="#5th">HRC</a></li>
-	<li data-menuanchor="6th"><a href="#6th">Project Objectives</a></li>
+	<!-- <li data-menuanchor="6th"><a href="#6th">Project Objectives</a></li> -->
 	<li data-menuanchor="7th"><a href="#7th">Explore</a></li>
 </ul>
 
@@ -122,13 +124,23 @@
 
 
 		
-		<video id="myVideo" loop muted data-autoplay>
+		<!-- <video id="myVideo" loop muted data-autoplay>
 			<source src="images/SummerBreeze.mp4" type="video/mp4">
-		</video>
+		</video> -->
 		<div class="layer">
-			<h1 style="color:white;text-shadow: 1px 1px black;">Reporting for Socially Responsible Investing</h1>
+			<h1 style="color:white;text-shadow: 1px 1px black;">
+				<br>
+				<font color="#464647">Make Your Money<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				Make A Statement
+				</font>
+			</h1>
 			 <input type="hidden" name="id" value="1" />
-			<p style="color:white;text-shadow: 1px 1px black;">Casual investors are looking more and more at the social and environmental impacts of the companies in which they are investing. For these investors, there is not a quick and inexpensive way to understand the environmental, social, and governance (ESG) practices of the companies within their portfolio. Analysis for Socially Responsible Investing (SRI) analysis can be found “for sale”, but in consolidated views, this is offered only to financial institutions or advisors.  There are specifically targeted SRI funds, but one fund may excel on one ESG attribute, but err on another. Additionally, if you want to understand ESG attributes for non-SRI funds, investors have to search through numerous sites, often focusing only on those companies that comprise the largest portion of a fund. It can be a considerable time investment for a casual investor.
+			<p style="color:white;text-shadow: 1px 1px black;">
+				<font color="#f4f4f9">
+
+				Casual investors are looking more and more at the social and environmental impacts of the companies in which they are investing. For these investors, there is not a quick and inexpensive way to understand the environmental, social, and governance (ESG) practices of the companies within their portfolio. Analysis for Socially Responsible Investing (SRI) analysis can be found “for sale”, but in consolidated views, this is offered only to financial institutions or advisors.  There are specifically targeted SRI funds, but one fund may excel on one ESG attribute, but err on another. Additionally, if you want to understand ESG attributes for non-SRI funds, investors have to search through numerous sites, often focusing only on those companies that comprise the largest portion of a fund. It can be a considerable time investment for a casual investor.
+				</font>
 			</p>
 		</div>
 
@@ -153,11 +165,17 @@
 	<div class="section" id="section1">
 		<div class="container">
 			<header>
-   				<h1>SRI Funds</h1>
+				<div style="background-image: url(images/dropsplants.jpg)">
+   				
+   				<h1 style="color: white">SRI Funds</h1>
+
+   				</font>
    				<!-- need a background image here -->
+
+   				</div>
 			</header>
 			  
-			<navSRI>
+			<navsri>
 
 				<p>
 				The Forum for Sustainable and Responsible Investment,<br> <img src="images/USSIF.png" ><br>, is a leading voice for advancing sustainable, responsible, and impact investing across all asset classes. Their mission is to shift invesment practices towards sustainability, focusing on long-term investment and the generation of positive social and environmental impacts. You can read more about them and access their data directly <a href="http://www.ussif.org/about">here</a>.
@@ -165,12 +183,12 @@
 
 				<p>Within our analysis, we are incorporating financial, environmental, social, and governance ratings for 202 funds, as self reported by the fund managers with USSIF.</p>
 
-			</navSRI>
+			</navsri>
 
-			<articleSRI>
+			<articlesri>
 				<img src="images/USSIF-ESG.png">
 				<i>click category to see top performers</i>
-			</articleSRI>
+			</articlesri>
 
 			<footer></footer>
 
@@ -206,7 +224,8 @@
 
 			</p>
 
-			<img src="res/emission.jpg" >
+			<img src="images/Emissions.png" width = 75%; align="center"; float:right;>
+
 			<i>interaction note</i>
 				
 
@@ -216,16 +235,6 @@
 
 		</div>
 
-
-
-
-
-		<!-- <div class="intro">
-			<h1>Top Companies by Emission</h1>
-			<img src="res/emission.jpg" style="width:800px;height:400px;">
-			<p>The big companies  big companies big companies  big companies put your descriptions here </p>
-			
-		</div> -->
 	</div>
 
 
@@ -239,15 +248,41 @@
 
 
 	<div class="section" id="section1">
-		<div class="intro">
-			<h1>HRC</h1>
-			<img src="res/emission.jpg" style="width:800px;height:400px;">
-			<p>Description</p>
+		<div class="container">
+			<header>
+   				<h1>Corporate Equality</h1>
+   				<!-- need a background image here -->
+			</header>
+
+
+			<navhrc>
+
+				<p>
+				The Human Rights Campaign (HRC) and the Human Rights Campaign Foundation together serve as America's largest civil rights organization working to achieve LGBTQ equality. By inspiring and engaging individuals and communities, HRC strives to end discrimination against LGBTQ people and realize a world that achieves fundamental fairness and equality for all.
+
+				Human Rights Campaign Foundation’s Corporate Equality Index is the national benchmarking tool on corporate policies and practices pertinent to lesbian, gay, bisexual and transgender employees.
+
+				To read more about HRC, click <a href="http://www.hrc.org">here</a>.		  			
+			</p>
+			</navhrc>
+
+			<articlehrc>
+				<img src="images/hrc_viz_1.png" width = 75%; align="center"; float:right;>
+				<img src="images/hrc_viz_2.png" width = 75%; align="center"; float:right;>
+
+				
+				<i>click category to see top performers</i>
+			</articlehrc>
+ 
+
+			<footer></footer>
+
 		</div>
+
 	</div>
 
 
-	<div class="section" id="section2">
+	<!-- <div class="section" id="section2">
 		<div class="slide">
 			<div class="intro">
 				<h1>Goals</h1>
@@ -269,7 +304,7 @@
 		</div>
 	</div>
 
-
+ -->
 
 	<div class="section" id="section3">
 		<div class="intro">

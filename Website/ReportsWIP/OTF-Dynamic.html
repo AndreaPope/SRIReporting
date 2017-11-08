@@ -1,0 +1,621 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Orange Theory - Heart Rate Tracking</title>
+
+<html>
+
+    <!-- support from
+    for stacked bar chart example: https://bl.ocks.org/mbostock/3886208 
+    for general bar chart: https://bost.ocks.org/mike/bar/3/
+    for rotating x axis - http://bl.ocks.org/d3noob/ccdcb7673cdb3a796e13
+    for tool tip - http://bl.ocks.org/juan-cb/43f10523858abf6053ae
+    for data selection- http://bl.ocks.org/enjalot/1425402
+    for brush - https://bl.ocks.org/mbostock/34f08d5e11952a80609169b7917d4172
+    for selections - https://bost.ocks.org/mike/selection/
+    for multi-series - https://bl.ocks.org/mbostock/3884955
+    for tool tip: http://bl.ocks.org/Caged/6476579
+
+    "Maximum (90+%)", "Hard (84-90%)", "Moderate (71-83%)", "Light (61-70%)", "Very Light (Under 60%)"
+    "Maximum", "Hard", "Moderate", "Light", "Very Light"
+    ["#8c8c8c", "#1a75ff", "#00b33c", "#ff751a", "#ff3333"]
+
+
+    -->
+<head>
+<link rel="stylesheet" type="text/css" href="OTF.css">
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="d3-tip.js"></script>
+
+</head>
+
+
+<body>
+<div style="float:left; width:100%;" id="heading">
+  <table width = 100%>
+  <tr><td align = center><h3>Orange Theory</h3></td></tr>
+  <tr><td align = center><h5>Workout Minutes by Heart Rate Zone</h5></td></tr>
+  </table>
+</div>
+<div style="float:right; width:25%;" id="buttons">
+
+<table  width = 50% align=left>
+ <tr><td colspan="2"><text align=center><h2> Choose Heart Rate Zone<br>(or all)</h2></text></tr>
+ <tr>
+   <td align = right><button id="max" class="button button5">Maximum</button></td>
+   <td align = left class="heading">90%+ of HR</td>
+ </tr>
+<tr>
+   <td align = right> <button id="hard" class="button button4">Hard</button></td>
+   <td align = left class="heading">84-90% of HR</td>
+ </tr>
+<tr>
+   <td align = right><button id="moderate" class="button button3">Moderate</button></td>
+   <td align = left class="heading">71-83% of HR</td>
+ </tr>
+<tr>
+   <td align = right> <button id="light" class="button button2">Light</button></td>
+   <td align = left class="heading">61-70% of HR</td>
+ </tr>
+<tr>
+   <td align = right><button id="verylight" class="button button1">Very Light</button></td>
+   <td align = left class="heading">Under 60% of HR</td>
+ </tr>
+<tr>
+   <td align = right> <button id="all" class="button button6">All</button></td>
+   <td align = left class="heading">All HR Zones</td>
+ </tr>
+</table>
+  
+</div>
+<div style="float:left; width:75%;" id="bar"></div>
+
+<div style="float:left; width:75%;" id="scatter"></div>
+
+<div style="float:left; width:100%;" id="footer">
+    <br>
+    <table width = 100%>
+      <tr>
+        <td>Top chart tracks heart rate zones during <font color = #ff751a><b><i>OrangeTheory</i></b></font> workouts over last month.</td>
+      </tr>
+      <tr><td><br></td></tr>
+      <tr><td>
+        Lower chart plots calories burned vs. splat points for each workout during same period.Mouse-over either chart to see which days tie to calories/splat points.
+        <font color = "#e62e00"><b><i>Splat Points</i></b></font> represent total minutes in 
+        <font color = "#ff751a"><b><i>Orange</i></b></font> and 
+        <font color = "#ff3333"><b><i>Red</i></b></font> heart rate zones.
+      </td></tr>
+      <tr><td><br></td></tr>
+      <tr><td>
+          <font color = #ff751a><b><i>OrangeTheory</i></b></font> is a 1 hour, full body workout, focused on training Endurance, Strength and Power. Workoutsare designed to produce 12 minutes or more of intensities at 84% or higher of maximum heart rate (orange and red zones). This program design produces workout “after burn” effect, which is an increased metabolic rate for up to 36 hours after the workout. The physiological theory behind the Orangetheory workout is known as “Excess Post-Exercise Oxygen Consumption,” or EPOC. 
+      </td></tr>
+    </table>
+    <br>
+    <br>  
+</div>
+<script type="text/javascript">
+
+w = 1100;
+h = 400;
+    
+var svg = d3.select("#bar")
+  .append("svg")
+  .attr("width", w)
+  .attr("height", h);
+
+
+var my_viz_lib = my_viz_lib || {};
+
+my_viz_lib.makeBars = function() {
+
+    w = 1100;
+    h = 400;
+    
+    var svg = d3.select("svg"),
+    margin = {top: 20, right: 20, bottom: 60, left: 40},
+    width = +svg.attr("width") - margin.left - margin.right,
+    height = +svg.attr("height") - margin.top - margin.bottom;
+
+    var x = d3.scaleBand().rangeRound([0, width]).padding(0.1),
+    y = d3.scaleLinear().rangeRound([height, 0]);
+  
+    //var g = svg.append("g")
+    //.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+    var data = [];
+    var data_ = function(_) {
+      var that = this;
+      if (!arguments.length) return data;
+        data = _;
+      return that;
+    }  //end makeBars Data
+
+    var removePlot_ = function() {
+    	d3.select("#bar").select("svg").selectAll("g").remove();
+    }
+
+    var rect = d3.select("svg");
+
+    var plot_ = function(zone) {
+
+    	//console.log(zone);
+
+    	barData = zone[0];
+		fill = zone[1];
+
+		//console.log(fill);
+
+		x.domain(data.map(function(d) { return d.date; }));
+		y.domain([0, d3.max(data, function(d) { return d[barData]; })]);
+
+		var g = svg.append("g")
+    	  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+		g.append("g")
+	      .attr("transform", "translate(0," + height + ")")
+	      .call(d3.axisBottom(x))
+	      .selectAll("text")
+	      .style("text-anchor", "end")
+	      .attr("dx", "-.8em")
+	      .attr("dy", ".15em")
+	      .attr("transform", function(d) {
+	        return "rotate(-50)" 
+	      });
+
+	    g.append("g")
+	      .call(d3.axisLeft(y).ticks(null, "s"))
+	      .append("text")
+	      .attr("x", 2)
+	      .attr("y", y(y.ticks().pop()) + 0.5)
+	      .attr("dy", "0.32em")
+	      .attr("class", "heading");
+
+	    g.append("g")
+	      .append("text")
+	      .attr("class", "heading")
+	      .attr("x", -20)
+	      .attr("y", -15)
+	      .attr("dy", "0.32em")
+	      .text("Minutes");  
+
+	    g.selectAll(".bar")
+	      .data(data)
+
+
+	    rect = g
+	    .selectAll("rect")
+	    .data(data)
+        .enter().append("rect")
+	      .attr("class", "bar")
+	      .attr("x", function(d) { return x(d.date); })
+	      .attr("y", function(d) { return y(d[barData]); })
+	      .attr("width", x.bandwidth())
+	      .attr("height", function(d) { return height - y(d[barData]); })
+	      .attr("fill", function(d) { return fill; })
+	      .on("mouseover", function(d,i) {
+	      	d3.select(this).attr("fill","#323c4c");
+    		//console.log(d);
+    		makeScatter1.highlight(i);
+    	   })
+	      .on("mouseout", function(d,i) {
+	      	d3.select(this).attr("fill", function(d) { return fill; })
+	      	makeScatter1.unhighlight(i);
+   		   });
+
+    } //end makeBars plot function
+
+
+    var highlight = function(id) {
+    	//console.log("in highlight");
+    	//console.log(rect);
+    	rect.filter(function(d,i) { return (i === id) ? true : false; }).style("stroke", "#323c4c").style("stroke-width", "6px" );
+    }
+  
+    var unhighlight = function(id) {
+    	//console.log("in unhighlight");
+    	rect.filter(function(d,i) { return (i === id) ? true : false; }).style("stroke-width", "0px");
+    }
+
+    var public = {
+     	"plot": plot_,
+    	"data": data_,
+    	"removePlot": removePlot_,
+    	"highlight": highlight,
+    	"unhighlight": unhighlight
+    };
+  
+    return public;
+
+} //end makeBars function
+
+
+
+my_viz_lib.makeStacked = function() {
+	w = 1100;
+    h = 400;
+
+
+    //margins
+    var svg = d3.select("svg"),
+      margin = {top: 20, right: 20, bottom: 60, left: 40},
+      width = +svg.attr("width") - margin.left - margin.right,
+      height = +svg.attr("height") - margin.top - margin.bottom;
+      
+
+    //scaling
+    var x = d3.scaleBand()
+      .rangeRound([0, width])
+      .paddingInner(0.1)
+      .align(0.1);
+
+    var x_alt = d3.scaleBand()
+      .rangeRound([0, width])
+      .paddingInner(0)
+      .align(0);
+
+    var y = d3.scaleLinear()
+      .rangeRound([height, 0]);
+
+    var z = d3.scaleOrdinal()
+      .range(["#8c8c8c", "#1a75ff", "#00b33c", "#ff751a", "#ff3333"]);
+
+
+    var data = [];
+    var data_ = function(_) {
+      var that = this;
+      if (!arguments.length) return data;
+        data = _;
+      return that;
+    }  //end makeStacjed Data
+
+
+    var rect = d3.select("svg");
+
+    var plot_ = function() {
+
+    	var keys = data.columns.slice(3,8);
+	    var splat = data.columns.slice(2,3);
+	                
+	    //console.log(keys);
+	    //console.log(splat);
+
+	    var g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+	    //set domain for scales
+	    x.domain(data.map(function(d) { return d.date; }));
+	    x_alt.domain(data.map(function(d) { return d.date; }));
+	    y.domain([0, d3.max(data, function(d) { return d.total; })]).nice();
+	    z.domain(keys);
+
+
+	    var tip = d3.tip()
+          .attr('class', 'd3-tip')
+          .offset([-10, 0])
+          .html(function(d) { 
+        //console.log(d[1]);
+           minutes = d[1] - d[0];
+           return "Minutes: <span style='color:red'>" + minutes + "</span>";
+        })
+
+        svg.call(tip);
+ 		//build transparent rect behind stacked charts (used for higlighting later)
+        g.selectAll(".bar")
+	      .data(data)
+
+
+	    rect = g
+	    .selectAll("rect")
+	    .data(data)
+        .enter().append("rect")
+	      .attr("class", "bar")
+	      .attr("x", function(d) { return x_alt(d.date) + 2; })
+	      .attr("y", function(d) { return y(d.total) + 2; })
+	      .attr("width", x.bandwidth() + 2)
+	      .attr("height", function(d) { return (height - y(d.total)) + 4;})
+	      .attr("fill", "white")
+
+	   
+
+	    //build stacked bar charts
+	    g.append("g")
+	      .selectAll("g")
+	      .data(d3.stack().keys(keys)(data)) //binding data
+	      .enter().append("g")
+	        .attr("fill", function(d) { return z(d.key); })  //match fill color
+	        .selectAll("rect")
+	        .data(function(d) {return d;  })
+	        .enter().append("rect")
+	        .attr("x", function(d) {return x(d.data.date); })  //loops through ll 24 x positions, 5 times
+	        .attr("y", function(d) {return y(d[1]); })
+	        .attr("class", "bar")
+	        .attr("height", function(d) {return y(d[0]) - y(d[1]); })
+	        .attr("width", x.bandwidth())
+	        .on("mouseover", tip.show)
+	        .on("mouseout", tip.hide)
+	        .on("mouseenter", function(d,i) {
+	        	makeScatter1.highlight(i);
+    	    })
+	        .on("mouseleave", function(d,i) {
+	        	makeScatter1.unhighlight(i);
+   		    });
+
+	    //add axis   
+	    g.append("g")
+	      .attr("class", "axis")
+	      .attr("transform", "translate(0," + height + ")")
+	      .call(d3.axisBottom(x))
+	      .selectAll("text")
+	      .style("text-anchor", "end")
+	      .attr("dx", "-.8em")
+	      .attr("dy", ".15em")
+	      .attr("transform", function(d) {
+	        return "rotate(-50)" 
+	      });
+
+	    g.append("g")
+	      .attr("class", "axis")
+	      .call(d3.axisLeft(y).ticks(null, "s"))
+	      .append("text")
+	      .attr("x", 2)
+	      .attr("y", y(y.ticks().pop()) + 0.5)
+	      .attr("dy", "0.32em")
+	      .attr("fill", "#000")
+	      .attr("font-weight", "bold")
+	      .attr("text-anchor", "start");
+	                
+	    g.append("g")
+	      .append("text")
+	      .attr("font-family", "sans-serif")
+	      .attr("font-size", 10)
+	      .attr("font-weight", "bold")
+	      .attr("text-anchor", "start")
+	      .attr("x", -20)
+	      .attr("y", -15)
+	      .attr("dy", "0.32em")
+	      .text("Minutes");
+
+    } //end makeStacked plot
+
+    var highlight = function(id) {
+    	//console.log("in highlight");
+    	rect.filter(function(d,i) { return (i === id) ? true : false; }).attr("fill", "#323c4c").style("stroke-width", "20px" );
+    }
+  
+    var unhighlight = function(id) {
+    	//console.log("in unhighlight");
+    	rect.filter(function(d,i) { return (i === id) ? true : false; }).attr("fill", "white").style("stroke-width", "0px");
+    }
+
+    var public = {
+     	"plot": plot_,
+    	"data": data_,
+    	"highlight": highlight,
+    	"unhighlight": unhighlight
+    };
+  
+    return public;
+
+} //end makeStacked function
+
+
+my_viz_lib.makeScatter = function() {
+
+    var margin = {top: 20, right: 20, bottom: 30, left: 40},
+    width = 1100 - margin.left - margin.right,
+    height = 300 - margin.top - margin.bottom;
+
+    var x = d3.scaleLinear().range([0, width]);
+
+    var y = d3.scaleLinear().range([height, 0]);
+
+    var xAxis = d3.axisBottom(x);
+    var yAxis = d3.axisLeft(y)
+        .ticks(null, "s");
+
+    var svg = d3.select("#scatter").append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+    var data = [];
+    var data_ = function(_) {
+      var that = this;
+      if (!arguments.length) return data;
+        data = _;
+      return that;
+    }  //end makeScatter data
+
+    var circle = d3.select("svg");
+
+    var plot_ = function() {
+    	
+    	// var g = svg.append("g")
+    	//   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+		x.domain(d3.extent(data, function(d) { return d.splat; })).nice();
+	    y.domain(d3.extent(data, function(d) { return d.calories; })).nice();
+
+
+	    svg.append("g")
+	      .attr("class", "x axis")
+	      .attr("transform", "translate(0," + height + ")")
+	      .call(xAxis)
+	    .append("text")
+	      .attr("class", "label")
+	      .attr("x", width)
+	      .attr("y", -6)
+	      .style("text-anchor", "end")
+	      .text("Splat Points");
+
+	    svg.append("g")
+	      .attr("class", "y axis")
+	      .call(yAxis)
+	    .append("text")
+	      .attr("class", "label")
+	      .attr("transform", "rotate(-90)")
+	      .attr("y", 6)
+	      .attr("dy", ".71em")
+	      .style("text-anchor", "end")
+	      .text("Calories Burned")
+
+	    svg.selectAll(".dot")
+	      .data(data)
+
+	    circle = svg
+	    .selectAll("circles")
+	    .data(data)
+        .enter().append("circle")
+	      .attr("class", "dot")
+	      .attr("r", 3.5)
+	      .attr("cx", function(d) { return x(d.splat); })
+	      .attr("cy", function(d) { return y(d.calories); })
+	      .style("fill", "#ff751a")
+	    .on("mouseover", function(d,i) {
+	      	d3.select(this).attr("r",10).style("fill","#323c4c");
+    		//console.log(d);
+    		makeBars1.highlight(i);
+    		makeStacked1.highlight(i);
+    	   })
+	      .on("mouseout", function(d,i) {
+	      	d3.select(this).attr("r",3.5).style("fill", "#ff751a");
+	      	makeBars1.unhighlight(i);
+	      	makeStacked1.unhighlight(i);
+   		   });
+
+	    svg.append("g")
+	      .append("text")
+	      .attr("class", "heading")
+	      .attr("x", -20)
+	      .attr("y", -15)
+	      .attr("dy", "0.32em")
+	      .text("Calories");   
+
+
+	     svg.append("g")
+	        .append("text")
+	        .attr("class", "heading")
+	        .attr("x", 975)
+	        .attr("y", 270)
+	        .attr("dy", "0.32em")
+	        .text("Splat Points")  
+
+    } //end makeScatter plot
+
+    var highlight = function(id) {
+    	//console.log("in highlight");
+    	circle.filter(function(d,i) { return (i === id) ? true : false; }).attr("r",10).style("fill", "#323c4c" );
+    }
+  
+    var unhighlight = function(id) {
+    	//console.log("in unhighlight");
+    	circle.filter(function(d,i) { return (i === id) ? true : false; }).attr("r",3.5).style("fill", "#ff751a" );
+    } 
+
+    var public = {
+     	"plot": plot_,
+    	"data": data_,
+    	"highlight": highlight,
+    	"unhighlight": unhighlight
+    };
+  
+    return public;
+
+
+} //end of makeScatter function
+
+d3.csv("data/OTF_Tracking2.csv", function(d) {
+  d.black = +d.black;
+  d.blue = +d.blue;
+  d.green = +d.green;
+  d.orange = +d.orange;
+  d.red = +d.red;
+  d.total = +d.black + +d.blue + +d.green + +d.orange + +d.red;
+  d.splat = +d.splat;
+  d.calories = +d.calories;
+    
+  return d;
+}, function(error, data) {
+  if (error) throw error;
+
+  //intial build
+  var zone = [data.columns.slice(6,7), "#1a75ff"];
+  makeBars1 = my_viz_lib.makeBars();
+  makeBars1.data(data);
+  //makeBars1.plot(zone);
+
+  makeStacked1 = my_viz_lib.makeStacked();
+  makeStacked1.data(data);
+  makeStacked1.plot();
+
+
+  makeScatter1 = my_viz_lib.makeScatter();
+  makeScatter1.data(data);
+  makeScatter1.plot();
+
+
+  //handle button selections
+  d3.select("#verylight")
+    .on("click", function(d,i) {
+    //console.log("black");
+    zone = [data.columns.slice(3,4), "#8c8c8c"];
+    //makeBars(zone);
+    makeBars1.removePlot();
+    makeBars1.plot(zone);
+  })   
+  d3.select("#light")
+    .on("click", function(d,i) {
+    //console.log("blue");
+    zone = [data.columns.slice(4,5), "#1a75ff" ];
+    //makeBars(zone);
+    makeBars1.removePlot();
+    makeBars1.plot(zone);
+  }) 
+  d3.select("#moderate")
+    .on("click", function(d,i) {
+    zone = [data.columns.slice(5,6), "#00b33c"];
+    //console.log("green");
+    //console.log(zone);
+    //makeBars(zone);
+    makeBars1.removePlot();
+    makeBars1.plot(zone);
+  })   
+  d3.select("#hard")
+    .on("click", function(d,i) {
+    //console.log("orange");
+    zone = [data.columns.slice(6,7), "#ff751a"];
+    //makeBars(zone);
+    makeBars1.removePlot();
+    makeBars1.plot(zone);
+  }) 
+  d3.select("#max")
+    .on("click", function(d,i) {
+    //console.log("red");
+    zone = [data.columns.slice(7,8), "#ff3333" ];
+    //makeBars(zone);
+    makeBars1.removePlot();
+    //makeBars1.data(data);
+    makeBars1.plot(zone);
+  })
+
+  d3.select("#all")
+    .on("click", function(d,i) {
+    //console.log("all");
+    makeBars1.removePlot();
+    makeStacked1.plot();
+
+  })
+
+}); //end data pull
+
+
+
+
+
+</script>
+</body>
+</html>

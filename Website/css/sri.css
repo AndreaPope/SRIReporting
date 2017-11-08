@@ -14,16 +14,21 @@
     border: 1px solid gray;
 }
 
+/*#container h1 {
+	font-color: white;
+
+}*/
+
 
 header, footer {
     padding: 1em;
     color: white;
-    background-color: #c6dbef;
+    background-color: white;
     clear: left;
     text-align: center;
 }
 
-navSRI {
+navsri {
     float: left;
     max-width: 490px;
     margin: 0;
@@ -31,10 +36,30 @@ navSRI {
 }
 
 
-articleSRI {
+articlesri {
     margin-left: 500px;
     border-left: 1px solid gray;
     padding: 1em;
     overflow: hidden;
 }
 
+navhrc {
+    float: left;
+    max-width: 490px;
+    margin: 0;
+    /*padding: 1em;*/
+}
+
+
+articlehrc {
+    margin-left: 500px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+
+
+#sriheader{
+	background-image: url();
+	opacity: 0.8;
+}

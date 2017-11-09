@@ -103,12 +103,29 @@
 		});
 	</script>
 
+
+	<script language="javascript">
+    function changeSRIImage() {
+    	
+        if (document.getElementById("imgClickAndChange").src == "http://localhost:8000/images/USSIF-ESG.png") 
+        {
+            console.log("here2")
+            document.getElementById("imgClickAndChange").src = "images/USSIF-2.png";
+        }
+        else 
+        {
+            document.getElementById("imgClickAndChange").src = "images/USSIF-ESG.png";
+
+        }
+    }
+</script>
+
 </head>
 <body>
 
 
 <ul id="menu">
-	<li data-menuanchor="1st"><a href="#1st">About</a></li>
+	<li data-menuanchor="1st"><a href="#1st">Home</a></li>
 	<li data-menuanchor="2nd"><a href="#2nd">SRI Funds</a></li>
 	<li data-menuanchor="3rd"><a href="#3rd">Emissions</a></li>
 	<li data-menuanchor="4th"><a href="#4th">Forest</a></li>
@@ -140,7 +157,20 @@
 			<p style="color:white;text-shadow: 1px 1px black;">
 				<font color="#f4f4f9">
 
-				Casual investors are looking more and more at the social and environmental impacts of the companies in which they are investing. For these investors, there is not a quick and inexpensive way to understand the environmental, social, and governance (ESG) practices of the companies within their portfolio. Analysis for Socially Responsible Investing (SRI) analysis can be found “for sale”, but in consolidated views, this is offered only to financial institutions or advisors.  There are specifically targeted SRI funds, but one fund may excel on one ESG attribute, but err on another. Additionally, if you want to understand ESG attributes for non-SRI funds, investors have to search through numerous sites, often focusing only on those companies that comprise the largest portion of a fund. It can be a considerable time investment for a casual investor.
+					There was a time and place when investment choices were made based on one factor: the best opportunity for financial gain.  
+					<br>But, do you expect more?
+					<br><br>You are not alone. Money magazine reported in August of 2017, that <br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					“...three quarters of millennials believe social and environmental impact 
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					should be an important factor in their portfolios.”
+					<br><br>
+
+					We make it possible to research your investments to ensure they reflect your social and environmental views.
+					<br> Gathering ratings for environmental, social, and governance (ESG) practices from a range of organizations, we allow you to explore both stocks and funds.
+
+					<br><br>Continue below to begin exploring…
+				
 				</font>
 			</p>
 		</div>
@@ -187,8 +217,14 @@
 			</navsri>
 
 			<articlesri>
-				<img src="images/USSIF-ESG.png">
+				<center>
+					<!-- style="height: 85px; width: 198px" -->
+					<img alt="" src="images/USSIF-ESG.png"  id="imgClickAndChange" onclick="changeSRIImage()""  />
+					<!-- <img src="images/USSIF-ESG.png"> -->
+				<br>
+				
 				<i>click category to see top performers</i>
+				</center>
 			</articlesri>
 
 			<footer></footer>
@@ -211,51 +247,98 @@
 				CDP provides Scope 1 and 2 emissions from 482 of the largest 500 companies in the world by market capitalization. A group called The Greenhouse Gas Protocol has been very influential in defining how organizations should manage and report their GHG, including the establishment of three categories of emissions (Scope). The separation of GHG emissions into scopes is designed to avoid ‘double-counting’ of emissions, and is also intended to help organizations categorize GHG into those that they control versus those that they can influence.
 				Scope 1 are also referred to as Direct GHG, and are defined as ‘emissions from sources that are owned or controlled by the organization’, such as:
 				<table border=0px; align="center";>
-				<tr><td align="left"><li style="color:white;">>Stationary Combustion: from the combustion of fossil fuels (e.g. natural gas, fuel oil, propane, etc.) for comfort heating or other industrial applications</li></td></tr>
-				<tr><td align="left"><li style="color:white;">>Mobile Combustion: from the combustion of fossil fuels (e.g. gasoline, diesel) used in the operation of vehicles or other forms of mobile transportation</li></td></tr>
-				<tr><td align="left"><li style="color:white;">>Process Emissions: emissions released during the manufacturing process in specific industry sectors (e.g. cement, iron and steel, ammonia)</li></td></tr>
-				<tr><td align="left"><li style="color:white;">>Fugitive Emissions: unintentional release of GHG from sources including refrigerant systems and natural gas distribution</li></td></tr>
+				<tr><td align="left"><li style="color:white;">Stationary Combustion: from the combustion of fossil fuels (e.g. natural gas, fuel oil, propane, etc.) for comfort heating or other industrial applications</li></td></tr>
+				<tr><td align="left"><li style="color:white;">Mobile Combustion: from the combustion of fossil fuels (e.g. gasoline, diesel) used in the operation of vehicles or other forms of mobile transportation</li></td></tr>
+				<tr><td align="left"><li style="color:white;">Process Emissions: emissions released during the manufacturing process in specific industry sectors (e.g. cement, iron and steel, ammonia)</li></td></tr>
+				<tr><td align="left"><li style="color:white;">Fugitive Emissions: unintentional release of GHG from sources including refrigerant systems and natural gas distribution</li></td></tr>
 				</table>
 			</p>
 			</div>
 
 		</div>
 		<div class="slide">
-			<div class="intro" style="background-image: url(res/bg1.jpg); opacity: 0.8;">
-			<p style="color:white;">
+			<div class="container">
+				<!-- <header>
+					<div style="background-image: url(res/bg1.jpg); opacity: 0.8;">
 
-				For the majority of organizations, the stationary and mobile combustion sources of Scope 1 GHG will be the most relevant.
-				Scope 2 are also referred to as Energy Indirect GHG, and are defined as ‘emissions from the consumption of purchased electricity, steam, or other sources of energy (e.g. chilled water) generated upstream from the organization’.
+   					</div>
+				</header>
+				 --><header>
+					<div style="background-image: url(images/bg1.jpg)">
+   				
+   					<h1 style="color: white">GHG: Carbon Emissions</h1>
+   				<!-- need a background image here -->
 
-				To learn more about the GHG protocol, click here: http://www.ghgprotocol.org/
+   					</div>
+				</header>
+			  
+				<navghg>
+					<p>
+					For the majority of organizations, the stationary and mobile combustion sources of Scope 1 GHG will be the most relevant.
+					Scope 2 are also referred to as Energy Indirect GHG, and are defined as ‘emissions from the consumption of purchased electricity, steam, or other sources of energy (e.g. chilled water) generated upstream from the organization’.
+					<br>
+					To learn more about the GHG protocol, click here: http://www.ghgprotocol.org/
+				</p>
+				</navghg>
 
-			</p>
+				<articleghg>
+					<img src="images/Emissions.png" align="center";>
+				</articleghg>
 
-			<img src="images/Emissions.png" width = 800px; height= 600px; align="center"; float:right;>
-
-			<i>interaction note</i>
-			<footer></footer> 
+				<footer></footer>
 			</div>
+
 		</div>
-		</div>
-
-	
+	</div>
 
 
-	<div class="section" id="section3">
+<!-- 	<div class="section" id="section3">
 		<div class="intro">
 			<h1>Forest / Water</h1>
 			<img src="res/emission.jpg" style="width:800px;height:400px;">
 			<p>Text Decription </p>
 		</div>
+	</div> -->
+
+	<div class="section" id="section3">
+		<div class="container">
+			<header>
+				<div style="background-image: url(images/forest.png)">
+   				
+   				<!-- <h1 style="color: white"> -->
+   				<h1 style="color:white;text-shadow: 1px 1px black;">Forestation</h1>
+
+   				</font>
+
+   				</div>
+			</header>
+			  
+			<navsri>
+
+				<p>
+				CDP Source....
+			</navsri>
+
+			<articlesri>
+				
+			</articlesri>
+
+			<footer></footer>
+
+		</div>
 	</div>
+
+
+
 
 
 	<div class="section" id="section1">
 		<div class="container">
 			<header>
-   				<h1>Corporate Equality</h1>
-   				<!-- need a background image here -->
+				<div style="background-image: url(images/photo-montage-556809_1920.jpg)">
+   			
+   				<h1 style="color:white;text-shadow: 1px 1px black;">Corporate Equality</h1>
+				</div>
 			</header>
 
 

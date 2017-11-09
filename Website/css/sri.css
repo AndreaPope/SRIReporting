@@ -59,6 +59,23 @@ articlehrc {
 }
 
 
+navghg {
+    float: left;
+    max-width: 390px;
+    margin: 0;
+    /*padding: 1em;*/
+}
+
+
+articleghg {
+    margin-left: 400px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+
+
+
 #sriheader{
 	background-image: url();
 	opacity: 0.8;

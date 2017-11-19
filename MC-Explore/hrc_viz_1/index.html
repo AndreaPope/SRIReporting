@@ -2,20 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>HRC Exploration</title>
+    <title>HRC Gains and Losses</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">    
     <link rel="stylesheet" href="css/style.css">
     <style>
-    .bar--positive {
-    fill: #31a354;
-    }
-
-    .bar--negative {
-    fill: #3182bd;
-    }
 
     .axis text {
     font: 10px sans-serif;
+    }
+
+    .infowin text {
+    font: 12px sans-serif;
+    }
+
+    .legend text {
+    font: 14px sans-serif;
+    font-weight: bold;
+    }
+
+    .caveat text {
+    font: 10px sans-serif;
+    font-weight: bold;
     }
 
     .axis path,
@@ -25,24 +32,27 @@
     shape-rendering: crispEdges;
     }
 
+    .paragraph {
+    margin-left: 80px;
+    }
+
     </style>
   </head>
   <body>
 
 
-    <!-- <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script> -->
-    <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
-<!--     <script>
-
-    var yellow = d3.interpolateYlGn(0), // "rgb(255, 255, 229)"
-        yellowGreen = d3.interpolateYlGn(), // "rgb(120, 197, 120)"
-        green = d3.interpolateYlGn(1); // "rgb(0, 69, 41)"
-
-    </script> -->
     <!-- page content -->
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/d3.v4.js"></script>    
-    <script src="js/my-viz3.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="js/hrc-viz1.js"></script>
+
+    <div id="chart1" align="left"></div>
+    <div class="paragraph">
+        <p>According to the Human Rights Commission, major companies in recent years have accelerated their efforts to improve policies affecting LGBTQ employees and their families. In 2017, 123 companies posted gains in their HRC ratings - with television cable company Charter Communications (CHTR) and aerospace and defense giant Lockheed Martin (LM) posting the most gains. Of those who improved year over year, 23 are rated Strong Buy based on analyst recommendations. Analyst recommendations are a likert scale assessment of whether it is a good time to buy or sell a particular stock - Strong Sell, Moderate Sell, Hold, Moderate Buy, Strong Buy. The recommendations used here are as of November 12, 2017.</p>
+        <p>A handful of companies slid backward from 2016 to 2017. Genuine Parts Company (GPC), which sells and distributes car parts and electronics, lost the most points year over year. Also notably, the big box store Costco (COST) lost points because it does not enforce non-discrimination standards that include sexual orientation and gender identity for its vendors. Costco also lost points because it does not have transgender-inclusive health insurance coverage.</p>
+    </div>
+
   </body>
 </html>

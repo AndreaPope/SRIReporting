@@ -8,10 +8,7 @@ var rowConverter = function(d) {
     marketcap: d.MarketCap,
     sector: d.Sector,
     industry: d.industry,
-    cei_17: parseFloat(d.CEI_Score_2017),
-    cei_16: parseFloat(d.CEI_Score_2016),
     cei_change: parseFloat(d.Diff),
-    fort_rank: parseFloat(d.Fortune_1000_Rank),
     reco: d.Reco
   };
 }
@@ -23,9 +20,9 @@ d3.csv("data/SRI-R-HRC.csv", rowConverter, function(error, data) {
     var dataset = data;
     console.log("Data loaded. Data:");
     console.table(dataset, ["symbol", "name", "lastsale", "marketcap", "sector", "industry", 
-        "cei_17", "cei_16", "cei_change", "fort_rank", "reco"]);
+        "cei_change", "reco"]);
     dataset.sort(function(a, b) {
-      return a.cei_change - b.cei_change
+      return a.cei_change - b.cei_change;
     });
 
     // Call functions here //
@@ -55,11 +52,11 @@ var barGraph = function(dataset) {
     // Set scales
     var yScale = d3.scaleLinear()
           // .domain(d3.extent(dataset, function(d) { if(d.cei_change !== 0 && d.cei_change === d.cei_change) return d.cei_change; }))
-          .domain(d3.extent(dataset, function(d) { if(d.cei_change !== 0 && d.cei_16 === d.cei_16) return d.cei_change; }))
+          .domain(d3.extent(dataset, function(d) { return d.cei_change; }))
           .range([height, 0]);
 
     var xScale = d3.scaleBand()
-          .domain(dataset.map(function(d) { if(d.cei_change !== 0 && d.cei_16 === d.cei_16) return d.symbol; }))
+          .domain(dataset.map(function(d) { return d.symbol; }))
           .rangeRound([0, width])
           .padding(0.1);
 
@@ -136,8 +133,19 @@ svg.selectAll(".bar")
         .attr("y", -5)
         .attr("text-anchor", "end")
         .style("opacity", 0.5)
-        .text("Change in HRC Corporate Equality Index (2016-2017)");
+        .text("Change in HRC Corporate Equality Index (2016-2017)*");
     // End legend
+
+    // Add caveat
+    var caveat = svg.append("g")
+        .attr("class", "caveat")
+
+    caveat.append("text")
+        .attr("x", width - margin.right)
+        .attr("y", height)
+        .attr("text-anchor", "end")
+        .style("opacity", 0.5)
+        .text("*(Only companies with a year over year change are displayed)");
 
     svg.append("g")
         .attr("class", "y axis")

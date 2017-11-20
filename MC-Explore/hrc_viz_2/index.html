@@ -26,24 +26,32 @@
       position: absolute;
       text-indent: 2px;
     }
+    .paragraph {
+    margin-top: 10px;
+    }
     </style>
-    <form>
-      <label><input type="radio" name="mode" value="size" checked> Last Trade</label>
-      <label><input type="radio" name="mode" value="count"> Count</label>
-    </form>
-    <!-- <script src="//d3js.org/d3.v4.min.js"></script> -->
+
 
   </head>
   <body>
+  <h2>Top Scoring Companies by Market Cap and Sector</h2>
+    <form>
+      <label><input type="radio" name="mode" value="size" checked> Market Cap</label>
+      <label><input type="radio" name="mode" value="count"> Count</label>
+    </form>
 
 
-    <!-- <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script> -->
     <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
-
-    <!-- page content -->
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/d3.v4.js"></script>    
-    <script src="js/my-viz3.js"></script>
+    <script src="js/hrc-viz-2.js"></script>
+
+    <div class="paragraph">
+      <p>More than 200 companies earned perfect scores on HRC's Corporate Equality Index (CEI). They are represented above by sector (color) and market cap (size). Market cap is the market value of a company's outstanding shares and can be a useful guide when making investment choices. Companies typically fall into three market cap categories: small-, mid- and large-cap. Historical financial performance shows large-cap companies are typically less risky but slow to grow, while small-cap companies have rapid growth potential but come with more risk. </p>
+      <p>If you want low-risk investments, explore the larger boxes - companies like Apple (AAPL), Google (GOOGL) and Huron Consulting Group (HURN). If you're willing to absorb more risk, check out the smaller boxes</p>
+      <p>To get a sense for which business sectors are leading the way when it comes to corporate equality, select the "Count" radio button above. Consumer Services, which includes companies like Starbucks, CBS Broadcasting and restaurant finder app Yelp, has the highest count of companies with perfect CEI scores. The Technology sector also has a large share of perfect scores, while the Energy and Transportation Industries have less representation.</p>
+    </div>
+
   </body>
 </html>

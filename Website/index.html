@@ -7,20 +7,19 @@
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="css/examples.css" />
 	<link rel="stylesheet" type="text/css" href="css/sri.css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<style>
-		/* Sections
-		 * --------------------------------------- */
 		#section0{
 		/*background-image: url(res/bg1.jpg);*/
 		/*opacity: 0.8;*/
 		}
 
 		#section0 .layer{
-		position: absolute;
-		z-index: 4;
-		width: 100%;
-		left: 0;
-		top: 30%;
+			position: absolute;
+			z-index: 4;
+			width: 100%;
+			left: 0;
+			top: 30%;
 
 		/* 
 		* Preventing flicker on some browsers 
@@ -30,39 +29,33 @@
 		-ms-transform: translate3d(0,0,0);
 		transform: translate3d(0,0,0);
 	}
-		#section0 img,
-		
-		#section1 img{
-			margin: 20px 0 0 0;
-		}
-		#section2 img{
-			margin: 20px 0 0 52px;
-		}
-		#section3 img{
-			margin: 20px 0 0 0;
-		}
-		#section4 img{
-			margin: 20px 0 0 52px;
-		}
-		.intro p{
-			width: 50%;
-			margin: 0 auto;
-			font-size: 1.5em;
-		}
-		.twitter-share-button{
-			position: absolute;
-			z-index: 99;
-			right: 149px;
-			top: 9px;
-		}
-		p {
-    		padding-top: 50px;
-    		padding-right: 100px;
-    		padding-bottom: 50px;
-    		padding-left: 100px;
-    		font-size: large;
-		}
-		#myVideo {
+	#section0 img,
+
+	#aboutClass img{
+		margin: 20px 0 0 0;
+	}
+	#educationClass img{
+		margin: 20px 20px 20px 52px;
+	}
+	#investigationClass img{
+		margin: 20px 0 0 0;
+	}
+	#explorationClass img{
+		margin: 20px 0 0 52px;
+	}
+	.intro p{
+		width: 50%;
+		margin: 0 auto;
+		font-size: 1.5em;
+	}
+	p {
+		padding-top: 50px;
+		padding-right: 100px;
+		padding-bottom: 50px;
+		padding-left: 100px;
+		font-size: large;
+	}
+	#myVideo {
 		position: absolute;
 		right: 0;
 		bottom: 0;
@@ -71,339 +64,288 @@
 		width: 100%;
 		height: 100%;
 		background-size: 100% 100%;
- 		background-color: black; /* in case the video doesn't fit the whole page*/
-  		background-image: /* our video */;
-  		background-position: center center;
-  		background-size: contain;
-   		object-fit: cover; /*cover video background */
-   		z-index:3;
-		}
-	</style>
-	<!--[if IE]>
-		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-	<![endif]-->
+		background-color: black; /* in case the video doesn't fit the whole page*/
+		background-image: /* our video */;
+		background-position: center center;
+		background-size: contain;
+		object-fit: cover; /*cover video background */
+		z-index:3;
+	}
+</style>
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
-	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
-	<script type="text/javascript" src="js/examples.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				//sectionsColor: ['#1bbc9b', 'white','white', 'white', 'white', '#4BBFC3', 'whitesmoke', '#ccddff'],
-				sectionsColor: ['#1bbc9b', 'white','white', 'white', 'white',  'whitesmoke', '#ccddff'],
-				//anchors: ['1st', '2nd', '3rd', '4th', '5th', '6th', '7th'],
-				anchors: ['1st', '2nd', '3rd', '4th', '5th', '7th'],
-				menu: '#menu',
-				scrollingSpeed: 1000
-			});
+<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+<script type="text/javascript" src="js/examples.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#fullpage').fullpage({
+			sectionsColor: ['#1bbc9b', 'white','white', 'white', 'white',  'white', 'white', 'white','white', 'white', 'white', 'white', 'white'],
+			anchors: ['Home', 'About', 'Education', 'Education1', 'Education2', 'Education3','Education4', 'Education5', 'Investigation', 'Investigation1', 'Investigation2', 'Investigation3', 'Exploration'],
+			menu: '#menu',
+			scrollingSpeed: 1000
 		});
-	</script>
+	});
+</script>
 
 
-	<script language="javascript">
-    function changeSRIImage() {
-    	
-        if (document.getElementById("imgClickAndChange").src == "http://localhost:8000/images/USSIF-ESG.png") 
-        {
-            console.log("here2")
-            document.getElementById("imgClickAndChange").src = "images/USSIF-2.png";
-        }
-        else 
-        {
-            document.getElementById("imgClickAndChange").src = "images/USSIF-ESG.png";
+<script language="javascript">
+	function changeSRIImage() {
 
-        }
-    }
+		if (document.getElementById("imgClickAndChange").src == "http://localhost:8000/images/USSIF-ESG.png") 
+		{
+			console.log("here2")
+			document.getElementById("imgClickAndChange").src = "images/USSIF-2.png";
+		}
+		else 
+		{
+			document.getElementById("imgClickAndChange").src = "images/USSIF-ESG.png";
+		}
+	}
 </script>
 
 </head>
 <body>
 
+	<ul id="menu">
+		<li data-menuanchor="Home"><a href="#Home">Home</a></li>
+		<li data-menuanchor="About"><a href="#About">About</a></li>
+		<li data-menuanchor="Education"><a href="#Education">Education</a></li>
+		<li data-menuanchor="Investigation"><a href="#Investigation">Investigation</a></li>
+		<li data-menuanchor="Exploration"><a href="#Exploration">Exploration</a></li>
+	</ul>
 
-<ul id="menu">
-	<li data-menuanchor="1st"><a href="#1st">Home</a></li>
-	<li data-menuanchor="2nd"><a href="#2nd">SRI Funds</a></li>
-	<li data-menuanchor="3rd"><a href="#3rd">Emissions</a></li>
-	<li data-menuanchor="4th"><a href="#4th">Forest</a></li>
-	<li data-menuanchor="5th"><a href="#5th">HRC</a></li>
-	<!-- <li data-menuanchor="6th"><a href="#6th">Project Objectives</a></li> -->
-	<li data-menuanchor="7th"><a href="#7th">Explore</a></li>
-</ul>
+	<div id="fullpage">
+		<div class="section " id="section0">
+			<video id="myVideo" loop muted data-autoplay>
+				<source src="images/trimedSummerBreeze.mp4" type="video/mp4">
+				</video>
+				<div class="layer">
+					<h1 style="color:#464647; text-shadow: 3px 3px white;">
+						<br>
+						Make Your Money
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						Make A Statement
+					</h1>
+					<input type="hidden" name="id" value="1" />
+					<p style="color:white; text-shadow: 2px 2px black;">
+						There was a time and place when investment choices were made based on one factor: the best opportunity for financial gain.  
+						<br>But, do you expect more?
+						<br><br>You are not alone. Money magazine reported in August of 2017, that <br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						“...three quarters of millennials believe social and environmental impact 
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						should be an important factor in their portfolios.”
+						<br><br>
+						We make it possible to research your investments to ensure they reflect your social and environmental views.
+						<br> Gathering ratings for environmental, social, and governance (ESG) practices from a range of organizations, we allow you to explore both stocks and funds.
+						<br><br>Continue below to begin exploring…
+					</p>
+				</div>
+			s</div>
 
 
-<div id="fullpage">
+			<div class="section" id="aboutClass" style="background-image: url(images/dropsplants.jpg); background-size:cover; opacity: 0.8;">
+				<div class="container">
+					<h1 style="color: white">About</h1>
+					<p> place holder</p>
+				</div>
+			</div>
 
 
-	<div class="section " id="section0">
+			<div class="section" id="educationClass" style="background-image: url(images/forest.png); background-size:cover; opacity: 0.8;">
+				<div class="intro" >
+					<h1 style="color: white"> Education </h1>
+				</div>
+			</div>
 
+			<div class="section" id="educationClass">
+				<div class="container">
+					<h3 class="w3-center">Investing Basics</h3>
+					<p class="w3-center"><em>Stocks vs. Mutual Funds</em></p>
+					<p>In this section, we will provide a brief overview of stocks and mutual funds, and specifically their differences. Additionally, we will cover Responsible Investing, and the Environmental, Social, and Goverance (ESG) tracking important to socially responsible investing.
+					</p>
+					<div class="w3-col m6 w3-center w3-padding-large">
+						<img src="/images/Investing.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Investment Breakdown" width="500" height="333">
+					</div>
+					<p>
+						Information for both mutual funds and stocks are provided below. If you are familiar with the difference, you may want to skip to, here, otherwise continue…
+						<br>
+						Choosing between mutual funds or stocks depends on how much risk vs return you are predated to handle. Higher returns are accompanied by higher risk. 
+						<br>
+						Stocks are riskier than mutual funds. Funds are a pool of many stocks or bonds. The pooling reduces risk, because, if one company in the fund has poor performance, its loss is balanced by other businesses that perform well.  This lowers the risk, thanks to diversification. Owning one individual stock carries more risk than owning several (which you can accomplish via a fund). This type of risk is known as unsystematic risk. Unsystematic risk is risk that CAN be diversified against.
+						<br>
+						There is also systematic risk, which is risk that you CANNOT diversify against. This would be similar to market risk or volatility risk. There is risk associated with investing. If the market as a whole declines in value, that is not something that can easily be diversified against.
+						<br>
+					</p>
+				</div>
+			</div>
 
-		
-		<video id="myVideo" loop muted data-autoplay>
-			<source src="images/trimedSummerBreeze.mp4" type="video/mp4">
-		</video>
-		<div class="layer">
-			<h1 style="color:#464647; text-shadow: 3px 3px white;">
-				<br>
-					Make Your Money
-					<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				Make A Statement
-			</h1>
-			 <input type="hidden" name="id" value="1" />
-			<p style="color:white; text-shadow: 2px 2px black;">
-					There was a time and place when investment choices were made based on one factor: the best opportunity for financial gain.  
-					<br>But, do you expect more?
-					<br><br>You are not alone. Money magazine reported in August of 2017, that <br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					“...three quarters of millennials believe social and environmental impact 
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					should be an important factor in their portfolios.”
-					<br><br>
-
-					We make it possible to research your investments to ensure they reflect your social and environmental views.
-					<br> Gathering ratings for environmental, social, and governance (ESG) practices from a range of organizations, we allow you to explore both stocks and funds.
-
-					<br><br>Continue below to begin exploring…
-				
-				
-			</p>
+			<div class="section" id="educationClass">
+				<div class="container">
+					<p>
+						If you want to invest in individual stocks, most financial planners recommended creating your own set of stocks, diversified between large and small companies, value and growth companies, domestic and international, and between stocks and bonds, according to your risk tolerance. There are numerous companies will to provide guidance in this process. 
+						<br>
+						In addition to risk and return, it also depends how much time you have to learn about individual companies. Mutual funds don't require as much time to research because the mutual fund manager does that for you. That stated, you need to research the fund, so you know how the particular fund manager is performing. 
+						<br>
+						To learn about investing in stocks, you need to research which company is the best investment. To do company research, you need to learn how to read financial reports to see how much money the company is making, and what strategies it is using to grow earnings. You must stay apprised of how the economy is doing, and how that will affect that company and its industry. You will want to pick companies who are in industries or sectors that are on the upswing.
+						To pick mutual funds, you don't need to learn how each company is doing - that is what the mutual fund manager does. However, you still need to research the past performance of the mutual funds. You also need to decide which sectors seem most promising. Of course, you still need to know how the economy is doing.
+					</p>
+					<div class="w3-col m6 w3-center w3-padding-large">
+						<img src="/images/Venn.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Investment Breakdown" >
+					</div>
+				</p>
+			</div>
 		</div>
 
-<!-- 		<div id="videoblock"> 
-
-			<video preload="preload"  id="welcomevideo" autoplay loop="loop" poster="images/bg1.jpg">
-				<source src="images/SummerBreeze.mp4" type="video/mp4"></source>
-			</video>
-		</div>
-
-
-		<div id="videomessage">
-
-			<h1 style="color:white;text-shadow: 1px 1px black;">Reporting for Socially Responsible Investing</h1>
-			 <input type="hidden" name="id" value="1" />
-			<p style="color:white;text-shadow: 1px 1px black;">Casual investors are looking more and more at the social and environmental impacts of the companies in which they are investing. For these investors, there is not a quick and inexpensive way to understand the environmental, social, and governance (ESG) practices of the companies within their portfolio. Analysis for Socially Responsible Investing (SRI) analysis can be found “for sale”, but in consolidated views, this is offered only to financial institutions or advisors.  There are specifically targeted SRI funds, but one fund may excel on one ESG attribute, but err on another. Additionally, if you want to understand ESG attributes for non-SRI funds, investors have to search through numerous sites, often focusing only on those companies that comprise the largest portion of a fund. It can be a considerable time investment for a casual investor.
-			</p>
-		</div>
- -->	</div>
-
-
-	<div class="section" id="section1">
-		<div class="container">
-			<header>
-				<div style="background-image: url(images/dropsplants.jpg)">
-   				
-   				<h1 style="color: white">SRI Funds</h1>
-
-   				</font>
-   				<!-- need a background image here -->
-
-   				</div>
-			</header>
-			  
-			<navsri>
-
+		<div class="section" id="educationClass">
+			<div class="container">
 				<p>
-				The Forum for Sustainable and Responsible Investment,<br> <img src="images/USSIF.png" ><br>, is a leading voice for advancing sustainable, responsible, and impact investing across all asset classes. Their mission is to shift invesment practices towards sustainability, focusing on long-term investment and the generation of positive social and environmental impacts. You can read more about them and access their data directly <a href="http://www.ussif.org/about">here</a>.
+					Additional things to consider when choosing between funds and stocks?
+					<br>1.	Savings Phase – If you are just getting started investing, funds are typically recommended. They have lower minimums for investment and easy access to diversification. Stocks are for more experienced investors that want to fine tune their portfolio and are looking for flexibility in their investments they can not get through funds alone. These generally carry higher minimums to use
+					<br>2.	Tax Sensitivity – Stocks offer superior tax efficiency, as it is up to you when you take gains and losses. This is also an area that warrants research, but at a minimum, it is important to be aware.
+					<br>3.	Control – Mutual funds provide a hands-off approach. The mutual fund managers do all of the work for you. Once invested, you’ll get periodic statements, and not much else is needed. This solution also means you lose some control and visibility into your specific investments. True transparency in what you are investing only occurs with stocks. Stocks require vigilance though.  You control all of the timing, and buying/selling decisions.  Constant monitoring of the company, market, and overall trends is important for success.
+				</p>
+				<br><br>
+				<div class="w3-light-grey">
+					<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%">
+						This is not meant to provide investment advice, but provide background on stocks and mutual funds and ESG topics.
+					</div>
+				</div>
+
+				<br><br>
+				<div class="w3-light-grey">
+					<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%">
+						Support for write up from: <br>
+						<a href="https://www.forbes.com/sites/robrussell/2013/12/09/mutual-funds-or-stocks-which-is-better-for-you/#344a1d5111b1">Forbes</a>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.investopedia.com/ask/answers/05/062305.asp">Investopedia</a>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.thebalance.com/should-you-invest-in-mutual-funds-or-stocks-3306145">the Balance</a>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://blog.mint.com/wp-content/uploads/2014/04/How-to-Start-Investing-Part-1.jpg">Mint</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section" id="educationClass">
+			<div class="container">
+				<div class="w3-content w3-container w3-padding-64" id="portfolio">
+					<h3 class="w3-center">Socially Responsible Investing - The Basics</h3>
+					<p>
+						Socially responsible investing (SRI), or social investment, also known as sustainable, socially conscious, "green" or ethical investing, is any investment strategy which seeks to consider both financial return and social good to bring about a social change.
+					</p>
+					<div class="w3-row">
+						<div class="w3-col m6 w3-left w3-padding-64">
+							<!-- <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br> -->
+							<!-- <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333"> -->
+							<p>
+								In general, socially responsible investors encourage corporate practices that promote environmental stewardship, consumer protection, human rights, and diversity. The areas of concern recognized by the SRI practitioners are sometimes summarized under the heading of ESG issues: environment, social justice, and corporate governance.
+							</p>
+
+							NEED to ADD a BIT MORE TEXT HERE
+						</div>
+
+						<!-- Hide this text on small devices -->
+						<div class="w3-col m6 w3-hide-small w3-padding-large">
+							<p>
+								<img src="/images/WordCloud.png"  alt="WordCloud" width="500" height="333">
+								<!-- class="w3-round w3-image w3-opacity w3-hover-opacity-off" -->
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section" id="educationClass">
+			<div class="container">
+				<h4> Socially Responsible Funds</h4>
+				<p>
+					<img src="images/USSIF.png" >
+					The Forum for Sustainable and Responsible Investment, USSIF, is a leading voice for advancing sustainable, responsible, and impact investing across all asset classes. Their mission is to shift invesment practices towards sustainability, focusing on long-term investment and the generation of positive social and environmental impacts. You can read more about them and access their data directly <a href="http://www.ussif.org/about">here</a>.
 				</p>
 
 				<p>Within our analysis, we are incorporating financial, environmental, social, and governance ratings for 202 funds, as self reported by the fund managers with USSIF.</p>
 
-			</navsri>
-
-			<articlesri>
-				<center>
-					<!-- style="height: 85px; width: 198px" -->
-					<img alt="" src="images/USSIF-ESG.png"  id="imgClickAndChange" onclick="changeSRIImage()""  />
-					<!-- <img src="images/USSIF-ESG.png"> -->
 				<br>
-				
-				<i>click category to see top performers</i>
-				</center>
-			</articlesri>
+				<h4>Greenhouse Gas Emissions</h4>
+				<p>
+					For Greenhouse Gas (GHG) Emissions, we are leveraging data from the CDP. CDP is a not-for-profit charity that runs the global disclosure system for investors, companies, cities, states and regions to manage their environmental impacts. To learn more about CDP, you can go <a href="https://www.cdp.net/en">here</a>.
 
-			<footer></footer>
-
-		</div>
-	</div>
-
-
-	<div class="section" id="section2">
-		<div class="slide">
-			<div class="intro" style="background-image: url(res/bg1.jpg); opacity: 0.8;">
-				<header>
-   				<h1>Greenhouse Gas Emissions</h1>
-   				<!-- need a background image here -->
-				</header>
-			  
-			  <p style="color:white;">
-				For Greenhouse Gas (GHG) Emissions, we are leveraging data from the CDP. CDP is a not-for-profit charity that runs the global disclosure system for investors, companies, cities, states and regions to manage their environmental impacts. To learn more about CDP, you can go <a href="https://www.cdp.net/en">here</a>.
-
-				CDP provides Scope 1 and 2 emissions from 482 of the largest 500 companies in the world by market capitalization. A group called The Greenhouse Gas Protocol has been very influential in defining how organizations should manage and report their GHG, including the establishment of three categories of emissions (Scope). The separation of GHG emissions into scopes is designed to avoid ‘double-counting’ of emissions, and is also intended to help organizations categorize GHG into those that they control versus those that they can influence.
-				Scope 1 are also referred to as Direct GHG, and are defined as ‘emissions from sources that are owned or controlled by the organization’, such as:
-				<table border=0px; align="center";>
-				<tr><td align="left"><li style="color:white;">Stationary Combustion: from the combustion of fossil fuels (e.g. natural gas, fuel oil, propane, etc.) for comfort heating or other industrial applications</li></td></tr>
-				<tr><td align="left"><li style="color:white;">Mobile Combustion: from the combustion of fossil fuels (e.g. gasoline, diesel) used in the operation of vehicles or other forms of mobile transportation</li></td></tr>
-				<tr><td align="left"><li style="color:white;">Process Emissions: emissions released during the manufacturing process in specific industry sectors (e.g. cement, iron and steel, ammonia)</li></td></tr>
-				<tr><td align="left"><li style="color:white;">Fugitive Emissions: unintentional release of GHG from sources including refrigerant systems and natural gas distribution</li></td></tr>
-				</table>
-			</p>
-			</div>
-
-		</div>
-		<div class="slide">
-			<div class="container">
-				<!-- <header>
-					<div style="background-image: url(res/bg1.jpg); opacity: 0.8;">
-
-   					</div>
-				</header>
-				 --><header>
-					<div style="background-image: url(images/bg1.jpg)">
-   				
-   					<h1 style="color: white">GHG: Carbon Emissions</h1>
-   				<!-- need a background image here -->
-
-   					</div>
-				</header>
-			  
-				<navghg>
-					<p>
-					For the majority of organizations, the stationary and mobile combustion sources of Scope 1 GHG will be the most relevant.
-					Scope 2 are also referred to as Energy Indirect GHG, and are defined as ‘emissions from the consumption of purchased electricity, steam, or other sources of energy (e.g. chilled water) generated upstream from the organization’.
-					<br>
-					To learn more about the GHG protocol, click here: http://www.ghgprotocol.org/
+					CDP provides Scope 1 and 2 emissions from 482 of the largest 500 companies in the world by market capitalization. A group called The Greenhouse Gas Protocol has been very influential in defining how organizations should manage and report their GHG, including the establishment of three categories of emissions (Scope). The separation of GHG emissions into scopes is designed to avoid ‘double-counting’ of emissions, and is also intended to help organizations categorize GHG into those that they control versus those that they can influence.
+					Scope 1 are also referred to as Direct GHG, and are defined as ‘emissions from sources that are owned or controlled by the organization’, such as:
+					<table border=0px; align="center";>
+						<tr><td align="left"><li >Stationary Combustion: from the combustion of fossil fuels (e.g. natural gas, fuel oil, propane, etc.) for comfort heating or other industrial applications</li></td></tr>
+						<tr><td align="left"><li>Mobile Combustion: from the combustion of fossil fuels (e.g. gasoline, diesel) used in the operation of vehicles or other forms of mobile transportation</li></td></tr>
+						<tr><td align="left"><li>Process Emissions: emissions released during the manufacturing process in specific industry sectors (e.g. cement, iron and steel, ammonia)</li></td></tr>
+						<tr><td align="left"><li>Fugitive Emissions: unintentional release of GHG from sources including refrigerant systems and natural gas distribution</li></td></tr>
+					</table>
+					<!-- style="color:white;" -->
 				</p>
-				</navghg>
-
-				<articleghg>
-					<img src="images/Emissions.png" align="center";>
-				</articleghg>
-
-				<footer></footer>
 			</div>
-
 		</div>
-	</div>
 
-
-<!-- 	<div class="section" id="section3">
-		<div class="intro">
-			<h1>Forest / Water</h1>
-			<img src="res/emission.jpg" style="width:800px;height:400px;">
-			<p>Text Decription </p>
-		</div>
-	</div> -->
-
-	<div class="section" id="section3">
-		<div class="container">
-			<header>
-				<div style="background-image: url(images/forest.png)">
-   				
-   				<!-- <h1 style="color: white"> -->
-   				<h1 style="color:white;text-shadow: 1px 1px black;">Forestation</h1>
-
-   				</font>
-
-   				</div>
-			</header>
-			  
-			<navsri>
-
+		<div class="section" id="educationClass">
+			<div class="container">
+				<h4>Corporate Equality</h4>
 				<p>
-				CDP Source....
-			</navsri>
+					The Human Rights Campaign (HRC) and the Human Rights Campaign Foundation together serve as America's largest civil rights organization working to achieve LGBTQ equality. By inspiring and engaging individuals and communities, HRC strives to end discrimination against LGBTQ people and realize a world that achieves fundamental fairness and equality for all.
 
-			<articlesri>
-				
-			</articlesri>
+					Human Rights Campaign Foundation’s Corporate Equality Index is the national benchmarking tool on corporate policies and practices pertinent to lesbian, gay, bisexual and transgender employees.
 
-			<footer></footer>
-
-		</div>
-	</div>
-
-
-
-
-
-	<div class="section" id="section1">
-		<div class="container">
-			<header>
-				<div style="background-image: url(images/photo-montage-556809_1920.jpg)">
-   			
-   				<h1 style="color:white;text-shadow: 1px 1px black;">Corporate Equality</h1>
+					To read more about HRC, click <a href="http://www.hrc.org">here</a>.		  			
+				</p>
+				<br><br>
+				<div class="w3-light-grey">
+					<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%">
+						Information in this section provided by: <br>
+						<a href="https://en.wikipedia.org/wiki/Socially_responsible_investing#Current_strategies">Wikipedia</a>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://re.wp.st-andrews.ac.uk/responsible-enterprise/">St. Andrews School of Management</a>
+					</div>
 				</div>
-			</header>
+			</div>
+		</div>
 
 
-			<navhrc>
 
+		<div class="section" id="investigationClass" style="background-image: url(images/lake-2063957_1920.jpg); background-size:cover; opacity: 0.8;" >
+			<div class="intro" >
+				<h1 style="color: white"> Investigation </h1>
+			</div>
+		</div>
+
+		<div class="section" id="investigationClass">
+			<div class="container">
+				<h1> Investigation1</h1>
+			</div>
+		</div>
+
+		<div class="section" id="investigationClass">
+			<div class="container">
+				<h1>Investigation2</h1>
+			</div>
+		</div>
+
+		<div class="section" id="investigationClass">
+			<div class="container">
+				<h1>Investigation3</h1>
+			</div>
+		</div>
+
+		<div class="section" id="explorationClass">
+			<div class="intro">
+				<h1>Exploration</h1>
 				<p>
-				The Human Rights Campaign (HRC) and the Human Rights Campaign Foundation together serve as America's largest civil rights organization working to achieve LGBTQ equality. By inspiring and engaging individuals and communities, HRC strives to end discrimination against LGBTQ people and realize a world that achieves fundamental fairness and equality for all.
-
-				Human Rights Campaign Foundation’s Corporate Equality Index is the national benchmarking tool on corporate policies and practices pertinent to lesbian, gay, bisexual and transgender employees.
-
-				To read more about HRC, click <a href="http://www.hrc.org">here</a>.		  			
-			</p>
-			</navhrc>
-
-			<articlehrc>
-				<img src="images/hrc_viz_1.png" width = 800px; align="right"; float:right;>
-				<img src="images/hrc_viz_2.png" width = 800px; align="right"; float:right;>
-
-				
-				<i>click category to see top performers</i>
-			</articlehrc>
- 
-
-			<footer></footer>
-
-		</div>
-
-	</div>
-
-
-	<!-- <div class="section" id="section2">
-		<div class="slide">
-			<div class="intro">
-				<h1>Goals</h1>
-				<p>The overall goal is to support the casual investor in building a socially responsible portfolio through insight into environmental, social, and governance attributes alongside financials for both funds and stocks.</p>
-			</div>
-
-		</div>
-		<div class="slide">
-			<div class="intro">
-				<h1>Target Users</h1>
-				<p>The intended users for this site are the casual investor looking to understand the ESG attributes of their portfolio. This is for individual stock/fund holders, to support their socially responsible investing. The website will allow users to look at funds together, regardless of issuing financial institution, and provide a consistent set of ESG attributes for comparison.</p>
+					Embbed sample d3 chart below
+				</p>
+				<iframe src="http://embed.vida.io/documents/hERF59CdAmCwHN4e6" width="700" height="335" seamless frameBorder="10" scrolling="no"></iframe><
 			</div>
 		</div>
-		<div class="slide">
-			<div class="intro">
-				<h1>Tasks</h1>
-				<p>To support the user both aggregate and detail views will be provided. Aggregate views will be available across ESG attributes and across companies. Detailed views can be viewed by attribute or by company or fund, showing attributes. Searching functionality, both by objective(s) (e.g. human rights supporter) or by specific company, stock ticker, or fund (e.g. 3M, or MMM) will be critical for users’ purposes.</p>
-			</div>
-		</div>
+
+
+
 	</div>
-
- -->
-
-	<div class="section" id="section3">
-		<div class="intro">
-			<h1>Explore</h1>
-			<p>
-				Embbed sample d3 chart below
-			</p>
-			<iframe src="http://embed.vida.io/documents/hERF59CdAmCwHN4e6" width="700" height="335" seamless frameBorder="10" scrolling="no"></iframe><
-		</div>
-	</div>
-
-
-
-</div>
 
 </body>
 </html>

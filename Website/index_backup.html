@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>SRI Reporting</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+	<link rel="stylesheet" type="text/css" href="css/sri.css" />
+	<style>
+		/* Sections
+		 * --------------------------------------- */
+		#section0{
+		/*background-image: url(res/bg1.jpg);*/
+		/*opacity: 0.8;*/
+		}
+
+		#section0 .layer{
+		position: absolute;
+		z-index: 4;
+		width: 100%;
+		left: 0;
+		top: 30%;
+
+		/* 
+		* Preventing flicker on some browsers 
+		* See http://stackoverflow.com/a/36671466/1081396  or issue #183
+		*/
+		-webkit-transform: translate3d(0,0,0);
+		-ms-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
+		#section0 img,
+		
+		#section1 img{
+			margin: 20px 0 0 0;
+		}
+		#section2 img{
+			margin: 20px 0 0 52px;
+		}
+		#section3 img{
+			margin: 20px 0 0 0;
+		}
+		#section4 img{
+			margin: 20px 0 0 52px;
+		}
+		.intro p{
+			width: 50%;
+			margin: 0 auto;
+			font-size: 1.5em;
+		}
+		.twitter-share-button{
+			position: absolute;
+			z-index: 99;
+			right: 149px;
+			top: 9px;
+		}
+		p {
+    		padding-top: 50px;
+    		padding-right: 100px;
+    		padding-bottom: 50px;
+    		padding-left: 100px;
+    		font-size: large;
+		}
+		#myVideo {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top:0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+ 		background-color: black; /* in case the video doesn't fit the whole page*/
+  		background-image: /* our video */;
+  		background-position: center center;
+  		background-size: contain;
+   		object-fit: cover; /*cover video background */
+   		z-index:3;
+		}
+	</style>
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				//sectionsColor: ['#1bbc9b', 'white','white', 'white', 'white', '#4BBFC3', 'whitesmoke', '#ccddff'],
+				sectionsColor: ['#1bbc9b', 'white','white', 'white', 'white',  'whitesmoke', '#ccddff'],
+				//anchors: ['1st', '2nd', '3rd', '4th', '5th', '6th', '7th'],
+				anchors: ['1st', '2nd', '3rd', '4th', '5th', '7th'],
+				menu: '#menu',
+				scrollingSpeed: 1000
+			});
+		});
+	</script>
+
+
+	<script language="javascript">
+    function changeSRIImage() {
+    	
+        if (document.getElementById("imgClickAndChange").src == "http://localhost:8000/images/USSIF-ESG.png") 
+        {
+            console.log("here2")
+            document.getElementById("imgClickAndChange").src = "images/USSIF-2.png";
+        }
+        else 
+        {
+            document.getElementById("imgClickAndChange").src = "images/USSIF-ESG.png";
+
+        }
+    }
+</script>
+
+</head>
+<body>
+
+
+<ul id="menu">
+	<li data-menuanchor="1st"><a href="#1st">Home</a></li>
+	<li data-menuanchor="2nd"><a href="#2nd">SRI Funds</a></li>
+	<li data-menuanchor="3rd"><a href="#3rd">Emissions</a></li>
+	<li data-menuanchor="4th"><a href="#4th">Forest</a></li>
+	<li data-menuanchor="5th"><a href="#5th">HRC</a></li>
+	<!-- <li data-menuanchor="6th"><a href="#6th">Project Objectives</a></li> -->
+	<li data-menuanchor="7th"><a href="#7th">Explore</a></li>
+</ul>
+
+
+<div id="fullpage">
+
+
+	<div class="section " id="section0">
+
+
+		
+		<video id="myVideo" loop muted data-autoplay>
+			<source src="images/trimedSummerBreeze.mp4" type="video/mp4">
+		</video>
+		<div class="layer">
+			<h1 style="color:#464647; text-shadow: 3px 3px white;">
+				<br>
+					Make Your Money
+					<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				Make A Statement
+			</h1>
+			 <input type="hidden" name="id" value="1" />
+			<p style="color:white; text-shadow: 2px 2px black;">
+					There was a time and place when investment choices were made based on one factor: the best opportunity for financial gain.  
+					<br>But, do you expect more?
+					<br><br>You are not alone. Money magazine reported in August of 2017, that <br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					“...three quarters of millennials believe social and environmental impact 
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					should be an important factor in their portfolios.”
+					<br><br>
+
+					We make it possible to research your investments to ensure they reflect your social and environmental views.
+					<br> Gathering ratings for environmental, social, and governance (ESG) practices from a range of organizations, we allow you to explore both stocks and funds.
+
+					<br><br>Continue below to begin exploring…
+				
+				
+			</p>
+		</div>
+
+<!-- 		<div id="videoblock"> 
+
+			<video preload="preload"  id="welcomevideo" autoplay loop="loop" poster="images/bg1.jpg">
+				<source src="images/SummerBreeze.mp4" type="video/mp4"></source>
+			</video>
+		</div>
+
+
+		<div id="videomessage">
+
+			<h1 style="color:white;text-shadow: 1px 1px black;">Reporting for Socially Responsible Investing</h1>
+			 <input type="hidden" name="id" value="1" />
+			<p style="color:white;text-shadow: 1px 1px black;">Casual investors are looking more and more at the social and environmental impacts of the companies in which they are investing. For these investors, there is not a quick and inexpensive way to understand the environmental, social, and governance (ESG) practices of the companies within their portfolio. Analysis for Socially Responsible Investing (SRI) analysis can be found “for sale”, but in consolidated views, this is offered only to financial institutions or advisors.  There are specifically targeted SRI funds, but one fund may excel on one ESG attribute, but err on another. Additionally, if you want to understand ESG attributes for non-SRI funds, investors have to search through numerous sites, often focusing only on those companies that comprise the largest portion of a fund. It can be a considerable time investment for a casual investor.
+			</p>
+		</div>
+ -->	</div>
+
+
+	<div class="section" id="section1">
+		<div class="container">
+			<header>
+				<div style="background-image: url(images/dropsplants.jpg)">
+   				
+   				<h1 style="color: white">SRI Funds</h1>
+
+   				</font>
+   				<!-- need a background image here -->
+
+   				</div>
+			</header>
+			  
+			<navsri>
+
+				<p>
+				The Forum for Sustainable and Responsible Investment,<br> <img src="images/USSIF.png" ><br>, is a leading voice for advancing sustainable, responsible, and impact investing across all asset classes. Their mission is to shift invesment practices towards sustainability, focusing on long-term investment and the generation of positive social and environmental impacts. You can read more about them and access their data directly <a href="http://www.ussif.org/about">here</a>.
+				</p>
+
+				<p>Within our analysis, we are incorporating financial, environmental, social, and governance ratings for 202 funds, as self reported by the fund managers with USSIF.</p>
+
+			</navsri>
+
+			<articlesri>
+				<center>
+					<!-- style="height: 85px; width: 198px" -->
+					<img alt="" src="images/USSIF-ESG.png"  id="imgClickAndChange" onclick="changeSRIImage()""  />
+					<!-- <img src="images/USSIF-ESG.png"> -->
+				<br>
+				
+				<i>click category to see top performers</i>
+				</center>
+			</articlesri>
+
+			<footer></footer>
+
+		</div>
+	</div>
+
+
+	<div class="section" id="section2">
+		<div class="slide">
+			<div class="intro" style="background-image: url(res/bg1.jpg); opacity: 0.8;">
+				<header>
+   				<h1>Greenhouse Gas Emissions</h1>
+   				<!-- need a background image here -->
+				</header>
+			  
+			  <p style="color:white;">
+				For Greenhouse Gas (GHG) Emissions, we are leveraging data from the CDP. CDP is a not-for-profit charity that runs the global disclosure system for investors, companies, cities, states and regions to manage their environmental impacts. To learn more about CDP, you can go <a href="https://www.cdp.net/en">here</a>.
+
+				CDP provides Scope 1 and 2 emissions from 482 of the largest 500 companies in the world by market capitalization. A group called The Greenhouse Gas Protocol has been very influential in defining how organizations should manage and report their GHG, including the establishment of three categories of emissions (Scope). The separation of GHG emissions into scopes is designed to avoid ‘double-counting’ of emissions, and is also intended to help organizations categorize GHG into those that they control versus those that they can influence.
+				Scope 1 are also referred to as Direct GHG, and are defined as ‘emissions from sources that are owned or controlled by the organization’, such as:
+				<table border=0px; align="center";>
+				<tr><td align="left"><li style="color:white;">Stationary Combustion: from the combustion of fossil fuels (e.g. natural gas, fuel oil, propane, etc.) for comfort heating or other industrial applications</li></td></tr>
+				<tr><td align="left"><li style="color:white;">Mobile Combustion: from the combustion of fossil fuels (e.g. gasoline, diesel) used in the operation of vehicles or other forms of mobile transportation</li></td></tr>
+				<tr><td align="left"><li style="color:white;">Process Emissions: emissions released during the manufacturing process in specific industry sectors (e.g. cement, iron and steel, ammonia)</li></td></tr>
+				<tr><td align="left"><li style="color:white;">Fugitive Emissions: unintentional release of GHG from sources including refrigerant systems and natural gas distribution</li></td></tr>
+				</table>
+			</p>
+			</div>
+
+		</div>
+		<div class="slide">
+			<div class="container">
+				<!-- <header>
+					<div style="background-image: url(res/bg1.jpg); opacity: 0.8;">
+
+   					</div>
+				</header>
+				 --><header>
+					<div style="background-image: url(images/bg1.jpg)">
+   				
+   					<h1 style="color: white">GHG: Carbon Emissions</h1>
+   				<!-- need a background image here -->
+
+   					</div>
+				</header>
+			  
+				<navghg>
+					<p>
+					For the majority of organizations, the stationary and mobile combustion sources of Scope 1 GHG will be the most relevant.
+					Scope 2 are also referred to as Energy Indirect GHG, and are defined as ‘emissions from the consumption of purchased electricity, steam, or other sources of energy (e.g. chilled water) generated upstream from the organization’.
+					<br>
+					To learn more about the GHG protocol, click here: http://www.ghgprotocol.org/
+				</p>
+				</navghg>
+
+				<articleghg>
+					<img src="images/Emissions.png" align="center";>
+				</articleghg>
+
+				<footer></footer>
+			</div>
+
+		</div>
+	</div>
+
+
+<!-- 	<div class="section" id="section3">
+		<div class="intro">
+			<h1>Forest / Water</h1>
+			<img src="res/emission.jpg" style="width:800px;height:400px;">
+			<p>Text Decription </p>
+		</div>
+	</div> -->
+
+	<div class="section" id="section3">
+		<div class="container">
+			<header>
+				<div style="background-image: url(images/forest.png)">
+   				
+   				<!-- <h1 style="color: white"> -->
+   				<h1 style="color:white;text-shadow: 1px 1px black;">Forestation</h1>
+
+   				</font>
+
+   				</div>
+			</header>
+			  
+			<navsri>
+
+				<p>
+				CDP Source....
+			</navsri>
+
+			<articlesri>
+				
+			</articlesri>
+
+			<footer></footer>
+
+		</div>
+	</div>
+
+
+
+
+
+	<div class="section" id="section1">
+		<div class="container">
+			<header>
+				<div style="background-image: url(images/photo-montage-556809_1920.jpg)">
+   			
+   				<h1 style="color:white;text-shadow: 1px 1px black;">Corporate Equality</h1>
+				</div>
+			</header>
+
+
+			<navhrc>
+
+				<p>
+				The Human Rights Campaign (HRC) and the Human Rights Campaign Foundation together serve as America's largest civil rights organization working to achieve LGBTQ equality. By inspiring and engaging individuals and communities, HRC strives to end discrimination against LGBTQ people and realize a world that achieves fundamental fairness and equality for all.
+
+				Human Rights Campaign Foundation’s Corporate Equality Index is the national benchmarking tool on corporate policies and practices pertinent to lesbian, gay, bisexual and transgender employees.
+
+				To read more about HRC, click <a href="http://www.hrc.org">here</a>.		  			
+			</p>
+			</navhrc>
+
+			<articlehrc>
+				<img src="images/hrc_viz_1.png" width = 800px; align="right"; float:right;>
+				<img src="images/hrc_viz_2.png" width = 800px; align="right"; float:right;>
+
+				
+				<i>click category to see top performers</i>
+			</articlehrc>
+ 
+
+			<footer></footer>
+
+		</div>
+
+	</div>
+
+
+	<!-- <div class="section" id="section2">
+		<div class="slide">
+			<div class="intro">
+				<h1>Goals</h1>
+				<p>The overall goal is to support the casual investor in building a socially responsible portfolio through insight into environmental, social, and governance attributes alongside financials for both funds and stocks.</p>
+			</div>
+
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<h1>Target Users</h1>
+				<p>The intended users for this site are the casual investor looking to understand the ESG attributes of their portfolio. This is for individual stock/fund holders, to support their socially responsible investing. The website will allow users to look at funds together, regardless of issuing financial institution, and provide a consistent set of ESG attributes for comparison.</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<h1>Tasks</h1>
+				<p>To support the user both aggregate and detail views will be provided. Aggregate views will be available across ESG attributes and across companies. Detailed views can be viewed by attribute or by company or fund, showing attributes. Searching functionality, both by objective(s) (e.g. human rights supporter) or by specific company, stock ticker, or fund (e.g. 3M, or MMM) will be critical for users’ purposes.</p>
+			</div>
+		</div>
+	</div>
+
+ -->
+
+	<div class="section" id="section3">
+		<div class="intro">
+			<h1>Explore</h1>
+			<p>
+				Embbed sample d3 chart below
+			</p>
+			<iframe src="http://embed.vida.io/documents/hERF59CdAmCwHN4e6" width="700" height="335" seamless frameBorder="10" scrolling="no"></iframe><
+		</div>
+	</div>
+
+
+
+</div>
+
+</body>
+</html>

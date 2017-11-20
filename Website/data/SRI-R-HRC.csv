@@ -1,0 +1,133 @@
+Exchange,Symbol,Name,LastSale,MarketCap,IPOyear,Sector,industry,Summary Quote,Financials,USSIF_Financials,USSIF_ESG,WaterDataset,CarbonEmissions,GlobalEmissions,HRC,ForestRisk,Headquarters,1a_Sexual_Orientation,1b_Gender_Identity,1c_Contractor_Standards,2a_Spousal_Benefits,2b_Parity_Spousal_Benefits,2c_Trans_Inclusive_Healthcare,3a_Org Competency,3b_ERG,4_Positive_LGBTQ_Engagmt,Negative_LGBTQ_Demerit,CEI_Score_2017,CEI_Score_2016,Fortune_1000_Rank,Diff,Reco
+NasDaq,CHTR,"Charter Communications, Inc.",357.4,$92.17B,n/a,Consumer Services,Television Services,http://www.nasdaq.com/symbol/chtr,1,0,0,0,0,0,1,0,"Stamford, CT",F,F,F,F,F,F,F,F,F,,100,10,317,90,Moderate Buy
+NYSE,LM,"Legg Mason, Inc.",38.74,$3.63B,n/a,Finance,Investment Managers,http://www.nasdaq.com/symbol/lm,1,0,0,0,0,0,1,0,"Baltimore, MD",F,F,F,F,F,F,F,F,P,,95,10,808,85,Moderate Buy
+NYSE,FIS,"Fidelity National Information Services, Inc.",94.96,$31.57B,n/a,Miscellaneous,Business Services,http://www.nasdaq.com/symbol/fis,1,0,0,1,0,0,1,1,"Jacksonville, FL",F,F,F,F,F,N,F,F,F,,90,10,422,80,Strong Buy
+NYSE,TEL,TE Connectivity Ltd.,87.74,$31.01B,n/a,Consumer Non-Durables,Electronic Components,http://www.nasdaq.com/symbol/tel,1,0,0,1,0,0,1,0,"Berwyn, PA",F,F,F,F,F,F,F,F,F,,100,90,,10,Strong Buy
+NYSE,UA,"Under Armour, Inc.",14.95,$6.59B,2016,Consumer Non-Durables,Apparel,http://www.nasdaq.com/symbol/ua,1,0,0,0,0,0,1,0,"Baltimore, MD",F,F,F,F,F,F,F,F,P,,95,20,739,75,Hold
+NasDaq,URBN,"Urban Outfitters, Inc.",22.54,$2.48B,1993,Consumer Services,Clothing/Shoe/Accessory Stores,http://www.nasdaq.com/symbol/urbn,1,0,0,0,0,0,1,0,"Philadelphia, PA",F,F,F,F,F,F,N,F,P,,85,10,701,75,Hold
+NYSE,EMN,Eastman Chemical Company,88.65,$12.84B,n/a,Basic Industries,Major Chemicals,http://www.nasdaq.com/symbol/emn,1,0,0,1,1,0,1,0,"Kingsport, TN",F,F,F,F,F,F,F,F,P,,95,20,305,75,Moderate Buy
+NYSE,HII,"Huntington Ingalls Industries, Inc.",234.4,$10.64B,n/a,Capital Goods,Marine Transportation,http://www.nasdaq.com/symbol/hii,1,0,0,0,0,0,1,0,"Newport News, VA",F,F,F,F,F,N,F,F,P,,85,10,390,75,Hold
+NasDaq,GT,The Goodyear Tire & Rubber Company,33.01,$8.31B,n/a,Consumer Durables,Automotive Aftermarket,http://www.nasdaq.com/symbol/gt,1,0,0,1,1,0,1,0,"Akron, OH",F,F,F,F,F,N,N,F,F,,80,10,166,70,Strong Buy
+NYSE,PSX,Phillips 66,94.43,$48.3B,n/a,Energy,Integrated oil Companies,http://www.nasdaq.com/symbol/psx,1,0,0,0,0,1,1,0,"Houston, TX",F,F,F,F,F,N,N,F,P,,75,20,7,55,Moderate Buy
+NYSE,LOW,"Lowe&#39;s Companies, Inc.",82.33,$68.57B,n/a,Consumer Services,RETAIL: Building Materials,http://www.nasdaq.com/symbol/low,1,0,0,0,0,1,1,0,"New York, NY",F,F,F,F,F,N,N,P,F,,75,25,211,50,Moderate Buy
+NYSE,WCC,"WESCO International, Inc.",58.85,$2.82B,1999,Consumer Non-Durables,Telecommunications Equipment,http://www.nasdaq.com/symbol/wcc,1,0,0,0,0,0,1,0,"Pittsburgh, PA",F,F,F,F,F,N,N,N,N,,55,10,360,45,Moderate Buy
+NYSE,BIG,"Big Lots, Inc.",51.44,$2.18B,n/a,Consumer Services,Department/Specialty Retail Stores,http://www.nasdaq.com/symbol/big,1,0,0,0,0,0,1,0,"Columbus, OH",F,F,N,F,F,N,N,P,P,,65,20,501,45,Strong Buy
+NYSE,XOM,Exxon Mobil Corporation,82.41,$349.18B,n/a,Energy,Integrated oil Companies,http://www.nasdaq.com/symbol/xom,1,0,0,1,0,1,1,0,"Irving, TX",P,P,F,F,F,F,F,F,P,,85,40,2,45,Hold
+NYSE,PNW,Pinnacle West Capital Corporation,87.38,$9.75B,n/a,Public Utilities,Electric Utilities: Central,http://www.nasdaq.com/symbol/pnw,1,0,0,0,0,0,1,0,"Phoenix, AZ",F,F,F,F,F,F,N,F,F,,90,50,683,40,Hold
+NYSE,KSS,Kohl&#39;s Corporation,42.14,$7.1B,1992,Consumer Services,Department/Specialty Retail Stores,http://www.nasdaq.com/symbol/kss,1,0,0,0,0,1,1,0,"Menomonee Falls, WI",F,F,F,F,F,F,F,F,P,,95,60,157,35,Moderate Buy
+NYSE,WDR,"Waddell & Reed Financial, Inc.",20.42,$1.71B,1998,Finance,Investment Bankers/Brokers/Service,http://www.nasdaq.com/symbol/wdr,1,0,0,0,0,0,1,0,"Overland Park, KS",F,F,F,F,F,F,N,P,P,,80,75,,5,Moderate Sell
+NYSE,NSC,Norfolk Souther Corporation,131.65,$37.94B,n/a,Transportation,Railroads,http://www.nasdaq.com/symbol/nsc,1,0,0,0,0,1,1,0,"Norfolk, VA",F,F,F,F,F,N,F,F,P,,80,45,256,35,Hold
+NYSE,ADM,Archer-Daniels-Midland Company,44,$24.75B,n/a,Consumer Non-Durables,Packaged Foods,http://www.nasdaq.com/symbol/adm,1,0,0,1,1,1,1,0,"Decatur, IL",F,F,N,F,F,N,N,F,P,,65,35,34,30,Hold
+NYSE,DVA,DaVita Inc.,54.73,$10.46B,n/a,Health Care,Hospital/Nursing Management,http://www.nasdaq.com/symbol/dva,1,0,0,0,0,0,1,0,"Denver, CO",F,F,F,F,F,F,N,P,P,,75,45,231,30,Hold
+NYSE,BCO,Brink&#39;s Company (The),86.35,$4.36B,n/a,Transportation,Oil Refining/Marketing,http://www.nasdaq.com/symbol/bco,1,0,0,0,0,0,1,0,"Dallas, TX",F,F,F,F,F,F,N,F,P,,80,55,777,25,Moderate Buy
+NasDaq,CME,CME Group Inc.,137.31,$46.67B,2002,Finance,Investment Bankers/Brokers/Service,http://www.nasdaq.com/symbol/cme,1,0,0,0,0,1,1,0,"Chicago, IL",F,F,F,F,F,F,F,F,P,,95,70,732,25,Strong Buy
+NYSE,SYK,Stryker Corporation,146.69,$54.87B,n/a,Health Care,Medical/Dental Instruments,http://www.nasdaq.com/symbol/syk,1,0,0,0,0,1,1,0,"Kalamazoo, MI",F,F,F,F,F,F,F,F,F,,100,80,300,20,Moderate Buy
+NasDaq,TSRO,"TESARO, Inc.",123,$6.66B,2012,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/tsro,1,0,0,0,0,0,1,0,"San Antonio, TX",P,P,N,F,F,N,N,N,N,,40,20,77,20,Moderate Buy
+NYSE,UNM,Unum Group,51.97,$11.73B,n/a,Finance,Accident &Health Insurance,http://www.nasdaq.com/symbol/unm,1,0,0,0,0,0,1,0,"Chattanooga, TN",F,F,F,F,F,N,F,P,P,,80,60,279,20,Hold
+NasDaq,AMD,"Advanced Micro Devices, Inc.",14.22,$13.46B,n/a,Technology,Semiconductors,http://www.nasdaq.com/symbol/amd,1,0,0,1,0,0,1,0,"Sunnyvale, CA",F,F,F,F,F,F,F,F,F,,100,80,473,20,Hold
+NYSE,APC,Anadarko Petroleum Corporation,47.79,$26.78B,n/a,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/apc,1,0,0,1,0,1,1,0,"The Woodlands, TX",P,P,N,F,F,N,N,N,N,,40,20,162,20,Moderate Buy
+NasDaq,AKAM,"Akamai Technologies, Inc.",50.76,$8.7B,1999,Miscellaneous,Business Services,http://www.nasdaq.com/symbol/akam,1,0,0,1,0,0,1,0,"Cambridge, MA",F,F,F,F,F,F,F,F,F,,100,75,,25,Moderate Buy
+NasDaq,CAR,"Avis Budget Group, Inc.",41.26,$3.41B,n/a,Consumer Services,Rental/Leasing Companies,http://www.nasdaq.com/symbol/car,1,0,0,0,0,0,1,0,"Parsippany, NJ",F,F,F,F,F,F,F,F,P,,95,75,336,20,Moderate Buy
+NYSE,BBT,BB&T Corporation,46.7,$37.74B,n/a,Finance,Major Banks,http://www.nasdaq.com/symbol/bbt,1,0,0,0,0,1,1,0,"Winston-Salem, NC",F,F,F,F,F,F,F,F,F,,100,80,292,20,Moderate Buy
+NYSE,BWA,BorgWarner Inc.,51.13,$10.79B,n/a,Capital Goods,Auto Parts:O.E.M.,http://www.nasdaq.com/symbol/bwa,1,0,0,0,0,0,1,0,"Auburn Hills, MI",P,P,N,F,F,N,N,N,N,,40,20,347,20,Moderate Buy
+NasDaq,CSX,CSX Corporation,52.83,$48.25B,n/a,Transportation,Railroads,http://www.nasdaq.com/symbol/csx,1,0,0,1,0,1,1,0,"Jacksonville, FL",F,F,N,F,F,F,F,F,F,,95,75,240,20,Moderate Buy
+NYSE,DVN,Devon Energy Corporation,35.87,$18.85B,n/a,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/dvn,1,0,0,1,0,1,1,0,"Oklahoma City, OK",P,P,N,F,F,N,N,N,N,,40,20,152,20,Strong Buy
+NYSE,FMC,FMC Corporation,93.72,$12.57B,n/a,Basic Industries,Major Chemicals,http://www.nasdaq.com/symbol/fmc,1,0,0,0,0,0,1,0,"Houston, TX",P,N,N,F,F,N,N,N,N,,30,10,357,20,Moderate Buy
+NYSE,HCA,"HCA Healthcare, Inc.",74.58,$26.94B,2011,Health Care,Hospital/Nursing Management,http://www.nasdaq.com/symbol/hca,1,0,0,0,0,0,1,0,"Nashville, TN",F,F,N,F,F,F,F,P,F,,90,70,75,20,Strong Buy
+NYSE,HUN,Huntsman Corporation,29.32,$7.8B,2005,Basic Industries,Major Chemicals,http://www.nasdaq.com/symbol/hun,1,0,0,0,1,0,1,0,"The Woodlands, TX",F,N,F,F,F,N,N,P,P,,55,35,259,20,Strong Buy
+NYSE,IP,International Paper Company,57.45,$23.72B,n/a,Basic Industries,Paper,http://www.nasdaq.com/symbol/ip,1,0,0,0,1,0,1,0,"Memphis, TN",P,P,N,F,P,N,N,F,N,,45,25,114,20,Moderate Buy
+NasDaq,JBHT,"J.B. Hunt Transport Services, Inc.",104.01,$11.38B,n/a,Transportation,Trucking Freight/Courier Services,http://www.nasdaq.com/symbol/jbht,1,0,0,0,0,0,1,0,"Lowell, AR",P,P,N,N,N,N,N,N,N,,20,0,434,20,Moderate Buy
+NYSE,LVLT,"Level 3 Communications, Inc.",55.36,$20.08B,2011,Public Utilities,Telecommunications Equipment,http://www.nasdaq.com/symbol/lvlt,1,0,0,0,0,0,1,0,"New York, NY",P,P,N,F,F,N,N,N,N,,40,20,252,20,Hold
+NYSE,MPC,Marathon Petroleum Corporation,56.37,$28.54B,n/a,Energy,Integrated oil Companies,http://www.nasdaq.com/symbol/mpc,1,0,0,0,0,1,1,0,"Findlay, OH",F,F,F,F,F,N,N,F,P,,75,55,25,20,Moderate Buy
+NasDaq,MU,"Micron Technology, Inc.",40.4,$45.01B,n/a,Technology,Semiconductors,http://www.nasdaq.com/symbol/mu,1,0,0,1,0,0,1,0,"Boise, ID",P,P,N,F,F,N,N,N,N,,40,20,190,20,Strong Buy
+NYSE,MHK,"Mohawk Industries, Inc.",254.99,$18.96B,n/a,Consumer Durables,Home Furnishings,http://www.nasdaq.com/symbol/mhk,1,0,0,0,0,0,1,0,"Calhoun, GA",P,P,N,F,P,N,N,N,N,,35,15,362,20,Strong Buy
+NYSE,NEM,Newmont Mining Corporation,38.59,$20.58B,n/a,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/nem,1,0,0,0,1,1,1,0,"Greenwood Village, CO",F,F,F,F,F,F,F,F,F,,100,80,379,20,Moderate Buy
+NasDaq,PDCO,"Patterson Companies, Inc.",37.41,$3.58B,1992,Health Care,Medical Specialities,http://www.nasdaq.com/symbol/pdco,1,0,0,0,0,0,1,0,"St. Paul, MN",F,F,F,F,F,N,N,P,N,,60,40,617,20,Hold
+NasDaq,TXN,Texas Instruments Incorporated,93.59,$92.66B,n/a,Technology,Semiconductors,http://www.nasdaq.com/symbol/txn,1,0,0,1,0,1,1,0,"Dallas, TX",F,F,F,F,F,F,F,F,F,,100,85,233,15,Moderate Buy
+NYSE,BFAM,Bright Horizons Family Solutions Inc.,85.15,$5.04B,2013,Miscellaneous,Other Consumer Services,http://www.nasdaq.com/symbol/bfam,1,0,0,0,0,0,1,0,"Watertown, MA",F,F,F,F,F,F,F,F,F,,100,85,,15,Moderate Buy
+NYSE,TSN,"Tyson Foods, Inc.",70.21,$25.22B,n/a,Consumer Non-Durables,Meat/Poultry/Fish,http://www.nasdaq.com/symbol/tsn,1,0,0,0,1,0,1,0,"Springdale, AR",F,F,F,F,F,F,F,F,F,,100,85,83,15,Moderate Buy
+NYSE,WEC,"WEC Energy Group, Inc.",65.1,$20.54B,n/a,Public Utilities,Power Generation,http://www.nasdaq.com/symbol/wec,1,0,0,0,0,0,1,0,"Milwaukee, WI",F,F,F,F,F,N,N,F,P,,75,60,519,15,Hold
+NasDaq,ADSK,"Autodesk, Inc.",119.63,$26.22B,n/a,Technology,Computer Software: Prepackaged Software,http://www.nasdaq.com/symbol/adsk,1,0,0,0,0,0,1,0,"San Rafael, CA",F,F,F,F,F,F,F,F,F,,100,85,862,15,Strong Buy
+NYSE,CNC,Centene Corporation,90.56,$15.62B,n/a,Health Care,Medical Specialities,http://www.nasdaq.com/symbol/cnc,1,0,0,0,0,0,1,0,"St. Louis, MO",F,F,F,F,F,F,F,F,P,,95,80,186,15,Moderate Buy
+NasDaq,ETFC,E*TRADE Financial Corporation,43.86,$12.05B,n/a,Finance,Savings Institutions,http://www.nasdaq.com/symbol/etfc,1,0,0,0,0,0,1,0,"New York, NY",F,F,F,F,F,N,F,F,P,,80,65,1000,15,Moderate Buy
+NasDaq,FOSL,"Fossil Group, Inc.",8.51,$412.92M,1993,Consumer Non-Durables,Consumer Specialties,http://www.nasdaq.com/symbol/fosl,1,0,0,0,0,0,1,0,"Richardson, TX",F,F,F,F,F,F,N,N,P,,75,60,679,15,Moderate Buy
+NYSE,SJM,J.M. Smucker Company (The),105.11,$11.94B,n/a,Consumer Non-Durables,Packaged Foods,http://www.nasdaq.com/symbol/sjm,1,0,0,1,0,0,1,0,"Orrville, OH",F,F,F,F,F,F,F,P,P,,90,75,467,15,Hold
+NYSE,JCI,Johnson Controls International plc,41.69,$38.87B,n/a,Consumer Services,Other Consumer Services,http://www.nasdaq.com/symbol/jci,1,0,0,0,0,1,1,1,"Milwaukee, WI",F,F,F,F,F,N,N,F,P,,75,60,66,15,Strong Buy
+NYSE,LEA,Lear Corporation,173.37,$11.79B,n/a,Capital Goods,Auto Parts:O.E.M.,http://www.nasdaq.com/symbol/lea,1,0,0,0,0,0,1,0,"Southfield, MI",F,F,F,F,F,F,F,F,F,,100,85,174,15,Moderate Buy
+NYSE,OMC,Omnicom Group Inc.,75.14,$17.34B,n/a,Technology,Advertising,http://www.nasdaq.com/symbol/omc,1,0,0,0,0,0,1,0,"New York, NY",F,F,F,F,F,F,F,F,F,,100,85,200,15,Hold
+NYSE,RHI,Robert Half International Inc.,49.01,$6.18B,n/a,Technology,Professional Services,http://www.nasdaq.com/symbol/rhi,1,0,0,0,0,0,1,0,"Menlo Park, CA",F,F,F,F,F,F,F,F,F,,100,85,552,15,Moderate Buy
+NYSE,SYY,Sysco Corporation,54.45,$28.46B,n/a,Consumer Non-Durables,Food Distributors,http://www.nasdaq.com/symbol/syy,1,0,0,1,0,1,1,0,"Houston, TX",F,F,F,F,F,N,F,F,P,,80,70,61,10,Moderate Buy
+NYSE,TEN,Tenneco Inc.,61.5,$3.27B,n/a,Capital Goods,Auto Parts:O.E.M.,http://www.nasdaq.com/symbol/ten,1,0,0,0,0,0,1,0,"Lake Forest, IL",P,P,N,N,N,N,N,N,N,,20,10,341,10,Moderate Buy
+NYSE,UPS,"United Parcel Service, Inc.",118.36,$102.5B,1999,Transportation,Trucking Freight/Courier Services,http://www.nasdaq.com/symbol/ups,1,0,0,1,0,1,1,0,"Atlanta, GA",F,F,F,F,F,F,F,F,F,,100,90,47,10,Hold
+NYSE,VLO,Valero Energy Corporation,78.08,$34.49B,n/a,Energy,Integrated oil Companies,http://www.nasdaq.com/symbol/vlo,1,0,0,0,0,1,1,0,"San Antonio, TX",P,P,N,N,N,N,N,N,N,,20,10,13,10,Moderate Buy
+NYSE,WMT,"Wal-Mart Stores, Inc.",86.62,$258.75B,n/a,Consumer Services,Department/Specialty Retail Stores,http://www.nasdaq.com/symbol/wmt,1,0,0,1,1,1,1,0,"Bentonville, AR",F,F,F,F,F,F,F,F,F,,100,90,1,10,Moderate Buy
+NYSE,DPZ,Domino&#39;s Pizza Inc,192.98,$8.44B,2004,Consumer Non-Durables,Food Distributors,http://www.nasdaq.com/symbol/dpz,1,0,0,0,0,0,1,0,"Ann Arbor, MI",F,F,F,F,F,N,F,F,P,,85,75,,10,Moderate Buy
+NYSE,XEL,Xcel Energy Inc.,48.61,$24.68B,n/a,Public Utilities,Power Generation,http://www.nasdaq.com/symbol/xel,1,0,0,0,0,0,1,0,"Minneapolis, MN",F,F,F,F,F,F,F,F,F,,100,90,255,10,Hold
+NYSE,AEE,Ameren Corporation,60.41,$14.66B,n/a,Public Utilities,Power Generation,http://www.nasdaq.com/symbol/aee,1,0,0,1,0,0,1,0,"St. Louis, MO",F,F,F,F,F,F,F,F,F,,100,90,438,10,Hold
+NYSE,ABC,AmerisourceBergen Corporation (Holding Co),79.44,$17.41B,n/a,Health Care,Other Pharmaceuticals,http://www.nasdaq.com/symbol/abc,1,0,0,0,0,0,1,0,"Chesterbrook, PA",F,F,F,F,F,F,N,F,P,,85,75,16,10,Moderate Buy
+NasDaq,AMGN,Amgen Inc.,183.01,$133.54B,1983,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),http://www.nasdaq.com/symbol/amgn,1,0,0,1,0,1,1,0,"Thousand Oaks, CA",F,F,F,F,F,F,F,F,F,,100,90,145,10,Moderate Buy
+NYSE,DNB,Dun & Bradstreet Corporation (The),120.02,$4.44B,n/a,Finance,Finance: Consumer Services,http://www.nasdaq.com/symbol/dnb,1,0,0,0,0,0,1,0,"Short Hills, NJ",F,F,F,F,F,F,F,F,F,,100,20,,80,Moderate Buy
+NYSE,ARW,"Arrow Electronics, Inc.",82.97,$7.32B,n/a,Consumer Non-Durables,Electronic Components,http://www.nasdaq.com/symbol/arw,1,0,0,0,0,0,1,0,"Centennial, CO",F,F,F,F,F,F,N,F,P,,85,75,131,10,Moderate Buy
+NYSE,AZO,"AutoZone, Inc.",599.16,$16.68B,n/a,Consumer Services,Other Specialty Stores,http://www.nasdaq.com/symbol/azo,1,0,0,0,0,0,1,0,"Memphis, TN",P,P,N,N,N,N,N,N,N,,20,10,307,10,Moderate Buy
+NYSE,BHGE,"Baker Hughes, a GE company",33.73,$38.63B,2017,Energy,Metal Fabrications,http://www.nasdaq.com/symbol/bhge,1,0,0,0,0,0,1,0,"Houston, TX",P,P,N,N,N,N,N,N,N,,20,10,119,10,Moderate Buy
+NYSE,CNP,"CenterPoint Energy, Inc.",29.36,$12.65B,n/a,Public Utilities,Electric Utilities: Central,http://www.nasdaq.com/symbol/cnp,1,0,0,0,0,0,1,0,"Houston, TX",P,P,N,N,N,N,N,N,N,,20,10,313,10,Hold
+NYSE,DE,Deere & Company,127.91,$41.1B,n/a,Capital Goods,Industrial Machinery/Components,http://www.nasdaq.com/symbol/de,1,0,0,1,1,1,1,0,"Moline, IL",F,F,F,F,F,F,N,F,P,,85,75,86,10,Moderate Buy
+NYSE,DAL,"Delta Air Lines, Inc.",53.96,$38.47B,n/a,Transportation,Air Freight/Delivery Services,http://www.nasdaq.com/symbol/dal,1,0,0,0,1,0,1,0,"Atlanta, GA",F,F,F,F,F,F,F,F,F,,100,90,73,10,Strong Buy
+NYSE,UFS,Domtar Corporation,43.96,$2.86B,n/a,Basic Industries,Paper,http://www.nasdaq.com/symbol/ufs,1,0,0,0,0,0,1,0,"Fort Mill, SC",P,P,N,N,N,N,N,N,N,,20,10,470,10,Moderate Sell
+NYSE,DSW,DSW Inc.,18.86,$1.52B,2005,Consumer Services,Clothing/Shoe/Accessory Stores,http://www.nasdaq.com/symbol/dsw,1,0,0,0,0,0,1,0,"Columbus, OH",F,F,F,F,F,N,F,F,F,,90,80,866,10,Hold
+NYSE,EMR,Emerson Electric Company,63.97,$40.94B,n/a,Energy,Consumer Electronics/Appliances,http://www.nasdaq.com/symbol/emr,1,0,0,1,0,1,1,0,"St. Louis, MO",F,F,F,F,F,F,F,P,P,,90,80,120,10,Moderate Buy
+NYSE,ES,Eversource Energy,61.65,$19.54B,n/a,Public Utilities,Electric Utilities: Central,http://www.nasdaq.com/symbol/es,1,0,0,0,0,0,1,0,"Springfield, MA",P,P,N,N,P,N,N,F,N,,35,25,367,10,Moderate Sell
+NasDaq,EXPE,"Expedia, Inc.",150.11,$22.76B,n/a,Consumer Services,Transportation Services,http://www.nasdaq.com/symbol/expe,1,0,0,0,0,0,1,0,"Bellevue, WA",F,F,F,F,F,F,F,F,F,,100,90,458,10,Strong Buy
+NasDaq,ESRX,Express Scripts Holding Company,57.14,$33B,1992,Health Care,Medical/Nursing Services,http://www.nasdaq.com/symbol/esrx,1,0,0,0,0,1,1,0,"St. Louis, MO",F,F,F,F,F,F,F,F,F,,100,90,22,10,Moderate Buy
+NYSE,BEN,"Franklin Resources, Inc.",44.64,$24.9B,n/a,Finance,Investment Managers,http://www.nasdaq.com/symbol/ben,1,0,0,0,0,1,1,0,"San Mateo, CA",F,F,F,F,F,F,F,F,F,,100,90,335,10,Moderate Sell
+NasDaq,HAS,"Hasbro, Inc.",96.62,$12.09B,n/a,Consumer Non-Durables,Recreational Products/Toys,http://www.nasdaq.com/symbol/has,1,0,0,0,0,0,1,0,"Pawtucket, RI",F,F,F,F,F,F,F,F,F,,100,90,595,10,Moderate Buy
+NYSE,KMB,Kimberly-Clark Corporation,118.56,$41.89B,n/a,Consumer Durables,Containers/Packaging,http://www.nasdaq.com/symbol/kmb,1,0,0,1,0,1,1,1,"Irving, TX",F,F,F,F,F,F,F,F,F,,100,90,140,10,Hold
+NYSE,KND,"Kindred Healthcare, Inc.",6,$522.11M,n/a,Health Care,Hospital/Nursing Management,http://www.nasdaq.com/symbol/knd,1,0,0,0,0,0,1,0,"Louisville, KY",P,P,N,N,N,N,N,N,N,,20,10,491,10,Hold
+NYSE,MKC,"McCormick & Company, Incorporated",98.51,$12.9B,n/a,Consumer Non-Durables,Packaged Foods,http://www.nasdaq.com/symbol/mkc,1,0,0,1,0,0,1,1,"Sparks, MD",F,F,F,F,F,F,N,F,P,,80,70,598,10,Moderate Buy
+NasDaq,NFLX,"Netflix, Inc.",199.49,$86.13B,2002,Consumer Services,Consumer Electronics/Video Chains,http://www.nasdaq.com/symbol/nflx,1,0,0,0,0,0,1,0,"Los Gatos, CA",F,F,F,F,F,F,F,F,F,,100,90,474,10,Moderate Buy
+NYSE,OSK,Oshkosh Corporation,87.05,$6.51B,n/a,Capital Goods,Auto Manufacturing,http://www.nasdaq.com/symbol/osk,1,0,0,0,0,0,1,0,"Oshkosh, WI",P,P,N,N,N,N,N,N,N,,20,10,394,10,Strong Buy
+NYSE,OI,"Owens-Illinois, Inc.",25.56,$4.16B,n/a,Consumer Durables,Containers/Packaging,http://www.nasdaq.com/symbol/oi,1,0,0,1,0,0,1,0,"Perrysburg, OH",P,P,N,N,N,N,N,N,N,,20,10,399,10,Hold
+NYSE,PEG,Public Service Enterprise Group Incorporated,48.64,$24.61B,n/a,Public Utilities,Power Generation,http://www.nasdaq.com/symbol/peg,1,0,0,0,0,1,1,0,"Newark, NJ",F,F,F,F,F,N,F,F,F,,90,80,274,10,Moderate Buy
+NYSE,DGX,Quest Diagnostics Incorporated,91.06,$12.42B,n/a,Health Care,Medical Specialities,http://www.nasdaq.com/symbol/dgx,1,0,0,0,0,0,1,0,"Madison, NJ",F,F,F,F,F,F,F,F,F,,100,90,375,10,Hold
+NYSE,IR,Ingersoll-Rand plc (Ireland),91.32,$23.16B,n/a,Capital Goods,Auto Parts:O.E.M.,http://www.nasdaq.com/symbol/ir,1,0,0,0,0,0,1,0,"Davidson, NC",F,F,F,F,F,F,F,F,F,,100,90,,10,Moderate Buy
+NYSE,RLGY,Realogy Holdings Corp.,32.15,$4.38B,2012,Finance,Real Estate,http://www.nasdaq.com/symbol/rlgy,1,0,0,0,0,0,1,0,"Madison, NJ",F,F,F,F,F,N,F,F,P,,85,75,488,10,Moderate Buy
+NasDaq,ROST,"Ross Stores, Inc.",63.12,$24.34B,1985,Consumer Services,Clothing/Shoe/Accessory Stores,http://www.nasdaq.com/symbol/rost,1,0,0,0,0,0,1,0,"Dublin , CA",F,F,F,F,F,F,F,N,F,,90,80,269,10,Moderate Buy
+NasDaq,TROW,"T. Rowe Price Group, Inc.",94.94,$22.82B,1986,Finance,Investment Bankers/Brokers/Service,http://www.nasdaq.com/symbol/trow,1,0,0,0,0,0,1,0,"Baltimore, MD",F,F,F,F,F,F,F,F,F,,100,95,620,5,Hold
+NYSE,TGNA,TEGNA Inc.,12.64,$2.72B,n/a,Consumer Services,Broadcasting,http://www.nasdaq.com/symbol/tgna,1,0,0,0,0,0,1,0,"McLean, VA",F,F,F,F,F,F,F,F,F,,100,95,441,5,Moderate Buy
+NYSE,THC,Tenet Healthcare Corporation,13.15,$1.33B,n/a,Health Care,Hospital/Nursing Management,http://www.nasdaq.com/symbol/thc,1,0,0,0,0,0,1,0,"Dallas, TX",F,F,N,F,F,N,N,P,F,,70,65,170,5,Moderate Buy
+NYSE,UTX,United Technologies Corporation,118.72,$94.8B,n/a,Capital Goods,Aerospace,http://www.nasdaq.com/symbol/utx,1,0,0,0,1,1,1,0,"Farmington, CT",F,F,F,F,F,F,F,F,F,,100,95,45,5,Moderate Buy
+NasDaq,WEN,Wendy&#39;s Company (The),15.35,$3.74B,n/a,Consumer Services,Restaurants,http://www.nasdaq.com/symbol/wen,1,0,0,0,0,0,1,0,"Dublin, OH",F,F,N,F,F,N,N,F,P,,70,65,993,5,Moderate Buy
+NYSE,WYN,Wyndham Worldwide Corp,110.37,$11.34B,n/a,Consumer Services,Hotels/Resorts,http://www.nasdaq.com/symbol/wyn,1,0,0,0,0,0,1,0,"Parsippany, NJ",F,F,F,F,F,F,F,F,F,,100,95,497,5,Moderate Buy
+NYSE,A,"Agilent Technologies, Inc.",66.99,$21.56B,1999,Capital Goods,Biotechnology: Laboratory Analytical Instruments,http://www.nasdaq.com/symbol/a,1,0,0,0,0,0,1,0,"Santa Clara, CA",F,F,F,F,F,F,F,P,F,,95,90,389,5,Moderate Buy
+NYSE,APD,"Air Products and Chemicals, Inc.",153.46,$33.45B,n/a,Basic Industries,Major Chemicals,http://www.nasdaq.com/symbol/apd,1,0,0,0,1,1,1,0,"Allentown, PA",F,F,F,F,F,F,F,F,F,,100,95,284,5,Strong Buy
+NasDaq,AMZN,"Amazon.com, Inc.",1002.94,$481.79B,1997,Consumer Services,Catalog/Specialty Distribution,http://www.nasdaq.com/symbol/amzn,1,0,0,0,0,1,1,0,"Seattle, WA",F,F,F,F,F,F,N,F,F,,90,85,29,5,Strong Buy
+NYSE,AEP,"American Electric Power Company, Inc.",73.16,$35.98B,n/a,Public Utilities,Electric Utilities: Central,http://www.nasdaq.com/symbol/aep,1,0,0,1,0,1,1,0,"Columbus, OH",F,F,F,F,F,F,F,F,F,,100,95,184,5,Moderate Buy
+NasDaq,LPLA,LPL Financial Holdings Inc.,53,$4.77B,2010,Finance,Investment Bankers/Brokers/Service,http://www.nasdaq.com/symbol/lpla,1,0,0,0,0,0,1,0,"Boston, MA",F,F,F,F,F,F,F,F,F,,100,95,,5,Strong Buy
+NasDaq,AMAT,"Applied Materials, Inc.",53.94,$57.53B,1972,Technology,Semiconductors,http://www.nasdaq.com/symbol/amat,1,0,0,1,0,0,1,0,"Santa Clara, CA",F,F,F,F,F,F,N,P,F,,85,80,319,5,Strong Buy
+NYSE,AIZ,"Assurant, Inc.",95.71,$5.16B,2004,Finance,Accident &Health Insurance,http://www.nasdaq.com/symbol/aiz,1,0,0,0,0,0,1,0,"New York, NY",F,F,F,F,F,N,F,F,F,,90,85,285,5,Moderate Buy
+NasDaq,AVGO,Broadcom Limited,247.96,$101.16B,2009,Technology,Semiconductors,http://www.nasdaq.com/symbol/avgo,1,0,0,0,0,0,1,0,"Irvine, CA",P,P,N,N,N,N,N,N,N,,20,15,340,5,Strong Buy
+NYSE,CE,Celanese Corporation,107.35,$14.76B,2005,Basic Industries,Major Chemicals,http://www.nasdaq.com/symbol/ce,1,0,0,0,1,0,1,0,"Irving, TX",F,F,F,F,F,N,F,F,F,,90,85,395,5,Moderate Buy
+NasDaq,MORN,"Morningstar, Inc.",85.63,$3.64B,2005,Finance,Investment Managers,http://www.nasdaq.com/symbol/morn,1,0,0,0,0,0,1,0,"Chicago, IL",F,F,F,F,F,F,N,F,F,,90,85,,5,Not Rated
+NYSE,CL,Colgate-Palmolive Company,75.99,$66.94B,n/a,Consumer Non-Durables,Package Goods/Cosmetics,http://www.nasdaq.com/symbol/cl,1,0,0,1,0,1,1,0,"New York, NY",F,F,F,F,F,F,F,F,F,,100,95,179,5,Moderate Buy
+NYSE,ED,Consolidated Edison Inc,83.08,$25.4B,n/a,Public Utilities,Power Generation,http://www.nasdaq.com/symbol/ed,1,0,0,0,0,1,1,0,"New York, NY",F,F,F,F,F,F,F,F,P,,95,90,236,5,Hold
+NYSE,DTV,DTE Energy Company,55.22,n/a,2016,Public Utilities,Electric Utilities: Central,http://www.nasdaq.com/symbol/dtv,1,0,0,0,0,1,1,0,"Detroit, MI",F,F,F,N,P,F,F,F,P,,80,75,246,5,Not Rated
+NYSE,GD,General Dynamics Corporation,213.34,$63.89B,n/a,Capital Goods,Marine Transportation,http://www.nasdaq.com/symbol/gd,1,0,0,0,1,1,1,0,"Falls Church, VA",F,F,F,F,F,N,F,F,F,,90,85,100,5,Strong Buy
+NasDaq,GILD,"Gilead Sciences, Inc.",81.17,$106B,1992,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),http://www.nasdaq.com/symbol/gild,1,0,0,0,0,1,1,0,"Foster City, CA",F,F,F,F,F,F,N,F,P,,85,80,118,5,Moderate Buy
+NYSE,HBI,Hanesbrands Inc.,23.73,$8.65B,n/a,Consumer Services,Clothing/Shoe/Accessory Stores,http://www.nasdaq.com/symbol/hbi,1,0,0,0,0,0,1,0,"Winston-Salem, NC",F,F,F,F,F,F,F,P,P,,90,85,490,5,Moderate Buy
+NYSE,OPY,"Oppenheimer Holdings, Inc.",17.85,$236.36M,n/a,Finance,Investment Bankers/Brokers/Service,http://www.nasdaq.com/symbol/opy,1,0,0,0,0,0,1,0,"New York, NY",F,F,F,F,F,F,F,F,F,,100,60,,40,Not Rated
+NYSE,ITW,Illinois Tool Works Inc.,152.82,$52.59B,n/a,Technology,Industrial Machinery/Components,http://www.nasdaq.com/symbol/itw,1,0,0,0,0,1,1,0,"Glenview, IL",F,F,F,F,F,N,N,P,P,,65,60,201,5,Moderate Buy
+NasDaq,NSIT,"Insight Enterprises, Inc.",45.17,$1.62B,1995,Consumer Services,Catalog/Specialty Distribution,http://www.nasdaq.com/symbol/nsit,1,0,0,0,0,0,1,0,"Tempe, AZ",F,F,F,F,F,N,N,P,P,,65,60,493,5,Moderate Buy
+NYSE,NRG,"NRG Energy, Inc.",26.06,$8.25B,n/a,Public Utilities,Electric Utilities: Central,http://www.nasdaq.com/symbol/nrg,1,0,0,0,0,0,1,0,"Princeton, NJ",F,F,N,F,F,N,F,P,P,,70,65,196,5,Moderate Buy
+NYSE,PPL,PPL Corporation,37.56,$25.76B,n/a,Public Utilities,Electric Utilities: Central,http://www.nasdaq.com/symbol/ppl,1,0,0,0,0,1,1,0,"Allentown, PA",F,F,F,F,F,F,F,F,F,,100,95,257,5,Moderate Buy
+NYSE,PX,"Praxair, Inc.",142.21,$40.68B,n/a,Basic Industries,Major Chemicals,http://www.nasdaq.com/symbol/px,1,0,0,0,1,1,1,0,"Danbury, CT",F,F,F,F,F,F,F,F,F,,100,95,249,5,Strong Buy
+NYSE,RSG,"Republic Services, Inc.",63.33,$21.33B,1998,Public Utilities,Environmental Services,http://www.nasdaq.com/symbol/rsg,1,0,0,0,0,0,1,0,"Phoenix, AZ",F,F,F,F,F,N,F,F,P,,85,80,323,5,Moderate Buy
+NYSE,CRM,Salesforce.com Inc,96.94,$69.67B,2004,Technology,Computer Software: Prepackaged Software,http://www.nasdaq.com/symbol/crm,1,0,0,0,0,1,1,0,"San Francisco, CA",F,F,F,F,F,F,F,F,F,,100,95,483,5,Strong Buy
+NYSE,WMB,"Williams Companies, Inc. (The)",29.87,$24.69B,n/a,Public Utilities,Natural Gas Distribution,http://www.nasdaq.com/symbol/wmb,1,0,0,0,0,1,1,0,"Tulsa, OK",F,F,F,F,F,N,N,F,F,,80,85,370,-5,Strong Buy
+NYSE,DPS,"Dr Pepper Snapple Group, Inc",89.25,$16.22B,n/a,Consumer Non-Durables,Beverages (Production/Distribution),http://www.nasdaq.com/symbol/dps,1,0,0,0,1,0,1,0,"Plano, TX",F,F,N,F,F,N,N,N,P,,55,60,437,-5,Moderate Buy
+NYSE,MSI,"Motorola Solutions, Inc.",89.93,$14.63B,n/a,Technology,Radio And Television Broadcasting And Communications Equipment,http://www.nasdaq.com/symbol/msi,1,0,0,1,0,1,1,0,"Schaumburg, IL",F,F,N,F,F,N,F,F,P,,75,80,363,-5,Moderate Buy
+NYSE,OMI,"Owens & Minor, Inc.",27.98,$1.71B,n/a,Health Care,Medical Specialities,http://www.nasdaq.com/symbol/omi,1,0,0,0,0,0,1,0,"Mechanicsville, VA",F,F,F,F,F,N,F,F,P,,80,85,309,-5,Hold
+NasDaq,COST,Costco Wholesale Corporation,159.85,$69.89B,n/a,Consumer Services,Department/Specialty Retail Stores,http://www.nasdaq.com/symbol/cost,1,0,0,0,1,1,1,0,"Issaquah, WA",F,F,N,F,F,N,F,F,N,,70,80,18,-10,Moderate Buy
+NYSE,CCK,"Crown Holdings, Inc.",60.7,$8.19B,n/a,Consumer Durables,Containers/Packaging,http://www.nasdaq.com/symbol/cck,1,0,0,0,0,0,1,0,"Philadelphia, PA",N,N,N,N,N,N,N,N,N,,0,10,318,-10,Strong Buy
+NYSE,HST,"Host Hotels & Resorts, Inc.",19.51,$14.44B,n/a,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/hst,1,0,0,0,0,0,1,0,"Bethesda, MD",N,N,N,F,N,N,N,N,N,,10,20,485,-10,Strong Buy
+NYSE,GPC,Genuine Parts Company,95.86,$14.08B,n/a,Capital Goods,Automotive Aftermarket,http://www.nasdaq.com/symbol/gpc,1,0,0,0,0,0,1,0,"Atlanta, GA",N,N,N,N,N,N,N,N,N,,0,20,199,-20,Moderate Buy
+NasDaq,SCHL,Scholastic Corporation,37.64,$1.32B,1992,Consumer Services,Books,http://www.nasdaq.com/symbol/schl,1,0,0,0,0,0,1,0,"New York, NY",F,F,F,F,F,N,N,F,P,,75,65,,10,Hold

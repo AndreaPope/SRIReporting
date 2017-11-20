@@ -9,17 +9,17 @@
 	<link rel="stylesheet" type="text/css" href="css/sri.css" />
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<style>
-		#section0{
+	#section0{
 		/*background-image: url(res/bg1.jpg);*/
 		/*opacity: 0.8;*/
-		}
+	}
 
-		#section0 .layer{
-			position: absolute;
-			z-index: 4;
-			width: 100%;
-			left: 0;
-			top: 30%;
+	#section0 .layer{
+		position: absolute;
+		z-index: 4;
+		width: 100%;
+		left: 0;
+		top: 30%;
 
 		/* 
 		* Preventing flicker on some browsers 
@@ -78,6 +78,9 @@
 
 <script type="text/javascript" src="js/jquery.fullPage.js"></script>
 <script type="text/javascript" src="js/examples.js"></script>
+<script src="js/d3.v4.js"></script>    
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="js/hrc-viz1.js"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
 		$('#fullpage').fullpage({
@@ -119,8 +122,8 @@
 	<div id="fullpage">
 		<div class="section " id="section0">
 			<video id="myVideo" loop muted data-autoplay>
-				<source src="images/trimedSummerBreeze.mp4" type="video/mp4">
-				</video>
+			<source src="images/trimedSummerBreeze.mp4" type="video/mp4">
+			</video>
 				<div class="layer">
 					<h1 style="color:#464647; text-shadow: 3px 3px white;">
 						<br>
@@ -144,7 +147,7 @@
 						<br><br>Continue below to begin exploring…
 					</p>
 				</div>
-			s</div>
+		</div>
 
 
 			<div class="section" id="aboutClass" style="background-image: url(images/dropsplants.jpg); background-size:cover; opacity: 0.8;">
@@ -317,7 +320,10 @@
 
 		<div class="section" id="investigationClass">
 			<div class="container">
-				<h1> Investigation1</h1>
+				<div id="chart1" align="left">
+				</div>
+					<p>According to the Human Rights Commission, major companies in recent years have accelerated their efforts to improve policies affecting LGBTQ employees and their families. In 2017, 123 companies posted gains in their HRC ratings - with television cable company Charter Communications (CHTR) and aerospace and defense giant Lockheed Martin (LM) posting the most gains. Of those who improved year over year, 23 are rated Strong Buy based on analyst recommendations. Analyst recommendations are a likert scale assessment of whether it is a good time to buy or sell a particular stock - Strong Sell, Moderate Sell, Hold, Moderate Buy, Strong Buy. The recommendations used here are as of November 12, 2017.</p>
+					<p>A handful of companies slid backward from 2016 to 2017. Genuine Parts Company (GPC), which sells and distributes car parts and electronics, lost the most points year over year. Also notably, the big box store Costco (COST) lost points because it does not enforce non-discrimination standards that include sexual orientation and gender identity for its vendors. Costco also lost points because it does not have transgender-inclusive health insurance coverage.</p>
 			</div>
 		</div>
 

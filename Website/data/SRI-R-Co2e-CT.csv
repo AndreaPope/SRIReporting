@@ -1,0 +1,13 @@
+"Sector","A","B","C","D","E"
+"Basic Industries",11,28,14,22,
+"Capital Goods",6,7,12,4,
+"Consumer Durables",,,8,1,
+"Consumer Non-Durables",9,24,12,7,
+"Consumer Services",13,17,16,5,
+"Energy",1,14,14,9,2
+"Finance",10,20,18,7,2
+"Health Care",3,22,11,10,2
+"Miscellaneous",,,2,3,
+"Public Utilities",2,9,11,5,1
+"Technology",8,11,7,8,4
+"Transportation",4,14,12,9,

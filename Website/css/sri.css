@@ -61,14 +61,14 @@ articlehrc {
 
 navghg {
     float: left;
-    max-width: 390px;
+    max-width: 200px;
     margin: 0;
     /*padding: 1em;*/
 }
 
 
 articleghg {
-    margin-left: 400px;
+    margin-left: 210px;
     border-left: 1px solid gray;
     padding: 1em;
     overflow: hidden;

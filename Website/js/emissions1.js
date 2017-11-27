@@ -1,7 +1,7 @@
 var my_viz_lib = my_viz_lib || {};
 
   //create SVG Element
-var svg = d3.select("#emissions1").append("svg")
+var svg = d3.select("#emissionChart").append("svg")
   .attr("width", "960")
   .attr("height", "500");
 

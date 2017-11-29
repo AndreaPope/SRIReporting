@@ -114,8 +114,8 @@
 <script type="text/javascript">
 	$(document).ready(function() {
 		$('#fullpage').fullpage({
-			sectionsColor: ['#1bbc9b', 'white','white', 'white', 'white',  'white', 'white', 'white','white', 'white', 'white', 'white', 'white', 'white'],
-			anchors: ['Home', 'Education', 'Investigation', 'Investigation1', 'Investigation2', 'Investigation3', 'Exploration', 'Exploration1'],
+			sectionsColor: ['#1bbc9b', 'white','white', 'white', 'white',  'white', 'white', 'white', 'white', 'white', 'white'],
+			anchors: ['Home', 'Education', 'Investigation', 'Exploration', 'Exploration1'],
 			menu: '#menu',
 			scrollingSpeed: 1000
 		});
@@ -182,76 +182,11 @@
 				<iframe src="Education2.html" width=100% height=90% align="center" seamless frameBorder=5 scrolling="yes"></iframe>
 			</div>
 
-			<div class="section" id="investigationClass" style="background-image: url(images/lake-2063957_1920.jpg); background-size:cover; opacity: 0.8;" >
-				<div class="intro" >
-					<h1 style="color: white"> Investigation </h1>
-				</div>
+			<div class="section" id="investigationClass" >
+				<iframe src="Investigation.html" width=100% height=90% align="center" seamless frameBorder=5 scrolling="yes"></iframe>
 			</div>
 
-			<div class="section" id="investigationClass">
-				<div class="container">
-					<div id="chart1" align="left">
-					</div>
-					<h1>HRC</h1>
-					<p>According to the Human Rights Commission, major companies in recent years have accelerated their efforts to improve policies affecting LGBTQ employees and their families. In 2017, 123 companies posted gains in their HRC ratings - with television cable company Charter Communications (CHTR) and aerospace and defense giant Lockheed Martin (LM) posting the most gains. Of those who improved year over year, 23 are rated Strong Buy based on analyst recommendations. Analyst recommendations are a likert scale assessment of whether it is a good time to buy or sell a particular stock - Strong Sell, Moderate Sell, Hold, Moderate Buy, Strong Buy. The recommendations used here are as of November 12, 2017.</p>
-					<p>A handful of companies slid backward from 2016 to 2017. Genuine Parts Company (GPC), which sells and distributes car parts and electronics, lost the most points year over year. Also notably, the big box store Costco (COST) lost points because it does not enforce non-discrimination standards that include sexual orientation and gender identity for its vendors. Costco also lost points because it does not have transgender-inclusive health insurance coverage.</p>
-				</div>
-			</div>
-
-			<div class="section" id="investigationClass">
-				<div class="container">
-					<script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
-					<script src="js/hrc-viz-2.js"></script>
-					<form>
-						<input type="radio" name="mode" value="size" checked> Market Cap
-						<input type="radio" name="mode" value="count"> Count
-					</form>
-					<chart2>
-					</chart2>
-					<p>More than 200 companies earned perfect scores on HRC's Corporate Equality Index (CEI). They are represented above by sector (color) and market cap (size). Market cap is the market value of a company's outstanding shares and can be a useful guide when making investment choices. Companies typically fall into three market cap categories: small-, mid- and large-cap. Historical financial performance shows large-cap companies are typically less risky but slow to grow, while small-cap companies have rapid growth potential but come with more risk. 
-						If you want low-risk investments, explore the larger boxes - companies like Apple (AAPL), Google (GOOGL) and Huron Consulting Group (HURN). If you're willing to absorb more risk, check out the smaller boxes
-					To get a sense for which business sectors are leading the way when it comes to corporate equality, select the "Count" radio button above. Consumer Services, which includes companies like Starbucks, CBS Broadcasting and restaurant finder app Yelp, has the highest count of companies with perfect CEI scores. The Technology sector also has a large share of perfect scores, while the Energy and Transportation Industries have less representation.</p>
-				</div>
-			</div>
-
-			<div class="section" id="investigationClass">
-				<div class="container">
-					<div id="EmissionsHeader" style="background-image: url(images/bg1.jpg)">
-						<h1 style="color: white">GHG: Carbon Emissions</h1>
-					</div>
-					<div id="emissions1">
-						<p>
-							Companies are placed into Performance Bands by the CDP report used as the basis for these Carbon Emission reports. Performance Bands range from A (the best) to E (the worst). Note, this is not directly related to total metric tons of carbon emissions, but based on the company’s performance in comparison to their peers within their sector. Specifically, performance points are awarded for evidence considered to contribute to climate change mitigation, adaptation and transparency. Actions considered to be more fundamental to progress on combating climate change are awarded more points. External verification of emissions data is rewarded under the performance scoring as it is considered that this potentially increases the usefulness of the information to decision makers and can act as a pre-qualifier of the 	data submitted that should be recognized when evaluating performance.
-							<br>
-							The performance score is also based solely on a company's CDP response. To receive a performance score, a company must achieve a minimum disclosure score of 50. This is to ensure that the judgement is based on sufficient information.
-							Performance scores are converted to percentages in a similar way to the disclosure score percentage is generated. At the end of scoring, the number of points a company has been awarded is divided by the maximum number that could have been awarded. The fraction is then converted to a percentage by multiplying by 100 and rounded to the nearest whole number.
-							(Points awarded / points attainable) x 100 = Disclosure Score
-
-							For additional information on the scoring mechanism, see <a href="https://www.cdp.net/Documents/Guidance/2015/CDP-climate-change-scoring-methodology.pdf"> CDP</a>.
-							<br><br>
-							Reviewing the charts, we see that the Consumer Server sector has the most A-Band rated companies. Additionally, Energy and Technology have the larger percentage of darker blue colors, indicating lower performance bands.
-							<br><br>
-							The second chart shows the financial performance over the past 5 years for companies within each sector that have Performance Bands of A. 
-						</p>
-						<div id="emissionChart">
-						</div>
-						<form>
-							<table border=0 align="right">
-								<tr align="right">
-									<td align="right"><label><input type="radio" name="mode" value="grouped"> Grouped</label></td>
-									<td align="right"><label><input type="radio" name="mode" value="stacked" checked> Stacked</label></td>
-								</tr>
-
-							</table>
-						</form>
-						
-						<script src="js/emissions1.js"></script>
-						(Switch between grouped and stacked to see different versions of this information).
-					</div>
-					
-				</div>	
-			</div>
-
+			
 			<div class="section" id="explorationClass" style="background-image: url(images/dropsplants.jpg); background-size:cover; opacity: 0.8;">
 				<div class="container">
 					<h1 style="color: white">Exploration</h1>

@@ -35,9 +35,12 @@
   </head>
   <body>
   <h2>Top Scoring Companies by Market Cap and Sector</h2>
+
+  <svg width="960" height="570" id="treemap"></svg>
+  
     <form>
-      <label><input type="radio" name="mode" value="size" checked> Market Cap</label>
-      <label><input type="radio" name="mode" value="count"> Count</label>
+      <label><input type="radio" name="mode" value="sumBySize" checked> Market Cap</label>
+      <label><input type="radio" name="mode" value="sumByCount"> Count</label>
     </form>
 
 
@@ -45,7 +48,8 @@
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/d3.v4.js"></script>    
-    <script src="js/hrc-viz-2.js"></script>
+    <script src="js/hrc-viz-2a.js"></script>
+
 
     <div class="paragraph">
       <p>More than 200 companies earned perfect scores on HRC's Corporate Equality Index (CEI). They are represented above by sector (color) and market cap (size). Market cap is the market value of a company's outstanding shares and can be a useful guide when making investment choices. Companies typically fall into three market cap categories: small-, mid- and large-cap. Historical financial performance shows large-cap companies are typically less risky but slow to grow, while small-cap companies have rapid growth potential but come with more risk. </p>

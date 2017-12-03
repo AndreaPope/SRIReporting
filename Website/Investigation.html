@@ -47,6 +47,42 @@ chart2 {
     width: 960px;
   }
 
+ /*HTML Horizonal Legend*/
+.sector {
+    margin: 0 !important;
+    font-size: 10.5px;
+}
+.key-dot {
+    display: inline-block;
+    height: 10px;
+    margin-right: .5em;
+    width: 10px;
+    /*font-size: 8;*/
+}
+
+.color1 { background: #1f77b4;}
+.color2 { background: #aec7e8;}
+.color3 { background: #ff7f0e;}
+.color4 { background: #ffbb78; }
+.color5 { background: #2ca02c;}
+.color6 { background: #98df8a;}
+.color7 { background: #d62728;}
+.color8 { background: #ff9896;}
+.color9 { background: #9467bd;}
+.color10 { background: #c5b0d5;}
+.color11 { background: #8c564b;}
+.color12 { background: #c49c94;}
+
+#legend2{
+    overflow:hidden;
+}
+.legend2 {
+    float:left;
+    margin-right: 1em;
+    /*font-size: 8;*/
+}
+/*End Horizontal Legend*/
+
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 .w3-col-ib {width:60%}
@@ -99,34 +135,62 @@ chart2 {
 
 <!-- Container (HRC Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">Human Rights Campaign (HRC)</h3>
-  <p class="w3-center"><em>HRC</em></p>
+  <h2 class="w3-center">Human Rights Campaign (HRC)</h3>
+  <h3 class="w3-center"><em>2016-2017 Gains and Losses</em></h3>
   <p>
-  	According to the Human Rights Commission, major companies in recent years have accelerated their efforts to improve policies affecting LGBTQ employees and their families. In 2017, 123 companies posted gains in their HRC ratings - with television cable company Charter Communications (CHTR) and aerospace and defense giant Lockheed Martin (LM) posting the most gains. Of those who improved year over year, 23 are rated Strong Buy based on analyst recommendations. Analyst recommendations are a likert scale assessment of whether it is a good time to buy or sell a particular stock - Strong Sell, Moderate Sell, Hold, Moderate Buy, Strong Buy. The recommendations used here are as of November 12, 2017.</p>
-   <p>
-	A handful of companies slid backward from 2016 to 2017. Genuine Parts Company (GPC), which sells and distributes car parts and electronics, lost the most points year over year. Also notably, the big box store Costco (COST) lost points because it does not enforce non-discrimination standards that include sexual orientation and gender identity for its vendors. Costco also lost points because it does not have transgender-inclusive health insurance coverage.</p>
+  	According to the Human Rights Commission, major companies in recent years have accelerated their efforts to improve policies affecting LGBTQ employees and their families. The HRC assesses these efforts in their annual Corporate Equality Index (CEI) report. In 2017, more than 100 publicly traded companies posted gains in their HRC scores and a few lost points.</p>
+  	<p>
+  	Hover over the bars in the chart below to see the companies and analyst recommendations for whether it is a good time to buy or sell a particular stock.</p> 
 
-	<br>
-  <div style="width: 1200px;" style="background-color:#FFFFFF" class="w3-light-grey">
+  	<p><em>The recommendations used here are as of November 12, 2017.</em></p>
+
+
+
+  <!-- <div style="width: 1000px;" style="background-color:#FFFFFF" class="w3-light-grey"> -->
+  <div style="width: 1000px;" style="background-color:#FFFFFF" >
 	<div id = "chart1">
 	   <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
 	   <script src="js/hrc-viz1.js"></script>
 	</div>
-	   <p>More than 200 companies earned perfect scores on HRC's Corporate Equality Index (CEI). They are represented above by sector (color) and market cap (size). Market cap is the market value of a company's outstanding shares and can be a useful guide when making investment choices. Companies typically fall into three market cap categories: small-, mid- and large-cap. Historical financial performance shows large-cap companies are typically less risky but slow to grow, while small-cap companies have rapid growth potential but come with more risk. 
 
-	   If you want low-risk investments, explore the larger boxes - companies like Apple (AAPL), Google (GOOGL) and Huron Consulting Group (HURN). If you're willing to absorb more risk, check out the smaller boxes
-	   
-	   To get a sense for which business sectors are leading the way when it comes to corporate equality, select the "Count" radio button above. Consumer Services, which includes companies like Starbucks, CBS Broadcasting and restaurant finder app Yelp, has the highest count of companies with perfect CEI scores. The Technology sector also has a large share of perfect scores, while the Energy and Transportation Industries have less representation.</p>
+  	<p>Television cable company Charter Communications (CHTR) and aerospace and defense giant Lockheed Martin (LM) posted the most gains. Genuine Parts Company (GPC), which sells and distributes car parts and electronics, lost the most points year over year. Also notably, the big box store Costco (COST) lost points because it does not enforce non-discrimination standards that include sexual orientation and gender identity for its vendors. Costco also lost points because it does not have transgender-inclusive health insurance coverage.</p>
+
+	<br>
+	<h3 class="w3-center"><em>Investment Options for Companies with Perfect HRC Scores</em></h3>
+	   <p>More than 200 companies earned perfect scores on HRC's Corporate Equality Index (CEI). They are represented below by sector (color) and market cap (size).</p> 
 	 
-    <form>
-		<input type="radio" name="mode" value="size" checked> Market Cap
-		<input type="radio" name="mode" value="count"> Count
-	</form>
+
      <div style="width: 1000px;">
-	   <chart2>
-	   </chart2>
+	   <div id = "chart2">
+
+       <form>
+      	<label><input type="radio" name="mode" value="sumBySize" checked> Market Cap </label>
+      	<label><input type="radio" name="mode" value="sumByCount"> Count </label>
+    	</form>
+	   <script src="js/hrc-viz-2a.js"></script>
+
+	<div id="legend2">
+	   <div class="legend2"> <p class="sector"><span class="key-dot color1"></span>Basic Industries</p> </div>
+	   <div class="legend2"> <p class="sector"><span class="key-dot color2"></span>Capital Goods</p> </div>
+	   <div class="legend2"> <p class="sector"><span class="key-dot color3"></span>Durables</p> </div>
+	   <div class="legend2"> <p class="sector"><span class="key-dot color4"></span>Non-Durables</p> </div>
+	   <div class="legend2"> <p class="sector"><span class="key-dot color5"></span>Services</p> </div>
+	   <div class="legend2"> <p class="sector"><span class="key-dot color6"></span>Energy</p> </div>
+	   <div class="legend2"> <p class="sector"><span class="key-dot color7"></span>Finance</p> </div>
+	   <div class="legend2"> <p class="sector"><span class="key-dot color8"></span>Health Care</p> </div>
+	   <div class="legend2"> <p class="sector"><span class="key-dot color9"></span>Miscellaneous</p> </div>
+	   <div class="legend2"> <p class="sector"><span class="key-dot color10"></span>Utilities</p> </div>
+	   <div class="legend2"> <p class="sector"><span class="key-dot color11"></span>Technology</p> </div>
+	   <div class="legend2"> <p class="sector"><span class="key-dot color12"></span>Transportation</p> </div>
+	</div>
+
 	 </div>
-  
+
+	   <p>Market cap is the market value of a company's outstanding shares and can be a useful guide when making investment choices. Companies typically fall into three market cap categories: small-, mid- and large-cap. Historical financial performance shows large-cap companies are typically less risky but slow to grow, while small-cap companies have rapid growth potential but come with more risk.</p> 
+
+	   <p>If you want low-risk investments, explore the larger boxes - companies like Apple (AAPL), Google (GOOGL) and Huron Consulting Group (HURN). If you're willing to absorb more risk, check out the smaller boxes.</p>
+	   
+	   <p>To get a sense for which business sectors are leading the way when it comes to corporate equality, select the "Count" radio button above. Consumer Services, which includes companies like Starbucks, CBS Broadcasting and restaurant finder app Yelp, has the highest count of companies with perfect CEI scores. The Technology sector also has a large share of perfect scores, while the Energy and Transportation Industries have less representation.</p> 
 
   </div>
 
@@ -137,17 +201,17 @@ chart2 {
     </div> -->
   </div>
 
-   <br><br>
+<!--    <br><br>
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">
     	Support for this from: <br>
     	<a href="https://www.forbes.com/sites/robrussell/2013/12/09/mutual-funds-or-stocks-which-is-better-for-you/#344a1d5111b1">ABC</a>
     	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.investopedia.com/ask/answers/05/062305.asp">DEF</a>
     </div>
-  </div>
+  </div> -->
  
 </div>
- -->
+
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">

@@ -9,10 +9,12 @@
 	<link rel="stylesheet" type="text/css" href="css/sri.css" />
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<style>
+
+	/*solves problem with overflowing video in Mac with Chrome */
 	#section0{
-		/*background-image: url(res/bg1.jpg);*/
-		/*opacity: 0.8;*/
+		overflow: hidden;
 	}
+
 
 	#section0 .layer{
 		position: absolute;
@@ -24,6 +26,7 @@
 		-ms-transform: translate3d(0,0,0);
 		transform: translate3d(0,0,0);
 	}
+
 	#section0 img,
 
 	.intro p{

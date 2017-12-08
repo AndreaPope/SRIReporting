@@ -37,8 +37,8 @@ d3.csv("data/SRI-R-HRC.csv", rowConverter, function(error, data) {
 var barGraph = function(dataset) {
 
   //Set margin
-    var margin = {top: 50, right: 120, bottom: 100, left: 80}
-      , width = 1250 - margin.left - margin.right
+    var margin = {top: 50, right: 20, bottom: 50, left: 20}
+      , width = 1000 - margin.left - margin.right
       , height = 525 - margin.top - margin.bottom;
 
   //Create SVG element
@@ -47,7 +47,8 @@ var barGraph = function(dataset) {
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
         .attr("transform", 
-              "translate(" + margin.left + "," + margin.top + ")");
+              "translate(" + margin.left + "," + margin.top + ")")
+        ;
 
     // Set scales
     var yScale = d3.scaleLinear()
@@ -74,15 +75,15 @@ var barGraph = function(dataset) {
 svg.selectAll(".bar")
         .data(dataset)
         .enter().append("rect")
-        .attr("class", function(d) {
+        // .attr("class", function(d) {
 
-            if (d.cei_change < 0){
-                return "bar--negative";
-            } else {
-                return "bar--positive";
-            }
+            // if (d.cei_change < 0){
+            //     return "bar--negative";
+            // } else {
+            //     return "bar--positive";
+            // }
 
-        })
+        // })
         .attr("data-yr", function(d){
             return d.symbol;
         })
@@ -126,6 +127,7 @@ svg.selectAll(".bar")
         .attr("x", width - margin.right)
         .attr("y", -1 * margin.top/2)
         .attr("text-anchor", "end")
+        .style("font-size", 20)
         .text("Publicly Traded Companies");
     
     legend.append("text")
@@ -133,6 +135,7 @@ svg.selectAll(".bar")
         .attr("y", -5)
         .attr("text-anchor", "end")
         .style("opacity", 0.5)
+        .style("font-size", 16)
         .text("Change in HRC Corporate Equality Index (2016-2017)*");
     // End legend
 
@@ -145,6 +148,7 @@ svg.selectAll(".bar")
         .attr("y", height)
         .attr("text-anchor", "end")
         .style("opacity", 0.5)
+        .style("font-size", 12)
         .text("*(Only companies with a year over year change are displayed)");
 
     svg.append("g")
@@ -155,7 +159,7 @@ svg.selectAll(".bar")
         .attr("class", "y axis")
         .append("text")
         .text("HRC Score Change")
-        .attr("transform", "translate(15, 85), rotate(-90)")
+        .attr("transform", "translate(25, 150), rotate(-90)")
 
 
 // Runs line to anchor bars

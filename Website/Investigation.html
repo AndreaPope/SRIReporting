@@ -9,61 +9,61 @@
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
-    height: 100%;
-    color: #777;
-    line-height: 1.8;
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
 }
 
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('images/lake-2063957_1920.jpg');
-    min-height: 100%;
+  background-image: url('images/lake-2063957_1920.jpg');
+  min-height: 100%;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-    background-image: url("images/leaves-2912818_1920.jpg");
-    min-height: 400px;
+  background-image: url("images/leaves-2912818_1920.jpg");
+  min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url("images/tree-fern-320078_1920.jpg");
-    min-height: 400px;
+  background-image: url("images/tree-fern-320078_1920.jpg");
+  min-height: 400px;
 }
 
 chart2 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-    width: 960px;
-  }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
 
- /*HTML Horizonal Legend*/
+/*HTML Horizonal Legend*/
 .sector {
-    margin: 0 !important;
-    font-size: 10.5px;
+  margin: 0 !important;
+  font-size: 10.5px;
 }
 .key-dot {
-    display: inline-block;
-    height: 10px;
-    margin-right: .5em;
-    width: 10px;
-    /*font-size: 8;*/
+  display: inline-block;
+  height: 10px;
+  margin-right: .5em;
+  width: 10px;
+  /*font-size: 8;*/
 }
 
 .color1 { background: #1f77b4;}
 .color2 { background: #aec7e8;}
 .color3 { background: #ff7f0e;}
-.color4 { background: #ffbb78; }
+.color4 { background: #ffbb78;}
 .color5 { background: #2ca02c;}
 .color6 { background: #98df8a;}
 .color7 { background: #d62728;}
@@ -74,12 +74,12 @@ chart2 {
 .color12 { background: #c49c94;}
 
 #legend2{
-    overflow:hidden;
+  overflow:hidden;
 }
 .legend2 {
-    float:left;
-    margin-right: 1em;
-    /*font-size: 8;*/
+  float:left;
+  margin-right: 1em;
+  /*font-size: 8;*/
 }
 /*End Horizontal Legend*/
 
@@ -89,14 +89,13 @@ chart2 {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-    }
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
 }
 </style>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
 <script type="text/javascript" src="js/jquery.fullPage.js"></script>
 <script type="text/javascript" src="js/examples.js"></script>
 <script src="js/d3.v4.js"></script>
@@ -104,175 +103,138 @@ chart2 {
 <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 <script src="js/hrc-viz-2.js"></script>
 
-
-
-
 <body>
-
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-  </div>
-</div>
-
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">INVESTIGATION</span></span>
-  </div>
-</div>
-
-<!-- Container (HRC Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h2 class="w3-center"><strong>Social Justice:</strong> Human Rights Campaign (HRC)</h3>
-  <h3 class="w3-center"><em>2016-2017 Gains and Losses</em></h3>
-  <p>
-  	According to the Human Rights Commission, major companies in recent years have accelerated their efforts to improve policies affecting LGBTQ employees and their families. The HRC assesses these efforts in their annual Corporate Equality Index (CEI) report. In 2017, more than 100 publicly traded companies posted gains in their HRC scores and a few lost points.</p>
-  	<p>
-  	Hover over the bars in the chart below to see the companies and analyst recommendations for whether it is a good time to buy or sell a particular stock.</p> 
-
-  	<p><em>The recommendations used here are as of November 12, 2017.</em></p>
-
-
-
-  <!-- <div style="width: 1000px;" style="background-color:#FFFFFF" class="w3-light-grey"> -->
-  <div style="width: 1000px;" style="background-color:#FFFFFF" >
-	<div id = "chart1">
-	   <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
-	   <script src="js/hrc-viz1.js"></script>
-	</div>
-
-  	<p>Television cable company Charter Communications (CHTR) and aerospace and defense giant Lockheed Martin (LM) posted the most gains. Genuine Parts Company (GPC), which sells and distributes car parts and electronics, lost the most points year over year. Also notably, the big box store Costco (COST) lost points because it does not enforce non-discrimination standards that include sexual orientation and gender identity for its vendors. Costco also lost points because it does not have transgender-inclusive health insurance coverage.</p>
-
-	<br>
-	<h3 class="w3-center"><em>Investment Options for Companies with Perfect HRC Scores</em></h3>
-	   <p>More than 200 companies earned perfect scores on HRC's Corporate Equality Index (CEI). They are represented below by sector (color) and market cap (size).</p> 
-	 
-
-     <div style="width: 1000px;">
-	   <div id = "chart2">
-
-       <form>
-      	<label><input type="radio" name="mode" value="sumBySize" checked> Market Cap </label>
-      	<label><input type="radio" name="mode" value="sumByCount"> Count </label>
-    	</form>
-	   <script src="js/hrc-viz-2a.js"></script>
-
-	<div id="legend2">
-	   <div class="legend2"> <p class="sector"><span class="key-dot color1"></span>Basic Industries</p> </div>
-	   <div class="legend2"> <p class="sector"><span class="key-dot color2"></span>Capital Goods</p> </div>
-	   <div class="legend2"> <p class="sector"><span class="key-dot color3"></span>Durables</p> </div>
-	   <div class="legend2"> <p class="sector"><span class="key-dot color4"></span>Non-Durables</p> </div>
-	   <div class="legend2"> <p class="sector"><span class="key-dot color5"></span>Services</p> </div>
-	   <div class="legend2"> <p class="sector"><span class="key-dot color6"></span>Energy</p> </div>
-	   <div class="legend2"> <p class="sector"><span class="key-dot color7"></span>Finance</p> </div>
-	   <div class="legend2"> <p class="sector"><span class="key-dot color8"></span>Health Care</p> </div>
-	   <div class="legend2"> <p class="sector"><span class="key-dot color9"></span>Miscellaneous</p> </div>
-	   <div class="legend2"> <p class="sector"><span class="key-dot color10"></span>Utilities</p> </div>
-	   <div class="legend2"> <p class="sector"><span class="key-dot color11"></span>Technology</p> </div>
-	   <div class="legend2"> <p class="sector"><span class="key-dot color12"></span>Transportation</p> </div>
-	</div>
-
-	 </div>
-
-	   <p>Market cap is the market value of a company's outstanding shares and can be a useful guide when making investment choices. Companies typically fall into three market cap categories: small-, mid- and large-cap. Historical financial performance shows large-cap companies are typically less risky but slow to grow, while small-cap companies have rapid growth potential but come with more risk.</p> 
-
-	   <p>If you want low-risk investments, explore the larger boxes - companies like Apple (AAPL), Google (GOOGL) and Huron Consulting Group (HURN). If you're willing to absorb more risk, check out the smaller boxes.</p>
-	   
-	   <p>To get a sense for which business sectors are leading the way when it comes to corporate equality, select the "Count" radio button above. Consumer Services, which includes companies like Starbucks, CBS Broadcasting and restaurant finder app Yelp, has the highest count of companies with perfect CEI scores. The Technology sector also has a large share of perfect scores, while the Energy and Transportation Industries have less representation.</p> 
-
-  </div>
-
-  <br><br>
-  <div class="w3-light-grey">
-    <!-- <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">
-    	This is not meant to provide investment advice, but provide background on stocks and mutual funds and ESG topics.
-    </div> -->
-  </div>
-
-<!--    <br><br>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">
-    	Support for this from: <br>
-    	<a href="https://www.forbes.com/sites/robrussell/2013/12/09/mutual-funds-or-stocks-which-is-better-for-you/#344a1d5111b1">ABC</a>
-    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.investopedia.com/ask/answers/05/062305.asp">DEF</a>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
-  </div> -->
- 
-<!-- </div> -->
 
-<!-- Second Parallax Image with Portfolio Text -->
-<!-- <div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">Global Greenhouse Gas Emissions</span>
-  </div>
-</div> -->
-
-<!-- Container (Emissions Section) -->
-<div style="height: 1500px;" class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h2 class="w3-center"><strong>Environment:</strong> Greenhouse Gas Emissions</h2>
-  <h3 class="w3-center"><em>CDP Report on Carbon Emissions</em></h3>
-<p>
-		Companies are placed into Performance Bands by the Carbon Disclosure Project (CDP) report used as the basis for these Carbon Emission reports. Performance Bands range from A (the best) to E (the worst). Note, this is not directly related to total metric tons of carbon emissions, but based on the company’s performance in comparison to their peers within their sector. Specifically, performance points are awarded for evidence considered to contribute to climate change mitigation, adaptation and transparency. Actions considered to be more fundamental to progress on combating climate change are awarded more points. External verification of emissions data is rewarded under the performance scoring as it is considered that this potentially increases the usefulness of the information to decision makers and can act as a pre-qualifier of the data submitted that should be recognized when evaluating performance.
-		<br><br>
-		
-		The performance score is also based solely on a company's CDP response. To receive a performance score, a company must achieve a minimum disclosure score of 50. This is to ensure that the judgement is based on sufficient information.
-		Performance scores are converted to percentages in a similar way to the disclosure score percentage is generated. At the end of scoring, the number of points a company has been awarded is divided by the maximum number that could have been awarded. The fraction is then converted to a percentage by multiplying by 100 and rounded to the nearest whole number.
-		(Points awarded / points attainable) x 100 = Disclosure Score
-
-		For additional information on the scoring mechanism, see <a href="https://www.cdp.net/Documents/Guidance/2015/CDP-climate-change-scoring-methodology.pdf"> CDP</a>.
-		<br><br>
-		Reviewing the charts, we see that the Consumer Server sector has the most A-Band rated companies. Additionally, Energy and Technology have the larger percentage of darker blue colors, indicating lower performance bands.
-		<br><br>
-		The second chart shows the financial performance over the past 5 years for companies within each sector that have Performance Bands of A.
-</p>
-  <div style="height: 300px;" class="w3-light-grey">
-     <iframe src="https://public.tableau.com/views/w209-Emissions/Dashboard1?:showVizHome=no&embed=true&:display_count=yes&publish=yes" width=125% height=300% align="center" seamless frameBorder=0 scrolling="yes"></iframe>
-
-     <!-- https://public.tableau.com/views/w209-Emissions/Dashboard1?:embed=y&:display_count=yes&publish=yes -->
-
-     <!-- <iframe src="https://public.tableau.com/views/ExploreSRIData_0/ExploreFunds?:showVizHome=no&embed=true&:display_count=yes" width=70% height=90% align="center" seamless frameBorder=0 scrolling="yes"></iframe> -->
-
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+      <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+    </div>
   </div>
 
-  
+  <!-- First Parallax Image with Logo Text -->
+  <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">INVESTIGATION</span></span>
+    </div>
+  </div>
 
-	  
-	 
+  <!-- Container (HRC Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="about">
+    <h2 class="w3-center"><strong>Social Justice:</strong> Human Rights Campaign (HRC)</h3>
+      <h3 class="w3-center"><em>2016-2017 Gains and Losses</em></h3>
+      <p>
+        According to the Human Rights Commission, major companies in recent years have accelerated their efforts to improve policies affecting LGBTQ employees and their families. The HRC assesses these efforts in their annual Corporate Equality Index (CEI) report. In 2017, more than 100 publicly traded companies posted gains in their HRC scores and a few lost points.
+      </p>
+      <p>
+        Hover over the bars in the chart below to see the companies and analyst recommendations for whether it is a good time to buy or sell a particular stock.
+      </p> 
 
+      <p><em>The recommendations used here are as of November 12, 2017.</em></p>
+      <div style="width: 1000px;" style="background-color:#FFFFFF" >
+       <div id = "chart1">
+        <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+        <script src="js/hrc-viz1.js"></script>
+      </div>
+    </div>
+
+    <p>
+      Television cable company Charter Communications (CHTR) and aerospace and defense giant Lockheed Martin (LM) posted the most gains. Genuine Parts Company (GPC), which sells and distributes car parts and electronics, lost the most points year over year. Also notably, the big box store Costco (COST) lost points because it does not enforce non-discrimination standards that include sexual orientation and gender identity for its vendors. Costco also lost points because it does not have transgender-inclusive health insurance coverage.
+    </p>
+
+    <br>
+    <h3 class="w3-center"><em>Investment Options for Companies with Perfect HRC Scores</em></h3>
+    <p>
+      More than 200 companies earned perfect scores on HRC's Corporate Equality Index (CEI). They are represented below by sector (color) and market cap (size).
+    </p> 
+
+    <div style="width: 1000px;">
+      <div id = "chart2">
+       <form>
+         <label><input type="radio" name="mode" value="sumBySize" checked> Market Cap </label>
+         <label><input type="radio" name="mode" value="sumByCount"> Count </label>
+       </form>
+     </div>
+     <script src="js/hrc-viz-2a.js"></script>
+     <div id="legend2">
+      <div class="legend2"> <p class="sector"><span class="key-dot color1"></span>Basic Industries</p> </div>
+      <div class="legend2"> <p class="sector"><span class="key-dot color2"></span>Capital Goods</p> </div>
+      <div class="legend2"> <p class="sector"><span class="key-dot color3"></span>Durables</p> </div>
+      <div class="legend2"> <p class="sector"><span class="key-dot color4"></span>Non-Durables</p> </div>
+      <div class="legend2"> <p class="sector"><span class="key-dot color5"></span>Services</p> </div>
+      <div class="legend2"> <p class="sector"><span class="key-dot color6"></span>Energy</p> </div>
+      <div class="legend2"> <p class="sector"><span class="key-dot color7"></span>Finance</p> </div>
+      <div class="legend2"> <p class="sector"><span class="key-dot color8"></span>Health Care</p> </div>
+      <div class="legend2"> <p class="sector"><span class="key-dot color9"></span>Miscellaneous</p> </div>
+      <div class="legend2"> <p class="sector"><span class="key-dot color10"></span>Utilities</p> </div>
+      <div class="legend2"> <p class="sector"><span class="key-dot color11"></span>Technology</p> </div>
+      <div class="legend2"> <p class="sector"><span class="key-dot color12"></span>Transportation</p> </div>
+    </div>
+  </div>
+  <p>
+    Market cap is the market value of a company's outstanding shares and can be a useful guide when making investment choices. Companies typically fall into three market cap categories: small-, mid- and large-cap. Historical financial performance shows large-cap companies are typically less risky but slow to grow, while small-cap companies have rapid growth potential but come with more risk.
+  </p> 
+  <p>
+    If you want low-risk investments, explore the larger boxes - companies like Apple (AAPL), Google (GOOGL) and Huron Consulting Group (HURN). If you're willing to absorb more risk, check out the smaller boxes.
+  </p>
+  <p>
+    To get a sense for which business sectors are leading the way when it comes to corporate equality, select the "Count" radio button above. Consumer Services, which includes companies like Starbucks, CBS Broadcasting and restaurant finder app Yelp, has the highest count of companies with perfect CEI scores. The Technology sector also has a large share of perfect scores, while the Energy and Transportation Industries have less representation.
+  </p> 
+
+</div>
 
 <br><br>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%">
-    	Information in this section provided by: <br>
 
-    </div>
+<!-- Container (Emissions Section) -->
+<div style="height: 2200px;" class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h2 class="w3-center"><strong>Environment:</strong> Greenhouse Gas Emissions</h2>
+  <h3 class="w3-center"><em>CDP Report on Carbon Emissions</em></h3>
+  <p>
+    Companies are placed into Performance Bands by the Carbon Disclosure Project (CDP) report used as the basis for these Carbon Emission reports. Performance Bands range from A (the best) to E (the worst). Note, this is not directly related to total metric tons of carbon emissions, but based on the company’s performance in comparison to their peers within their sector. Specifically, performance points are awarded for evidence considered to contribute to climate change mitigation, adaptation and transparency. Actions considered to be more fundamental to progress on combating climate change are awarded more points. External verification of emissions data is rewarded under the performance scoring as it is considered that this potentially increases the usefulness of the information to decision makers and can act as a pre-qualifier of the data submitted that should be recognized when evaluating performance.
+    <br>
+    <br>
+    The performance score is also based solely on a company's CDP response. To receive a performance score, a company must achieve a minimum disclosure score of 50. This is to ensure that the judgement is based on sufficient information.
+    Performance scores are converted to percentages in a similar way to the disclosure score percentage is generated. At the end of scoring, the number of points a company has been awarded is divided by the maximum number that could have been awarded. The fraction is then converted to a percentage by multiplying by 100 and rounded to the nearest whole number.
+    (Points awarded / points attainable) x 100 = Disclosure Score
+
+    For additional information on the scoring mechanism, see <a href="https://www.cdp.net/Documents/Guidance/2015/CDP-climate-change-scoring-methodology.pdf"> CDP</a>.
+    <br>
+    <br>
+  </p>
+  <div style="height: 600px;" class="w3-white">
+    <iframe src="Emissions_chart.html" width=100% height=100% align="center" seamless frameBorder=0 scrolling="no"></iframe>
   </div>
+  <p>
+    Reviewing the charts, we see that the Consumer Server sector has the most A-Band rated companies. Additionally, Energy and Technology have the larger percentage of darker blue colors, indicating lower performance bands.
+    <br><br>
+    The second chart shows the financial performance over the past 5 years for companies within each sector that have Performance Bands of A.
+  </p>
+  <div style="height: 300px;" class="w3-light-grey">
+   <iframe src="https://public.tableau.com/views/w209-Emissions/Dashboard1?:showVizHome=no&embed=true&:display_count=yes&publish=yes" width=125% height=300% align="center" seamless frameBorder=0 scrolling="yes"></iframe>
+ </div>
+</div>
+<br>
+<br>
 
+<div class="w3-light-grey">
+  <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%">
+   Information in this section provided by: 
+   <br>
+ </div>
 </div>
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-
 </div>
-
-<!-- Third Parallax Image with Portfolio Text -->
-<!-- <div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle"> -->
-     <!-- <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span> -->
-<!--   </div>
-</div> -->
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
@@ -282,9 +244,8 @@ chart2 {
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
 </footer>
- 
-<script>
 
+<script>
 // Modal Image Gallery
 function onClick(element) {
   document.getElementById("img01").src = element.src;
@@ -296,24 +257,23 @@ function onClick(element) {
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
 function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
+  var navbar = document.getElementById("myNavbar");
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+  } else {
+    navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+  }
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
 }
 </script>
-
 </body>
 </html>

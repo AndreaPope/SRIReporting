@@ -19,6 +19,7 @@
 #### Important Links:
 * Website: http://people.ischool.berkeley.edu/~cliu/
 * Demo Video: https://www.youtube.com/watch?v=3njaco5nOuo&feature=youtu.be
+* School Project Page: https://www.ischool.berkeley.edu/projects/2017/socially-responsible-investing-make-your-money-make-statement
 
 #### About:
 This data visualization project for MIDS W209 brings together disparate data sources to create a more comprehensive view of the environmental, social and governance practices of publicly traded companies and investment funds.

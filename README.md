@@ -10,9 +10,9 @@
 **Under the Guidance of**: Professor John Alexis Guerra Gomez
 
 **Authors**:
-* [Melanie Costello](https://www.ischool.berkeley.edu/people/melanie-costello) // chenglin_liu@berkeley.edu
-* [Chenglin Liu](https://www.ischool.berkeley.edu/people/chenglin-liu/) // melanie.costello@berkeley.edu
-* [Adrea Pope](https://www.ischool.berkeley.edu/people/andrea-pope) // andreapope@berkeley.edu
+* [Melanie Costello](https://www.ischool.berkeley.edu/people/melanie-costello) // melanie.costello@berkeley.edu
+* [Chenglin Liu](https://www.ischool.berkeley.edu/people/chenglin-liu/) // chenglin_liu@berkeley.edu
+* [Andrea Pope](https://www.ischool.berkeley.edu/people/andrea-pope) // andreapope@berkeley.edu
 
 
 

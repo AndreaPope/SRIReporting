@@ -1,6 +1,6 @@
-![SRI Reporting](images/homepage.png "SRI Reporting")
+![SRI Reporting](Images/homepage.png "SRI Reporting")
 
-## Project: SRI Reporting
+## Project: Socially Responsible Investments Reporting - Make Your Money, Make a Statement
 ## Data Science w209. Data Visualization, Fall 2017 (Section 4)
 
 ### University of California, Berkeley

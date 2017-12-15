@@ -17,7 +17,7 @@
 
 
 #### Important Links:
-* Website: http://people.ischool.berkeley.edu/~cliu/
+* Website: http://people.ischool.berkeley.edu/~cliu/SRIReporting
 * Demo Video: https://www.youtube.com/watch?v=3njaco5nOuo&feature=youtu.be
 * School Project Page: https://www.ischool.berkeley.edu/projects/2017/socially-responsible-investing-make-your-money-make-statement
 

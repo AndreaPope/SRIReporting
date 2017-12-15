@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>SRI Reporting</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+	<link rel="stylesheet" type="text/css" href="css/sri.css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style>
+	#section0{
+		/*background-image: url(res/bg1.jpg);*/
+		/*opacity: 0.8;*/
+	}
+
+	#section0 .layer{
+		position: absolute;
+		z-index: 4;
+		width: 100%;
+		left: 0;
+		top: 30%;
+
+		/* 
+		* Preventing flicker on some browsers 
+		* See http://stackoverflow.com/a/36671466/1081396  or issue #183
+		*/
+		-webkit-transform: translate3d(0,0,0);
+		-ms-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
+	#section0 img,
+
+	#explorationClass img{
+		margin: 20px 0 0 0;
+	}
+	#educationClass img{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top:20;
+		right:0;
+		width: 100%;
+		background-size: 100% 100%;
+	}
+	#investigationClass img{
+		margin: 20px 0 0 0;
+	}
+	.intro p{
+		width: 50%;
+		margin: 0 auto;
+		font-size: 1.5em;
+	}
+	p {
+		padding-top: 50px;
+		padding-right: 100px;
+		padding-bottom: 50px;
+		padding-left: 100px;
+		font-size: large;
+	}
+	#myVideo {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top:0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+		background-color: black; /* in case the video doesn't fit the whole page*/
+		background-image: /* our video */;
+		background-position: center center;
+		background-size: contain;
+		object-fit: cover; /*cover video background */
+		z-index:3;
+	}
+
+	form {
+		position: absolute;
+		right: 20px;
+		top: 50px;
+	}
+	.node {
+		border: solid 1px white;
+		font: 10px sans-serif;
+		line-height: 12px;
+		overflow: hidden;
+		position: absolute;
+		text-indent: 2px;
+	}
+	.paragraph {
+		margin-top: 10px;
+	}
+
+	chart2 {
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		margin-left: auto;
+		margin-right: auto;
+		width: 960px;
+	}
+
+
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+<script type="text/javascript" src="js/examples.js"></script>
+<script src="js/d3.v4.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="js/hrc-viz1.js"></script>    
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#fullpage').fullpage({
+			sectionsColor: ['#1bbc9b', 'white','white', 'white', 'white',  'white', 'white', 'white','white', 'white', 'white', 'white', 'white', 'white'],
+			anchors: ['Home', 'Education', 'Investigation', 'Investigation1', 'Investigation2', 'Investigation3', 'Exploration', 'Exploration1'],
+			menu: '#menu',
+			scrollingSpeed: 1000
+		});
+	});
+</script>
+
+
+<script language="javascript">
+	function changeSRIImage() {
+
+		if (document.getElementById("imgClickAndChange").src == "http://localhost:8000/images/USSIF-ESG.png") 
+		{
+			console.log("here2")
+			document.getElementById("imgClickAndChange").src = "images/USSIF-2.png";
+		}
+		else 
+		{
+			document.getElementById("imgClickAndChange").src = "images/USSIF-ESG.png";
+		}
+	}
+</script>
+
+</head>
+<body>
+
+	<ul id="menu">
+		<li data-menuanchor="Home"><a href="#Home">Home</a></li>
+		<li data-menuanchor="Education"><a href="#Education">Education</a></li>
+		<li data-menuanchor="Investigation"><a href="#Investigation">Investigation</a></li>
+		<li data-menuanchor="Exploration"><a href="#Exploration">Exploration</a></li>
+	</ul>
+
+	<div id="fullpage">
+		<div class="section " id="section0">
+			<video id="myVideo" loop muted data-autoplay>
+				<source src="images/trimedSummerBreeze.mp4" type="video/mp4">
+				</video>
+				<div class="layer">
+					<h1 style="color:#464647; text-shadow: 3px 3px white;">
+						<br>
+						Make Your Money
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						Make A Statement
+					</h1>
+					<input type="hidden" name="id" value="1" />
+					<p style="color:white; text-shadow: 2px 2px black;">
+						There was a time and place when investment choices were made based on one factor: the best opportunity for financial gain.  
+						<br>But, do you expect more?
+						<br><br>You are not alone. Money magazine reported in August of 2017, that <br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						“...three quarters of millennials believe social and environmental impact 
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						should be an important factor in their portfolios.”
+						<br><br>
+						We make it possible to research your investments to ensure they reflect your social and environmental views.
+						<br> Gathering ratings for environmental, social, and governance (ESG) practices from a range of organizations, we allow you to explore both stocks and funds.
+						<br><br>Continue below to begin exploring…
+					</p>
+				</div>
+			</div>
+
+			<div class="section" id="educationClass">
+				<iframe src="Education2.html" width=100% height=90% align="center" seamless frameBorder=5 scrolling="yes"></iframe>
+			</div>
+
+			<div class="section" id="investigationClass" style="background-image: url(images/lake-2063957_1920.jpg); background-size:cover; opacity: 0.8;" >
+				<div class="intro" >
+					<h1 style="color: white"> Investigation </h1>
+				</div>
+			</div>
+
+			<div class="section" id="investigationClass">
+				<div class="container">
+					<div id="chart1" align="left">
+					</div>
+					<h1>HRC</h1>
+					<p>According to the Human Rights Commission, major companies in recent years have accelerated their efforts to improve policies affecting LGBTQ employees and their families. In 2017, 123 companies posted gains in their HRC ratings - with television cable company Charter Communications (CHTR) and aerospace and defense giant Lockheed Martin (LM) posting the most gains. Of those who improved year over year, 23 are rated Strong Buy based on analyst recommendations. Analyst recommendations are a likert scale assessment of whether it is a good time to buy or sell a particular stock - Strong Sell, Moderate Sell, Hold, Moderate Buy, Strong Buy. The recommendations used here are as of November 12, 2017.</p>
+					<p>A handful of companies slid backward from 2016 to 2017. Genuine Parts Company (GPC), which sells and distributes car parts and electronics, lost the most points year over year. Also notably, the big box store Costco (COST) lost points because it does not enforce non-discrimination standards that include sexual orientation and gender identity for its vendors. Costco also lost points because it does not have transgender-inclusive health insurance coverage.</p>
+				</div>
+			</div>
+
+			<div class="section" id="investigationClass">
+				<div class="container">
+					<script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+					<script src="js/hrc-viz-2.js"></script>
+					<form>
+						<input type="radio" name="mode" value="size" checked> Market Cap
+						<input type="radio" name="mode" value="count"> Count
+					</form>
+					<chart2>
+					</chart2>
+					<p>More than 200 companies earned perfect scores on HRC's Corporate Equality Index (CEI). They are represented above by sector (color) and market cap (size). Market cap is the market value of a company's outstanding shares and can be a useful guide when making investment choices. Companies typically fall into three market cap categories: small-, mid- and large-cap. Historical financial performance shows large-cap companies are typically less risky but slow to grow, while small-cap companies have rapid growth potential but come with more risk. 
+						If you want low-risk investments, explore the larger boxes - companies like Apple (AAPL), Google (GOOGL) and Huron Consulting Group (HURN). If you're willing to absorb more risk, check out the smaller boxes
+					To get a sense for which business sectors are leading the way when it comes to corporate equality, select the "Count" radio button above. Consumer Services, which includes companies like Starbucks, CBS Broadcasting and restaurant finder app Yelp, has the highest count of companies with perfect CEI scores. The Technology sector also has a large share of perfect scores, while the Energy and Transportation Industries have less representation.</p>
+				</div>
+			</div>
+
+			<div class="section" id="investigationClass">
+				<div class="container">
+					<h1>Emissions</h1>
+				</div>
+			</div>
+
+			<div class="section" id="explorationClass" style="background-image: url(images/dropsplants.jpg); background-size:cover; opacity: 0.8;">
+				<div class="container">
+					<h1 style="color: white">Exploration</h1>
+					<p></p>
+				</div>
+			</div>
+
+			<div class="section" id="explorationClass">
+				<iframe src="https://public.tableau.com/views/ExploreSRIData_0/ExploreFunds?:showVizHome=no&embed=true&:display_count=yes" width=70% height=90% align="center" seamless frameBorder=0 scrolling="yes"></iframe>
+			</div>
+
+
+
+		</div>
+
+	</body>
+	</html>

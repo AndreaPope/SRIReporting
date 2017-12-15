@@ -1,0 +1,154 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Area Chart</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+<div class="container">
+		<div class="row">
+				<div class="col-md-5">
+					<h1 class="center">Developer Survey Results<br><strong>2011 2012 2013</strong></h1>
+							
+									<div id="vis"></div>	
+				</div>
+
+				<div class="col-md-5 space">
+						<h3>Overview</h3>
+						<p>This year, over fifty thousand developers shared where they work, 
+						what they build, and who they are. You are about to read the results 
+						of the most comprehensive developer survey ever conducted..
+						<a href="https://www.statwing.com/demos/dev-survey-2#workspaces/18726">Source Data</a>
+						</p>
+
+				</div>
+		</div>
+</div>
+
+
+<!-- d3.csv("file1.csv", function(error, data1) {
+d3.csv("file2.csv", function (error, data2) {
+
+allData = d3.merge([data1, data2]);  // d3.merge will create a single flat array of the arrays.
+
+}); // end file2
+}); // end file1
+ -->
+
+
+<!-- return d.country.replace(/ |,|\./g, '_'); -->
+
+		<script type="text/javascript">
+
+		var fullWidth = 250;
+		var fullHeight = 200;
+
+		var margin = {top:25, bottom: 20, right: 10, left: 40};
+
+		var width = fullWidth - margin.left - margin.right;
+		var height = fullHeight - margin.bottom - margin.top;
+
+		var x = d3.scale.linear()
+				.range([0, width]);
+
+		var y = d3.scale.linear()
+				.range([height, 0]);
+
+
+
+
+
+			// d3.csv("data/CountryAndJob.csv", typeFix, function (error, data1) {
+		d3.csv("data/SRI-Funds-Reshape.csv", function (error, data) {
+					
+			if (error) {
+				console.log("You have a problem with your data my friend");
+			}
+
+
+			console.log(data);
+
+			var countries = d3.nest() 
+								.key(function(d) {
+									return d.Country;
+								})
+								.sortValues(function(a, b) {return a.Love_my_job - b.Love_my_job;})
+								.entries(data);
+
+			countries.forEach(function(s) {
+				s.maxValue = d3.max(s.values, function(d) {
+					return +d.Gaming;
+				});
+			});
+
+			console.log(countries);
+
+			x.domain([d3.min(countries, function(d) { return d.values[0].Love_my_job;}),
+					  d3.max(countries, function(d) { return d.values[d.values.length-1].Love_my_job; })	
+				]);
+
+			var svg = d3.select("body").selectAll("svg")
+					.data(countries)
+					.enter()
+					.append("svg")
+					.attr("width", fullWidth)
+					.attr("height", fullHeight)
+					.append("g")
+					.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+			var circles = svg.selectAll("circle")
+							.data(data)
+							.enter()
+							.append("circle");
+
+			circles.attr("cx", function(d) {
+						return x(+d.Love_my_job);
+					})
+					.attr("cy", function(d) {
+						y.domain([0, d.maxValue]);
+						return (+d.Gaming);
+					})
+					.attr("r", 4)
+					.attr("class", "myCircles")
+					.attr("fill", "steelblue")
+					.append("title")
+					.text(function(d) {
+						return d.Country
+					});
+
+			svg.append("text")
+					.attr("class", "label")
+					.attr("x", 0)
+					.attr("y", -5)
+					.style("text-anchor", "start")
+					.text(function(d) {return (d.values[0].Love_my_job);});
+
+			svg.append("text")
+					.attr("class", "label")
+					.attr("x", width/2)
+					.attr("y", -5)
+					.style("text-anchor", "middle")
+					.text(function(d) {return d.key;});
+
+			svg.append("text")
+					.attr("class", "label")
+					.attr("x", width)
+					.attr("y", -8)
+					.style("text-anchor", "middle")
+					.text(function(d) {return (d.values[0].Gaming);});
+
+			
+		
+			});
+			
+
+		</script>
+
+	</body>
+</html>

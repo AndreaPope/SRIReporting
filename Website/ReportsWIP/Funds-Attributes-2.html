@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!-- Support from http://bl.ocks.org/chrisbrich/4173826 -->
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Canvas Parallel Coordinates</title>
+    <style type="text/css">
+
+svg {
+  font: 10px sans-serif;
+}
+
+canvas, svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#chart {
+  position: relative;
+}
+
+.brush .extent {
+  fill-opacity: .3;
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}
+
+.axis line, .axis path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  text-shadow: 0 1px 0 #fff;
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="chart">
+      <canvas id="foreground"></canvas>
+      <svg></svg>
+    </div>
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+    <script type="text/javascript">
+
+// shim layer with setTimeout fallback
+window.requestAnimFrame = (function(){
+  return window.requestAnimationFrame       ||
+         window.webkitRequestAnimationFrame ||
+         window.mozRequestAnimationFrame    ||
+         window.oRequestAnimationFrame      ||
+         window.msRequestAnimationFrame     ||
+         function( callback ){
+           window.setTimeout(callback, 1000 / 60);
+         };
+})();
+
+var m = [30, 10, 10, 10],
+    w = 960 - m[1] - m[3],
+    h = 340 - m[0] - m[2];
+
+var x = d3.scaleOrdinal().range([0, w]),
+    y = {};
+
+var line = d3.line(),
+    axis = d3.axisLeft(),
+    foreground,
+    dimensions,
+    brush_count = 0;
+
+var colors = {
+  "All Cap": "hsla(28.13278008298755,100%,52.74509803921569%,0.12)",
+  "Balanced": "hsla(214.13793103448276,55.769230769230745%,79.6078431372549%,0.12)",
+  "Bonds (Fixed Inc)": "hsla(0,0%,33.33333333333333%,0.12)",
+  "Equity Large Cap": "hsla(29.77777777777777,100%,73.52941176470588%,0.12)",
+  "Equity Mid-Sm Cap": "hsla(359.6571428571429,69.1699604743083%,49.6078431372549%,0.12)",
+  "Equity Speciality": "hsla(110.11764705882352,57.04697986577182%,70.7843137254902%,0.12)",
+  "Int'l Global": "hsla(120,56.86274509803921%,40%,0.12)"
+};
+
+d3.selectAll("canvas")
+    .attr("width", w + m[1] + m[3])
+    .attr("height", h + m[0] + m[2])
+    .style("padding", m.join("px ") + "px");
+
+foreground = document.getElementById('foreground').getContext('2d');
+
+foreground.strokeStyle = "rgba(0,100,160,0.1)";
+
+var svg = d3.select("svg")
+    .attr("width", w + m[1] + m[3])
+    .attr("height", h + m[0] + m[2])
+  .append("svg:g")
+    .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
+
+// Could value belong to a quantitative ordinal scale
+var quant_p = function(v){return (parseFloat(v) == v) || (v == "")};
+
+d3.csv("data/SRI-Funds-Investigate-Attributes.csv", function(data) {
+  //Reduce the number of unique names... their were > 7K.
+  data.forEach(function(d){d["Name"] = d["Name"].slice(0,1);});
+
+    // Extract the list of dimensions.
+  dimensions = d3.keys(data[0]).slice(1).concat(d3.keys(data[0]).slice(0,1)); //Put the ordinal dimensions on opposite sides of the chart for easier viewing
+  x.domain(dimensions);
+  console.log(dimensions);
+
+  // Create a scale for each.
+  dimensions.forEach(function(d) {
+    var vals = data.map(function(p) {return p[d];}); 
+    if (vals.every(quant_p)){ 
+      y[d] = d3.scaleLinear()
+          .domain(d3.extent(vals.map(function(p){return +p})))
+          .range([h, 0]);}
+    else{           
+      y[d] = d3.scaleOrdinal()
+          .domain(vals.filter(function(v, i) {return vals.indexOf(v) == i;}))
+          .range([h, 0]);}
+  })
+
+  // Render full foreground
+  paths(data, foreground, brush_count);
+
+   // Add a group element for each dimension.
+  var g = svg.selectAll(".dimension")
+      .data(dimensions)
+    .enter().append("svg:g")
+      .attr("class", "dimension")
+      .attr("transform", function(d) { return "translate(" + x(d) + ")"; });
+
+// Add an axis and title.
+  g.append("svg:g")
+      .attr("class", "axis")
+      .each(function(d) { d3.select(this).call(axis.scale(y[d])); })
+    .append("svg:text")
+      .attr("text-anchor", "middle")
+      .attr("y", -9)
+      .text(String);
+
+  // Add and store a brush for each axis.
+  g.append("svg:g")
+      .attr("class", "brush")
+      .each(function(d) { d3.select(this).call(y[d].brush = d3.brushY(y[d]).on("brush", brush)); })
+     .selectAll("rect")
+      .attr("x", -12)
+      .attr("width", 24);
+
+  // Handles a brush event, toggling the display of foreground lines.
+  function brush() {
+    brush_count++;
+    var actives = dimensions.filter(function(p) { return !y[p].brush.empty(); }),
+        extents = actives.map(function(p) { return y[p].brush.extent(); });
+
+    // Get lines within extents
+    var selected = [];
+    data.map(function(d) {
+      return actives.every(function(p, i) {
+        var p_new = (y[p].ticks)?d[p]:y[p](d[p]); //convert to pixel range if ordinal
+          return extents[i][0] <= p_new && p_new <= extents[i][1];
+      }) ? selected.push(d) : null;
+    });
+
+    // Render selected lines
+    foreground.clearRect(0,0,w+1,h+1);
+    paths(selected, foreground, brush_count);
+  }
+
+
+  function paths(data, ctx, count) {
+    var n = data.length,
+        i = 0,
+        reset = false;
+    function render() {
+      var max = d3.min([i+60, n]);
+      data.slice(i,max).forEach(function(d) {
+        path(d, foreground, colors[d.group]);
+      });
+      i = max;
+    };
+    (function animloop(){
+      if (i >= n || count < brush_count) return;
+      requestAnimFrame(animloop);
+      render();
+    })();
+  };
+
+ 
+
+});//ends data pull
+
+// Supporting functions
+
+function path(d, ctx, color) {
+  if (color) ctx.strokeStyle = color;
+  ctx.beginPath();
+  dimensions.map(function(p,i) {
+    if (i == 0) {
+      ctx.moveTo(x(p),y[p](d[p]));
+    } else { 
+      ctx.lineTo(x(p),y[p](d[p]));
+    }
+  });
+  ctx.stroke();
+}
+
+
+   </script>
+  </body>
+</html
